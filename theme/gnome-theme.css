@@ -1,0 +1,27 @@
+/* Variables */
+@import "variables.css";
+@import "icons/icons.css";
+@import "colors/light.css";
+@import "colors/dark.css";
+@import "colors/black.css" screen and -moz-pref("gnomeTheme.oledBlack"); 
+
+/* Core */
+@import "parts/adw-animations.css";
+@import "parts/adw-browser-container.css";
+@import "parts/adw-browser-ui.css";
+@import "parts/adw-buttons.css";
+@import "parts/adw-omnibox.css";
+@import "parts/adw-overflowing-addons.css";
+@import "parts/adw-panel-ui.css";
+@import "parts/adw-popup.css";
+@import "parts/adw-sidebar.css";
+@import "parts/adw-sidebar-notification.css";
+@import "parts/adw-single-components.css";
+@import "parts/adw-toolbar.css";
+
+@import "parts/adw-icons.css";
+@import "parts/adw-theme.css";
+
+@import "parts/adw-branding.css";
+
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";

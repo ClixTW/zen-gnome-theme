@@ -1,0 +1,8 @@
+zen-themes.css
+customChrome.css
+theme/mods/
+
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

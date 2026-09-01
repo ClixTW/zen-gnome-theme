@@ -1,0 +1,35 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Status panel */
+#statuspanel {
+  padding: var(--gnome-menu-padding) !important;
+  & > #statuspanel-label {
+    border-radius: var(--gnome-menu-radius) !important;
+    border: none !important;
+    padding: 4px var(--gnome-menu-item-padding) !important;
+    font-weight: 500 !important;
+    background: color-mix(in srgb, var(--zen-primary-color), black 70%) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+}
+
+/* Site Data popup */
+#zen-unified-site-data-panel {
+  --panel-width: 246px !important;
+}
+#unified-extensions-area > * {
+  border-radius: var(--gnome-button-radius) !important;
+}
+#zen-site-data-header > * {
+  overflow: hidden !important;
+}
+#zen-site-data-footer {
+  padding-top: 12px !important;
+}
+#zen-site-data-actions {
+  border-radius: 99px !important;
+  margin-top: 2px !important;
+}
+#identity-popup-clear-sitedata-footer {
+  padding-bottom: var(--gnome-menu-padding) !important;
+}

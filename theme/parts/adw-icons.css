@@ -1,0 +1,774 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Dimmed icons color */
+.urlbar-icon:-moz-window-inactive,
+#urlbar:-moz-window-inactive image,
+.toolbarbutton-icon:-moz-window-inactive,
+.toolbarbutton-1:-moz-window-inactive,
+:root[customtitlebar] .titlebar-buttonbox .titlebar-button  .toolbarbutton-icon:-moz-window-inactive {
+  opacity: 0.5 !important;
+}
+
+/* Icons color */
+.toolbarbutton-1,
+.urlbar-page-action,
+.identity-box-button {
+  fill: var(--gnome-toolbar-icon-fill) !important;
+}
+
+/* Fix icons color */
+#tabs-newtab-button image,
+.zen-workspaces-actions {
+  opacity: 0.5 !important;
+}
+#tabs-newtab-button[in-urlbar] image,
+.zen-workspaces-actions[open] {
+  opacity: 0.8 !important;
+}
+#downloads-button:-moz-window-inactive {
+  opacity: 0.2 !important;
+}
+
+/* Menu checkbox/radio */
+menuitem[type="checkbox"],
+menuitem[type="radio"] {
+  &::before {
+    align-items: center;
+    content: "";
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    margin-inline-end: 0.5em;
+    width: 16px;
+  }
+  &[disabled="true"]::before {
+    opacity: 0.5;
+  }
+}
+menuitem[type="checkbox"][checked]::before {
+  content: var(--gnome-icon-select-symbolic);
+}
+menuitem[type="radio"] {
+  &::before {
+    border-radius: 100%;
+    border: 1px solid var(--gnome-toolbar-icon-fill);
+  }
+  &[checked]::before {
+    content: var(--gnome-icon-bullet-symbolic);
+  }
+}
+
+/* Replace icons */
+
+/* Context menu */
+#context-back {
+  --menuitem-icon: var(--gnome-icon-go-previous-symbolic) !important;
+}
+#context-forward {
+  --menuitem-icon: var(--gnome-icon-go-next-symbolic) !important;
+}
+#context-reload {
+  --menuitem-icon: var(--gnome-icon-view-refresh-symbolic) !important;
+}
+#context-stop {
+  --menuitem-icon: var(--gnome-icon-process-stop-symbolic) !important;
+}
+#context-bookmarkpage {
+  --menuitem-icon: var(--gnome-icon-non-starred-symbolic) !important;
+  &[starred] {
+    --menuitem-icon: var(--gnome-icon-starred-symbolic) !important;
+  }
+}
+
+/* UI */
+.private-browsing-indicator-icon {
+  list-style-image: url("account-private.svg", unset) !important;
+}
+#back-button {
+  list-style-image: var(--gnome-icon-go-previous-symbolic) !important;
+}
+#forward-button {
+  list-style-image: var(--gnome-icon-go-next-symbolic) !important;
+}
+#reload-button {
+  list-style-image: var(--gnome-icon-view-refresh-symbolic) !important;
+}
+#stop-button {
+  --menuitem-icon: var(--gnome-icon-process-stop-symbolic) !important;
+}
+.close-icon,
+.zen-glance-sidebar-close,
+.zen-theme-picker-custom-list-item-remove,
+#appMenu-quit-button2,
+#zen-boost-delete {
+  list-style-image: var(--gnome-icon-window-close-symbolic) !important;
+}
+#PanelUI-zen-emojis-picker-none,
+#zen-emojis-picker-none {
+  list-style-image: url("trash.svg", unset);
+}
+#PanelUI-zen-gradient-generator-color-remove,
+#zen-gradient-generator-color-remove,
+.sr-remove {
+  list-style-image: url("unpin.svg", unset) !important;
+}
+#PanelUI-zen-emojis-picker-none {
+  list-style-image: url("trash.svg", unset);
+}
+#PanelUI-zen-gradient-generator-color-remove {
+  list-style-image: url("unpin.svg", unset) !important;
+}
+.tab-reset-button {
+  list-style-image: url("unpin.svg", unset);
+  @media (-moz-pref("zen.pinned-tab-manager.close-shortcut-behavior", "close")) {
+    list-style-image: var(--gnome-icon-window-close-symbolic) !important;
+  }
+}
+#sidebar-button {
+  list-style-image: var(--gnome-icon-sidebar-show-right-symbolic) !important;
+}
+#sidebar-button:-moz-locale-dir(ltr):not([positionend]),
+#sidebar-button:-moz-locale-dir(rtl)[positionend],
+#zen-toggle-compact-mode {
+  list-style-image: var(--gnome-icon-sidebar-show-symbolic) !important;
+  :root[zen-right-side="true"] & {
+    list-style-image: var(--gnome-icon-sidebar-show-right-symbolic) !important;
+  }
+}
+#downloads-button,
+#downloads-indicator-anchor,
+#appMenu-downloads-button,
+#appMenu-library-downloads-button {
+  list-style-image: var(--gnome-icon-folder-download-symbolic) !important;
+}
+#appMenu-translate-button,
+#translations-button-icon {
+  list-style-image: url("translations.svg", unset) !important;
+}
+#appMenu-zoom-controls,
+#PanelUI-zen-gradient-generator-color-add,
+#zen-site-data-new-addon-button {
+  list-style-image: var(--gnome-icon-list-add-symbolic) !important;
+}
+#logins-button,
+#appMenu-passwords-button,
+#password-notification-icon,
+#PopupAutoComplete > richlistbox > richlistitem[originaltype="generatedPassword"] > .two-line-wrapper > .ac-site-icon,
+#PopupAutoComplete > richlistbox > richlistitem[originaltype="loginWithOrigin"] > .two-line-wrapper > .ac-site-icon,
+#PopupAutoComplete > richlistbox > richlistitem[originaltype="login"] > .ac-site-icon {
+  list-style-image: var(--gnome-icon-key-symbolic) !important;
+}
+#nav-bar-overflow-button {
+  list-style-image: var(--gnome-icon-pan-down-symbolic) !important;
+}
+.zen-current-workspace-indicator-chevron,
+#PanelUI-zen-gradient-generator-color-page-right,
+.zen-permission-popup-boost-editor-button {
+  list-style-image: var(--gnome-icon-go-next-symbolic) !important;
+}
+.sr-open-in-icon {
+  list-style-image: url("arrow-corner-down-right.svg", unset);
+}
+#PanelUI-menu-button,
+#appMenu-more-button2,
+#zen-workspace-actions-menu-icon {
+  list-style-image: var(--gnome-icon-open-menu-symbolic) !important;
+}
+.zen-workspaces-actions {
+  list-style-image: var(--gnome-icon-view-more-horizontal-symbolic) !important;
+}
+#appMenu-help-button2 {
+  list-style-image: url("help.svg", unset) !important;
+}
+#sync-button,
+.urlbarView-row[source="tabs"] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon,
+#urlbar-engine-one-off-item-tabs,
+#zen-open-background-tab-button {
+  list-style-image: var(--gnome-icon-tab-symbolic) !important;
+}
+#history-panelmenu,
+.urlbarView-row[source="history"] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon,
+#urlbar-engine-one-off-item-history,
+#appMenu-history-button,
+#appMenu-library-history-button,
+#sidebar-switcher-history,
+#zen-history-button,
+#sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  list-style-image: var(--gnome-icon-preferences-system-time-symbolic) !important;
+}
+#save-page-button,
+#appMenu-save-file-button2 {
+  list-style-image: var(--gnome-icon-folder-download-symbolic) !important;
+}
+#print-button,
+#appMenu-print-button2 {
+  list-style-image: var(--gnome-icon-printer-symbolic) !important;
+}
+.searchbar-search-icon {
+  list-style-image: url(../icons/edit-find-symbolic.svg, unset) !important;
+}
+#find-button,
+#appMenu-find-button2 {
+  list-style-image: var(--gnome-icon-edit-find-symbolic) !important;
+}
+#open-file-button {
+  list-style-image: url("open.svg", unset) !important;
+}
+#add-ons-button,
+#appMenu-extensions-themes-button,
+#appMenu-unified-extensions-button,
+#unified-extensions-button {
+  list-style-image: var(--gnome-icon-application-x-addon-symbolic) !important;
+}
+#zoom-out-button,
+#appMenu-zoomReduce-button2 {
+  list-style-image: var(--gnome-icon-zoom-out-symbolic) !important;
+}
+#zen-create-new-button,
+#new-tab-button,
+#PanelUI-zen-profiles-newProfile,
+#zen-sidebar-add-panel-button,
+#PanelUI-zen-gradient-generator-color-custom-add image {
+  list-style-image: var(--gnome-icon-list-add-symbolic) !important;
+}
+#zoom-in-button,
+#appMenu-zoomEnlarge-button2 {
+  list-style-image: var(--gnome-icon-zoom-in-symbolic) !important;
+}
+#cut-button {
+  list-style-image: var(--gnome-icon-edit-cut-symbolic) !important;
+}
+#copy-button {
+  list-style-image: var(--gnome-icon-edit-copy-symbolic) !important;
+}
+#paste-button {
+  list-style-image: var(--gnome-icon-edit-paste-symbolic) !important;
+}
+#email-link-button {
+  list-style-image: var(--gnome-icon-mail-unread-symbolic) !important;
+}
+#screenshot-button {
+  list-style-image: url("screenshot.svg", unset) !important;
+}
+#preferences-button,
+#zen-preferences-button,
+.search-setting-button > .button-box > .button-icon,
+#appMenu-settings-button,
+#PanelUI-zen-profiles-managePrfs,
+.unified-extensions-item-open-menu.subviewbutton {
+  list-style-image: var(--gnome-icon-settings-symbolic) !important;
+}
+#spell-check-enabled {
+  list-style-image: url("spell-check.svg", unset) !important;
+}
+#panic-button {
+  list-style-image: var(--gnome-icon-history-undo-symbolic) !important;
+}
+#appMenu-new-private-window-button2,
+#PanelUI-zen-profiles-privateWin {
+  list-style-image: var(--gnome-icon-eye-not-looking-symbolic) !important;
+}
+#privatebrowsing-button {
+  list-style-image: var(--gnome-icon-eye-not-looking-symbolic) !important;
+}
+#profiler-button-button > .toolbarbutton-icon {
+  list-style-image: url("tool-profiler.svg", unset) !important;
+}
+#developer-button {
+  list-style-image: var(--gnome-icon-build-configure-symbolic) !important;
+}
+#new-window-button,
+#appMenu-new-window-button2,
+#appMenu-new-zen-unsynced-window-button {
+  list-style-image: var(--gnome-icon-window-new-symbolic) !important;
+}
+#restore-button,
+#fullscreen-button,
+.zen-glance-sidebar-open,
+#appMenu-fullscreen-button2,
+.zen-tab-unsplit-button {
+  list-style-image: var(--gnome-icon-view-fullscreen-symbolic) !important;
+}
+#restore-button[checked],
+#fullscreen-button[checked],
+#appMenu-fullscreen-button2[checked] {
+  list-style-image: var(--gnome-icon-view-restore-symbolic) !important;
+}
+#bookmarks-menu-button,
+#appMenu-bookmarks-button,
+#sidebar-switcher-bookmarks,
+#appMenu-library-bookmarks-button,
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  list-style-image: var(--gnome-icon-starred-symbolic) !important;
+}
+#home-button {
+  list-style-image: var(--gnome-icon-user-home-symbolic) !important;
+}
+#library-button {
+  list-style-image: url("library.svg", unset) !important;
+}
+
+/* identity icons */
+#identity-icon {
+  list-style-image: var(--gnome-icon-edit-find-symbolic) !important;
+}
+#identity-box[pageproxystate="valid"].localResource #identity-icon {
+  list-style-image: url("page-portrait.svg", unset) !important;
+}
+#urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] #identity-icon {
+  list-style-image: url(../icons/edit-find-symbolic.svg, unset) !important;
+}
+#urlbar[actiontype="extension"] > #urlbar-input-container > #identity-box #identity-icon,
+#identity-box[pageproxystate="valid"].extensionPage #identity-icon {
+  list-style-image: var(--gnome-icon-application-x-addon-symbolic) !important;
+}
+#identity-box[pageproxystate="valid"].verifiedDomain #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
+  list-style-image: var(--gnome-icon-channel-secure-symbolic) !important;
+}
+#urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box > #tracking-protection-icon {
+  list-style-image: var(--gnome-icon-shield-full-symbolic) !important;
+}
+
+/* security */
+.identity-popup-security-connection,
+#appMenu-report-broken-site-button {
+  list-style-image: url("security-broken.svg", unset) !important;
+}
+#identity-box[pageproxystate="valid"].notSecure #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
+#identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
+  list-style-image: var(--gnome-icon-channel-insecure-symbolic) !important;
+}
+#identity-popup[connection="chrome"] .identity-popup-security-connection {
+  list-style-image: url("chrome://branding/content/icon48.png") !important;
+}
+#identity-popup[connection="file"] .identity-popup-security-connection {
+  list-style-image: url("page-portrait.svg", unset) !important;
+}
+#identity-popup[connection^="secure"] .identity-popup-security-connection {
+  list-style-image: var(--gnome-icon-channel-secure-symbolic) !important;
+}
+#identity-popup[ciphers="weak"] .identity-popup-security-connection,
+#identity-popup[mixedcontent~="passive-loaded"][isbroken] .identity-popup-security-connection,
+#identity-popup[connection="secure-cert-user-overridden"] .identity-popup-security-connection,
+#identity-popup[connection="cert-error-page"] .identity-popup-security-connection {
+  list-style-image: var(--gnome-icon-channel-insecure-symbolic) !important;
+}
+#identity-popup[connection="net-error-page"] .identity-popup-security-connection {
+  list-style-image: var(--gnome-icon-info-outline-symbolic) !important;
+}
+#identity-popup[connection="extension"] .identity-popup-security-connection {
+  list-style-image: var(--gnome-icon-application-x-addon-symbolic) !important;
+}
+#tabs-newtab-button,
+#appMenu-new-tab-button2 {
+  list-style-image: var(--gnome-icon-tab-new-symbolic) !important;
+}
+.findbar-find-previous {
+  list-style-image: var(--gnome-icon-go-up-symbolic) !important;
+}
+.findbar-find-next {
+  list-style-image: var(--gnome-icon-go-down-symbolic) !important;
+}
+.zen-workspace-close-unpinned-tabs-button {
+  list-style-image: url("dart-down.svg", unset);
+}
+.zen-workspace-actions-reorder-icon,
+.zen-tab-rearrange-button {
+  list-style-image: url("drag-indicator.svg", unset) !important;
+}
+#protections-popup-mainView .subviewbutton-nav:not(.notFound)::after,
+#identity-popup-mainView .subviewbutton-nav::after,
+.widget-overflow-list .subviewbutton-nav::after,
+.PanelUI-subView .subviewbutton-nav::after,
+.menu-right {
+  content: var(--gnome-icon-go-next-symbolic) !important;
+}
+#PlacesChevron {
+  list-style-image: var(--gnome-icon-go-next-symbolic) !important;
+}
+#zen-expand-sidebar-button {
+  list-style-image: url("expand-sidebar.svg", unset) !important;
+}
+.panel-header > .subviewbutton-back,
+#PanelUI-zen-gradient-generator-color-page-left,
+#zen-boost-back {
+  list-style-image: var(--gnome-icon-go-previous-symbolic) !important;
+}
+#appmenu-moreTools-button {
+  list-style-image: url("customize.svg", unset) !important;
+}
+#zen-copy-current-url-button,
+#share-tab-button,
+#zen-site-data-header-share {
+  list-style-image: url("share.svg", unset);
+}
+.bookmark-item[container],
+.downloadIconShow > .button-box > .button-icon {
+  list-style-image: var(--gnome-icon-folder-symbolic) !important;
+  --bookmark-item-icone: var(--gnome-icon-folder-symbolic) !important;
+  --menuitem-icon: var(--gnome-icon-folder-symbolic) !important;
+}
+#zen-site-data-header-bookmark,
+#pageAction-panel-bookmark,
+#star-button,
+#zen-bookmark-button {
+  list-style-image: var(--gnome-icon-non-starred-symbolic) !important;
+}
+#zen-site-data-header-bookmark.active,
+#pageAction-panel-bookmark[starred],
+#star-button[starred] {
+  list-style-image: var(--gnome-icon-starred-symbolic) !important;
+}
+.zen-glance-sidebar-split {
+  list-style-image: url("split.svg", unset);
+}
+#sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon,
+#sidebar-switcher-tabs {
+  list-style-image: url("send-to-device.svg", unset) !important;
+}
+
+/* tab icons */
+.tab-icon-image[src="chrome://branding/content/icon32.png"],
+.tab-icon-image[src="chrome://browser/skin/privatebrowsing/favicon.svg"]
+ {
+  content: var(--gnome-icon-tab-new-symbolic) !important;
+}
+.tab-icon-image[src="chrome://global/skin/icons/settings.svg"]
+ {
+  content: var(--gnome-icon-settings-symbolic) !important;
+}
+.tab-icon-image[src="chrome://mozapps/skin/extensions/extension.svg"]
+ {
+  content: var(--gnome-icon-application-x-addon-symbolic) !important;
+}
+.tab-icon-image[src="chrome://browser/skin/customize.svg"]
+ {
+  content: url("customize.svg", unset) !important;
+}
+
+/* permissions */
+#zen-site-data-icon-button {
+  & image {
+    list-style-image: url("permissions.svg", unset);
+  }
+  &:where([starred]) image {
+    list-style-image: url("permissions-fill.svg", unset);
+  }
+  &[boosting] image {
+    list-style-image: url("permissions-fill.svg", unset);
+  }
+}
+@media not (prefers-reduced-motion: reduce) {
+  #zen-site-data-icon-button[boosting] .zen-site-data-boost-animation {
+    list-style-image: url("chrome://browser/content/zen-images/boost-indicator.svg");
+  }
+}
+.geo-icon {
+  list-style-image: url("geo.svg", unset) !important;
+}
+.geo-icon.blocked-permission-icon {
+  list-style-image: url("geo-blocked.svg", unset) !important;
+}
+.xr-icon {
+  list-style-image: url("xr.svg", unset) !important;
+}
+.xr-icon.blocked-permission-icon {
+  list-style-image: url("xr-blocked.svg", unset) !important;
+}
+.popup-notification-icon[popupid="web-notifications"],
+.desktop-notification-icon {
+  list-style-image: var(--gnome-icon-chat-symbolic) !important;
+}
+.desktop-notification-icon.blocked-permission-icon {
+  list-style-image: url("desktop-notification-blocked.svg", unset) !important;
+}
+.camera-icon,
+#zen-site-data-header-screenshot {
+  list-style-image: url("camera.svg", unset) !important;
+}
+.camera-icon.blocked-permission-icon {
+  list-style-image: url("camera-blocked.svg", unset) !important;
+}
+.microphone-icon {
+  list-style-image: url("microphone.svg", unset) !important;
+}
+.microphone-icon.blocked-permission-icon {
+  list-style-image: url("microphone-blocked.svg", unset) !important;
+}
+.screen-icon {
+  list-style-image: url("screen.svg", unset) !important;
+}
+.screen-icon.blocked-permission-icon {
+  list-style-image: url("screen-blocked.svg", unset) !important;
+}
+.popup-notification-icon[popupid="persistent-storage"],
+.persistent-storage-icon,
+.indexedDB-icon {
+  list-style-image: url("persistent-storage.svg", unset) !important;
+}
+.persistent-storage-icon.blocked-permission-icon {
+  list-style-image: url("persistent-storage-blocked.svg", unset) !important;
+}
+.popup-icon {
+  list-style-image: url("popup.svg", unset) !important;
+}
+.autoplay-media-icon {
+  list-style-image: url("autoplay-media.svg", unset) !important;
+}
+.autoplay-media-icon.blocked-permission-icon {
+  list-style-image: var(--gnome-icon-play-large-disabled-symbolic) !important;
+}
+#canvas-notification-icon,
+.popup-notification-icon[popupid="canvas-permissions-prompt"],
+.canvas-icon {
+  list-style-image: url("canvas.svg", unset) !important;
+}
+.canvas-icon.blocked-permission-icon {
+  list-style-image: url("canvas-blocked.svg", unset) !important;
+}
+.midi-icon,
+.midi-sysex-icon,
+.popup-notification-icon[popupid="midi"],
+.popup-notification-icon[popupid="midi-sysex"] {
+  list-style-image: url("midi.svg", unset) !important;
+}
+.install-icon {
+  list-style-image: var(--gnome-icon-application-x-addon-symbolic) !important;
+}
+.install-icon.blocked-permission-icon,
+.popup-notification-icon[popupid="xpinstall-disabled"],
+.popup-notification-icon[popupid="addon-install-blocked"],
+.popup-notification-icon[popupid="addon-install-origin-blocked"] {
+  list-style-image: url("extension-blocked.svg", unset) !important;
+}
+.permission-popup-permission-item {
+  list-style-image: url("settings-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-geo {
+  list-style-image: url("geo-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-xr {
+  list-style-image: url("xr-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-desktop-notification {
+  list-style-image: url("desktop-notification-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-camera {
+  list-style-image: url("camera-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-microphone {
+  list-style-image: url("microphone-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-screen {
+  list-style-image: url("screen.svg", unset) !important;
+}
+.permission-popup-permission-item-persistent-storage {
+  list-style-image: url("persistent-storage-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-popup {
+  list-style-image: url("popup-fill.svg", unset) !important;
+}
+.permission-popup-permission-item-autoplay-media {
+  list-style-image: url("autoplay-media-fill.svg", unset) !important;
+}
+.zen-permission-shield-icon {
+  list-style-image: url("tracking-protection-fill.svg", unset);
+}
+.zen-permission-extension-icon {
+  list-style-image: url("extension-fill.svg", unset);
+}
+.zen-permission-cookie-icon {
+  list-style-image: url("cookies-fill.svg", unset);
+}
+
+/* tab sound icons */
+.tab-icon-overlay[soundplaying] {
+  list-style-image: var(--gnome-icon-audio-speakers-symbolic) !important;
+}
+.tab-icon-overlay[muted] {
+  list-style-image: var(--gnome-icon-audio-volume-muted-symbolic) !important;
+}
+.tab-icon-overlay[activemedia-blocked] {
+  list-style-image: var(--gnome-icon-play-large-disabled-symbolic) !important;
+}
+#reader-mode-button > .urlbar-icon,
+#zen-site-data-header-reader-mode {
+  list-style-image: var(--gnome-icon-newspaper-symbolic) !important;
+}
+#unified-extensions-manage-extensions {
+  list-style-image: url("manage.svg", unset) !important;
+}
+#appMenuRecentlyClosedTabs {
+  list-style-image: url("container-tab.svg", unset) !important;
+}
+#PanelUI-zen-gradient-generator-color-toggle-algo {
+  list-style-image: url("algorithm.svg", unset);
+}
+#appMenuClearRecentHistory {
+  list-style-image: var(--gnome-icon-edit-clear-symbolic) !important;
+}
+#appMenuRecentlyClosedWindows {
+  list-style-image: var(--gnome-icon-window-new-symbolic) !important;
+}
+#appMenuSearchHistory {
+  list-style-image: url(../icons/edit-find-symbolic.svg, unset) !important;
+}
+#PanelUI-historyMore {
+  list-style-image: url("manage.svg", unset) !important;
+}
+#panelMenuBookmarkThisPage {
+  list-style-image: var(--gnome-icon-non-starred-symbolic) !important;
+}
+#panelMenu_searchBookmarks {
+  list-style-image: url(../icons/edit-find-symbolic.svg, unset) !important;
+}
+#panelMenu_viewBookmarksToolbar {
+  list-style-image: url("open.svg", unset) !important;
+}
+#panelMenu_showAllBookmarks {
+  list-style-image: url("manage.svg", unset) !important;
+}
+#PanelUI-fxa .panel-header > h1 > span::before {
+  --header-image: var(--avatar-image-url);
+}
+#PanelUI-bookmarks .panel-header > h1 > span::before {
+  --header-image: var(--gnome-icon-starred-symbolic);
+}
+#PanelUI-history .panel-header > h1 > span::before {
+  --header-image: var(--gnome-icon-preferences-system-time-symbolic);
+}
+#PanelUI-helpView .panel-header > h1 > span::before {
+  --header-image: url("help.svg", unset);
+}
+#appMenu-libraryView .panel-header > h1 > span::before {
+  --header-image: url("library.svg", unset);
+}
+#unified-extensions-panel .panel-header > h1 > span::before {
+  --header-image: var(--gnome-icon-application-x-addon-symbolic);
+}
+#alltabs-button,
+#urlbar-engine-one-off-item-workspaces {
+  list-style-image: var(--gnome-icon-pan-down-symbolic) !important;
+}
+.zen-media-playpause-button {
+  list-style-image: url("media-play.svg", unset);
+}
+.zen-media-card.playing .zen-media-playpause-button {
+  list-style-image: url("media-pause.svg", unset);
+}
+.zen-media-nexttrack-button {
+  list-style-image: url("media-next.svg", unset);
+}
+.zen-media-previoustrack-button {
+  list-style-image: url("media-previous.svg", unset);
+}
+.zen-media-card[muted] .zen-media-mute-button {
+  list-style-image: var(--gnome-icon-audio-volume-muted-symbolic) !important;
+}
+.zen-media-mute-button {
+  list-style-image: var(--gnome-icon-audio-speakers-symbolic) !important;
+}
+.zen-media-close-button {
+  list-style-image: var(--gnome-icon-window-close-symbolic) !important;
+}
+.zen-media-focus-button:hover {
+  list-style-image: url("screen.svg", unset);
+}
+.zen-media-mute-mic-button {
+  list-style-image: url("microphone-fill.svg", unset);
+}
+.zen-media-card[mic-muted] .zen-media-mute-mic-button {
+  list-style-image: url("microphone-blocked-fill.svg", unset);
+}
+.zen-media-mute-camera-button {
+  list-style-image: url("video-fill.svg", unset);
+}
+.zen-media-card[camera-muted] .zen-media-mute-camera-button {
+  list-style-image: url("video-blocked-fill.svg", unset);
+}
+.zen-media-pip-button {
+  list-style-image: var(--gnome-icon-pip-in-symbolic) !important;
+}
+#PanelUI-zen-gradient-generator-scheme-auto {
+  list-style-image: url("sparkles.svg", unset);
+}
+#PanelUI-zen-gradient-generator-scheme-dark {
+  list-style-image: url("moon-stars.svg", unset);
+}
+#PanelUI-zen-gradient-generator-scheme-light {
+  list-style-image: url("face-sun.svg", unset);
+}
+#zen-site-data-boost {
+  list-style-image: url("boost.svg", unset);
+}
+.boost-brush {
+  list-style-image: url("boost.svg", unset) !important;
+}
+#zen-site-data-security-info {
+  &[identity="secure"] {
+    list-style-image: var(--gnome-icon-channel-secure-symbolic);
+  }
+  &[identity="not-secure"] {
+    list-style-image: var(--gnome-icon-channel-insecure-symbolic);
+  }
+  &[identity="extension"] {
+    list-style-image: var(--gnome-icon-application-x-addon-symbolic);
+  }
+}
+#zen-site-data-actions {
+  list-style-image: var(--gnome-icon-open-menu-symbolic);
+}
+#zen-copy-url-button image,
+.sr-url-icon {
+  list-style-image: url("link.svg", unset);
+}
+#zen-boost-case[case-mode="capitalize"] {
+  list-style-image: url("text-title-case.svg", unset);
+}
+#zen-boost-case[case-mode="uppercase"] {
+  list-style-image: url("text-uppercase.svg", unset);
+}
+#zen-boost-case[case-mode="lowercase"] {
+  list-style-image: url("text-lowercase.svg", unset);
+}
+#zen-boost-code {
+  list-style-image: url("brackets-curly.svg", unset);
+}
+#zen-boost-zap {
+  list-style-image: url("bolt.svg", unset);
+}
+#zen-boost-controls {
+  list-style-image: url("sliders.svg", unset);
+}
+#zen-boost-invert {
+  list-style-image: url("lightbulb.svg", unset);
+}
+#zen-boost-disable {
+  list-style-image: url("block.svg", unset);
+}
+#zen-boost-close {
+  list-style-image: var(--gnome-icon-window-close-symbolic) !important;
+}
+#zen-boost-magic-theme {
+  list-style-image: url("sparkles.svg", unset);
+}
+#zen-boost-shuffle {
+  list-style-image: url("dice.svg", unset);
+}
+#zen-boost-css-picker {
+  list-style-image: url("eyedropper.svg", unset);
+}
+#zen-boost-css-inspector {
+  list-style-image: url("hammer.svg", unset);
+}
+#zen-boost-save {
+  list-style-image: var(--gnome-icon-folder-download-symbolic) !important;
+}
+#zen-boost-load {
+  list-style-image: url("open.svg", unset);
+}
+.sr-airplane {
+  list-style-image: url("selectable/airplane.svg", unset);
+}

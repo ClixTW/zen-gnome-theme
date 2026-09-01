@@ -1,0 +1,11 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Move hamburger & overflow menu */
+#PanelUI-button {
+  order: 1 !important;
+}
+[zen-single-toolbar="true"] {
+  #nav-bar-overflow-button {
+    order: -1 !important;
+  }
+}

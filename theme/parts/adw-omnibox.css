@@ -1,0 +1,78 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* URL and tool bars */
+.urlbar {
+  --urlbarview-separator-color: var(--gnome-menu-separator-color) !important;
+}
+#urlbar[breakout-extend] .urlbar-background {
+  background-color: var(--gnome-menu-background) !important;
+  box-shadow: var(--gnome-menu-shadow), var(--gnome-menu-shadow) !important;
+  outline: none !important;
+  border-radius: var(--gnome-popover-radius) !important;
+}
+
+/* Other small tweaks */
+
+/* Action badges */
+.urlbarView-prettyName,
+.urlbarView-shortcutContent {
+  background: var(--gnome-trough-background) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+.urlbarView-row[has-action]:is([type="switchtab"],
+[type="remotetab"],
+[type="clipboard"]) {
+  & .urlbarView-action:last-child {
+    background: var(--gnome-trough-background) !important;
+    border-radius: 14px !important;
+    font-weight: 600 !important;
+    opacity: 0.7 !important;
+    padding-inline: var(--gnome-menu-item-padding) !important;
+  }
+  &:is([type="switchtab"],
+  [type="remotetab"]) .urlbarView-action:last-child {
+    background: transparent !important;
+  }
+}
+
+/* URL bar results */
+.urlbarView-row {
+  border-radius: var(--gnome-popover-radius) !important;
+  height: 47px !important;
+  color: var(--gnome-window-color) !important;
+  &:hover {
+    &,
+    & .urlbarView-favicon {
+      background-color: var(--gnome-hover-color) !important;
+    }
+  }
+  &[selected] {
+    background-color: var(--gnome-selected-color) !important;
+    & .urlbarView-shortcutContent {
+      color: var(--gnome-window-color) !important;
+    }
+    &:where([type="switchtab"],
+    [type="dynamic"],
+    [type^="history"],
+    [type^="autofill_"],
+    [type="top_site"],
+    [type="bookmark"]) .urlbarView-favicon,
+    & .urlbarView-shortcutContent {
+      fill: var(--gnome-window-color) !important;
+      background-color: var(--gnome-selected-color) !important;
+    }
+  }
+  & .urlbarView-favicon {
+    border-radius: var(--gnome-button-radius) !important;
+  }
+}
+
+/* Center URL bar text */
+.urlbar-input,
+.urlbar-input[aria-expanded="false"] {
+  text-align: center !important;
+}
+.urlbar-input[aria-expanded="true"] {
+  text-align: match-parent !important;
+}
