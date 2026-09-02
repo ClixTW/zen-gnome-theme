@@ -66,6 +66,27 @@
     "window-new-symbolic",
     "window-restore-symbolic",
     "zoom-in-symbolic",
-    "zoom-out-symbolic"
+    "zoom-out-symbolic",
+    "user-trash-symbolic",
+    "leaflet-symbolic",
+    "translate-symbolic",
+    "warning-outline-symbolic",
+    "question-round-outline-symbolic",
+    "arrow-into-box-symbolic",
+    "minus-symbolic",
+    "camera-photo-symbolic",
+    "camera-disabled-symbolic",
+    "mic-1-symbolic",
+    "mic-none-symbolic",
+    "share-symbolic",
+    "send-alt-symbolic",
+    "folder-open-symbolic",
+    "cross-large-symbolic",
+    "file-manager-symbolic",
+    "eye-open-negative-filled-symbolic",
+    "library-symbolic",
+    "update-symbolic",
+    "larger-brush-symbolic",
+    "shield-half-symbolic"
   ]
 }
