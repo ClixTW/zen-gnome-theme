@@ -273,10 +273,10 @@ menuitem[type="radio"] {
 }
 #appMenu-new-private-window-button2,
 #PanelUI-zen-profiles-privateWin {
-  list-style-image: var(--gnome-icon-eye-not-looking-symbolic) !important;
+  list-style-image: var(--gnome-icon-screen-privacy7-symbolic) !important;
 }
 #privatebrowsing-button {
-  list-style-image: var(--gnome-icon-eye-not-looking-symbolic) !important;
+  list-style-image: var(--gnome-icon-screen-privacy7-symbolic) !important;
 }
 #profiler-button-button > .toolbarbutton-icon {
   list-style-image: url("tool-profiler.svg", unset) !important;
@@ -486,7 +486,7 @@ menuitem[type="radio"] {
 }
 .popup-notification-icon[popupid="web-notifications"],
 .desktop-notification-icon {
-  list-style-image: var(--gnome-icon-chat-symbolic) !important;
+  list-style-image: var(--gnome-icon-bell-outline-symbolic) !important;
 }
 .desktop-notification-icon.blocked-permission-icon {
   list-style-image: url("desktop-notification-blocked.svg", unset) !important;
@@ -560,7 +560,7 @@ menuitem[type="radio"] {
   list-style-image: url("xr-fill.svg", unset) !important;
 }
 .permission-popup-permission-item-desktop-notification {
-  list-style-image: url("desktop-notification-fill.svg", unset) !important;
+  list-style-image: var(--gnome-icon-bell-outline-symbolic) !important;
 }
 .permission-popup-permission-item-camera {
   list-style-image: url("camera-fill.svg", unset) !important;
@@ -608,7 +608,7 @@ menuitem[type="radio"] {
   list-style-image: url("manage.svg", unset) !important;
 }
 #appMenuRecentlyClosedTabs {
-  list-style-image: url("container-tab.svg", unset) !important;
+  list-style-image: var(--gnome-icon-history-undo-symbolic) !important;
 }
 #PanelUI-zen-gradient-generator-color-toggle-algo {
   list-style-image: url("algorithm.svg", unset);
@@ -620,7 +620,7 @@ menuitem[type="radio"] {
   list-style-image: var(--gnome-icon-window-new-symbolic) !important;
 }
 #appMenuSearchHistory {
-  list-style-image: url(../icons/edit-find-symbolic.svg, unset) !important;
+  list-style-image: var(--gnome-icon-edit-find-symbolic) !important;
 }
 #PanelUI-historyMore {
   list-style-image: var(--gnome-icon-file-manager-symbolic) !important;
@@ -729,7 +729,7 @@ menuitem[type="radio"] {
 }
 #zen-copy-url-button image,
 .sr-url-icon {
-  list-style-image: url("link.svg", unset);
+  list-style-image: var(--gnome-icon-chain-link-loose-symbolic) !important;
 }
 #zen-boost-case[case-mode="capitalize"] {
   list-style-image: url("text-title-case.svg", unset);
@@ -787,4 +787,22 @@ menuitem[type="radio"] {
 }
 .fxa-menu-sync-status-icon {
   list-style-image: var(--gnome-icon-update-symbolic) !important;
+}
+#web-notifications-notification-icon {
+  list-style-image: var(--gnome-icon-bell-outline-symbolic) !important;
+}
+#appmenu-abouttranslations-button {
+  list-style-image: var(--gnome-icon-translate-symbolic) !important;
+}
+#appmenu-edit-pdf-button {
+  list-style-image: var(--gnome-icon-edit-symbolic) !important;
+}
+#identity-popup-clear-sitedata-button {
+  list-style-image: var(--gnome-icon-edit-clear-symbolic) !important;
+}
+#identity-popup-more-info {
+  list-style-image: var(--gnome-icon-view-more-horizontal-symbolic) !important;
+}
+#characterencoding-button {
+  list-style-image: var(--gnome-icon-language-symbolic) !important;
 }
