@@ -1,6 +1,9 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* Download Panel */
-richlistbox{
-	border-radius: var(--gnome-menu-item-radius) !important;
+/* Download panel */
+.downloadButton {
+  min-width: var(--gnome-button-size) !important;
+}
+.downloadButton:hover:not(:active) {
+  border: none !important;
 }
