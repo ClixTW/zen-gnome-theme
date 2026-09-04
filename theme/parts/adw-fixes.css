@@ -1,0 +1,14 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Temporary fixes for active UI issues. Safe to delete once resolved upstream. */
+
+
+/* Site Data popup */
+#identity-popup-clear-sitedata-footer {
+  padding-bottom: var(--gnome-menu-padding) !important;
+}
+
+/* Main menu */
+#appMenu-zoom-controls {
+  padding-top: 10px !important;
+}

@@ -19,9 +19,12 @@
 @import "parts/adw-single-components.css";
 @import "parts/adw-toolbar.css";
 
+@import "parts/adw-fixes.css";
+
 @import "parts/adw-icons.css";
 @import "parts/adw-theme.css";
 
 @import "parts/adw-branding.css";
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
