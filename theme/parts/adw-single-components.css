@@ -17,17 +17,13 @@
 #zen-unified-site-data-panel {
   --panel-width: 246px !important;
 }
-#unified-extensions-area > * {
+#unified-extensions-area toolbaritem {
   border-radius: var(--gnome-button-radius) !important;
 }
-#zen-site-data-header > * {
+#zen-site-data-header toolbarbutton {
   overflow: hidden !important;
-}
-#zen-site-data-footer {
-  padding-top: 12px !important;
 }
 #zen-site-data-actions {
   border-radius: 99px !important;
-  margin-top: 2px !important;
-}
+  margin-top: 3px !important;
 }
