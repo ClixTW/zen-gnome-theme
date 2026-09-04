@@ -1,16 +1,11 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* Status panel */
-#statuspanel {
-  padding: var(--gnome-menu-padding) !important;
-  & > #statuspanel-label {
-    border-radius: var(--gnome-menu-radius) !important;
-    border: none !important;
-    padding: 4px var(--gnome-menu-item-padding) !important;
-    font-weight: 500 !important;
-    background: color-mix(in srgb, var(--zen-primary-color), black 70%) !important;
-    color: rgba(255, 255, 255, 0.8) !important;
-  }
+#statuspanel > #statuspanel-label {
+  border-radius: var(--gnome-menu-radius) !important;
+  border: none !important;
+  padding: 4px 12px !important;
+  font-weight: 500 !important;
 }
 
 /* Site Data popup */

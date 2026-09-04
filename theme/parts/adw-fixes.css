@@ -12,3 +12,13 @@
 #appMenu-zoom-controls {
   padding-top: 10px !important;
 }
+
+/* Status panel */
+/* Waiting for the new Status panel to be implemented in Zen */
+#statuspanel {
+  padding: 6px !important;
+  & > #statuspanel-label {
+    background: color-mix(in srgb, var(--zen-primary-color), black 70%) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+}
