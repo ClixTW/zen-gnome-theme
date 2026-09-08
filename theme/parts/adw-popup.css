@@ -6,8 +6,8 @@ panel {
   --menuitem-padding: 4px 12px !important;
   --panel-border-radius: var(--gnome-popover-radius) !important;
 }
-toolbarseparator,
-menuseparator {
+menuseparator,
+#appMenu-mainView toolbarseparator {
   padding-block: var(--gnome-menu-padding) !important;
 }
 
