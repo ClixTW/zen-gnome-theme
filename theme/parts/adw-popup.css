@@ -1,31 +1,14 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* Popup menus and context menus */
-menupopup, panel {
-  --gnome-menu-item-block-padding: 4px;
-  --gnome-menu-item-inline-padding: 12px;
-  --gnome-menu-item-padding: var(--gnome-menu-item-block-padding) var(--gnome-menu-item-inline-padding);
-  --gnome-menu-item-inline-margin: var(--gnome-menu-padding);
-  --gnome-menu-item-margin: 0 var(--gnome-menu-item-inline-margin);
-  --gnome-menu-item-radius: var(--gnome-button-radius);
-  --panel-background-color: var(--gnome-menu-background) !important;
-  --panel-border-color: transparent !important;
+menupopup,
+panel {
+  --menuitem-padding: 4px 12px !important;
   --panel-border-radius: var(--gnome-popover-radius) !important;
-  --panel-padding: var(--gnome-menu-padding) !important;
-
-	/* Context menu items */
-  --menuitem-border-radius: var(--gnome-menu-item-radius) !important;
-  --menuitem-padding: var(--gnome-menu-item-padding) !important;
-  --menuitem-margin: var(--gnome-menu-item-margin) !important;
-	
-	/* Popover menu items */
-  --panel-menuitem-border-radius: var(--gnome-menu-item-radius) !important;
-  --panel-menuitem-padding: var(--gnome-menu-item-padding) !important;
 }
-
-/* Menus */
+toolbarseparator,
 menuseparator {
-  padding: var(--gnome-menu-padding) 0 !important;
+  padding-block: var(--gnome-menu-padding) !important;
 }
 
 /* Menu items */
@@ -34,53 +17,21 @@ menuitem:is([type="checkbox"],
 menuitem[type="radio"] .menu-icon {
   visibility: collapse !important;
 }
-menuitem {
-  &[badge]::after {
-    background-color: var(--gnome-trough-background) !important;
-    border-radius: 14px !important;
-    border: 0 !important;
-    color: var(--gnome-menu-color) !important;
-    font-size: 14px !important;
-  }
+menuitem[badge]::after {
+  border-radius: 99px !important;
+  border: none !important;
+  color: var(--gnome-menu-color) !important;
+  background-color: var(--gnome-trough-background) !important;
+  font-size: 0.85em !important;
 }
 menu,
 menuitem {
-  margin-inline: 0 !important;
   &:where([_moz-menuactive]:not([disabled])) {
-    color: currentColor;
-    background-color: transparent !important;
-  }
-}
-.menupopup-arrowscrollbox {
-  appearance: none !important;
-  border: 0 !important;
-}
-
-/* Popovers */
-panel toolbarseparator {
-  padding-block: var(--gnome-menu-padding) !important;
-}
-
-/* Menu buttons */
-menuitem,
-menupopup menu {
-  color: var(--gnome-window-color) !important;
-  min-height: 32px !important;
-  &:hover, &[_moz-menuactive], &:focus, &:focus-within {
-    &:not([disabled]) {
-      background: var(--gnome-selected-color) !important;
-    }
-    outline: 0 !important;
-  }
-  &[disabled] {
-    opacity: .5 !important;
-  }
-  &[disabled][_moz-menuactive] {
-    background: transparent !important;
+    background: var(--gnome-selected-color) !important;
   }
 }
 
-/* Section: Toast notifications */
+/* Toast notifications */
 #zen-toast-container {
   --zen-toast-spacing: max(8px, var(--zen-element-separation)) !important;
 }
