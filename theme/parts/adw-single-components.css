@@ -9,14 +9,21 @@
 }
 
 /* Site Data popup */
-#zen-unified-site-data-panel {
-  --panel-width: 246px !important;
+#zen-site-data-header toolbarbutton {
+  border-radius: var(--gnome-button-radius) !important;
+  overflow: hidden !important;
 }
-#unified-extensions-area toolbaritem {
+#zen-site-data-addons :is(
+#overflowed-extensions-list,
+#unified-extensions-area,
+.unified-extensions-list,
+#zen-site-data-new-addon-button-container
+) > * {
   border-radius: var(--gnome-button-radius) !important;
 }
-#zen-site-data-header toolbarbutton {
-  overflow: hidden !important;
+#zen-site-data-security-info,
+#zen-site-data-boost {
+  border-radius: var(--gnome-button-radius) !important;
 }
 #zen-site-data-actions {
   border-radius: 99px !important;
