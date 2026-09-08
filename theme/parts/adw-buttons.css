@@ -5,16 +5,17 @@
   --toolbarbutton-border-radius: 0px !important;
 }
 #appMenu-zoom-controls {
-  --uc-arrowpanel-menuitem-margin-block: -1px !important;
+  --uc-arrowpanel-menuitem-margin-block: -2px !important;
 }
-#appMenu-zoomReset-button2 .toolbarbutton-text {
-  background-color: transparent !important;
-}
+#appMenu-zoomReset-button2 .toolbarbutton-text,
 #appMenu-zoom-controls #appMenu-fullscreen-button2 image {
   background-color: transparent !important;
 }
 #appMenu-zoomReset-button2 {
   width: 60px !important;
+}
+#appMenu-fullscreen-button2 {
+  --border-radius-xsmall: 0px !important;
 }
 
 /* Combined buttons */
