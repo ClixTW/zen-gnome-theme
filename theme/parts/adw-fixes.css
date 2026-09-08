@@ -9,6 +9,9 @@
 }
 
 /* Main menu */
+#appMenu-find-button2 {
+  margin-bottom: var(--gnome-menu-padding) !important;
+}
 #appMenu-zoom-controls {
   padding-top: 10px !important;
 }
