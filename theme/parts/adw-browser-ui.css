@@ -1,1 +1,6 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Urlbar & Tab items */
+#navigator-toolbox {
+  --border-radius-medium: var(--gnome-menu-radius) !important;
+}
