@@ -3,6 +3,7 @@
 /* Temporary fixes for active UI issues. Safe to delete once resolved upstream. */
 
 /* Omnibox */
+/* Fix search icon alignment */
 :not([zen-single-toolbar="true"]) {
   #identity-icon-label {
     display: none !important;
@@ -19,16 +20,19 @@
 }
 
 /* Site Data popup */
+/* Fix bottom padding for the clear site data footer */
 #identity-popup-clear-sitedata-footer {
   padding-bottom: var(--gnome-menu-padding) !important;
 }
 
 /* Main menu */
+/* Add missing spacing for separator before zoom item */
 #appMenu-find-button2 {
   margin-bottom: var(--gnome-menu-padding) !important;
 }
 #appMenu-zoom-controls {
   padding-top: 10px !important;
+/* Fix Zoom label alignment */
   margin-left: 2px !important;
 }
 
