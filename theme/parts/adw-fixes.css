@@ -2,6 +2,21 @@
 
 /* Temporary fixes for active UI issues. Safe to delete once resolved upstream. */
 
+/* Omnibox */
+:not([zen-single-toolbar="true"]) {
+  #identity-icon-label {
+    display: none !important;
+  }
+  #identity-icon-box {
+    padding-left: 16px !important;
+  }
+}
+[zen-single-toolbar="true"],
+[zen-floating-urlbar="true"] {
+  #identity-icon-box {
+    padding-inline: 10px 0 !important;
+  }
+}
 
 /* Site Data popup */
 #identity-popup-clear-sitedata-footer {
