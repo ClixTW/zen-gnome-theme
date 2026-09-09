@@ -25,8 +25,8 @@ menuitem[type="radio"] .menu-icon {
 menuitem[badge]::after {
   border-radius: 99px !important;
   border: none !important;
-  color: var(--gnome-menu-color) !important;
-  background-color: var(--gnome-trough-background) !important;
+  color: var(--gnome-window-color) !important;
+  background-color: var(--gnome-button-background) !important;
   font-size: 0.85em !important;
 }
 menu,
