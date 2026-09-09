@@ -1,1 +1,14 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Essentials */
+.zen-essentials-container .tabbrowser-tab {
+  --tab-background-color-hover: var(--gnome-trough-hover-background) !important;
+  &[visuallyselected] .tab-background {
+    &::before {
+      display: none !important;
+    }
+    &::after {
+      filter: blur(35px) saturate(50%) contrast(0.7) !important;
+    }
+  }
+}
