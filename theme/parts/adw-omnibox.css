@@ -43,6 +43,7 @@
 }
 
 /* Action badges */
+.urlbarView-prettyName,
 .urlbarView-shortcutContent {
   background: var(--gnome-button-background) !important;
   box-shadow: none !important;
