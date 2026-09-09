@@ -4,3 +4,9 @@
 #navigator-toolbox {
   --border-radius-medium: var(--gnome-menu-radius) !important;
 }
+
+/* Tooltip */
+tooltip {
+  border-radius: var(--gnome-button-radius) !important;
+  border: 0.5px solid var(--gnome-border-color) !important;
+}
