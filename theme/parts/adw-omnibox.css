@@ -9,6 +9,7 @@
   #urlbar[breakout-extend] & {
     background-color: var(--gnome-menu-background) !important;
     border-radius: var(--gnome-dialog-radius) !important;
+    box-shadow: var(--gnome-menu-shadow), var(--gnome-menu-shadow) !important;
   }
 }
 
