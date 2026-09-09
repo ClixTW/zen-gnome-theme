@@ -92,6 +92,11 @@
     "chain-link-loose-symbolic",
     "edit-symbolic",
     "language-symbolic",
-    "screen-privacy7-symbolic"
+    "screen-privacy7-symbolic",
+    "play-large-symbolic",
+    "pause-large-symbolic",
+    "skip-forward-large-symbolic",
+    "skip-backward-large-symbolic",
+    "speaker-3-symbolic"
   ]
 }

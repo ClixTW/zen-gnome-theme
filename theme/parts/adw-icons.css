@@ -1,22 +1,22 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* Dimmed icons color */
+/* Dimmed icons color 
 .urlbar-icon:-moz-window-inactive,
 #urlbar:-moz-window-inactive image,
 .toolbarbutton-icon:-moz-window-inactive,
 .toolbarbutton-1:-moz-window-inactive,
 :root[customtitlebar] .titlebar-buttonbox .titlebar-button  .toolbarbutton-icon:-moz-window-inactive {
   opacity: 0.5 !important;
-}
+}*/
 
-/* Icons color */
+/* Icons color 
 .toolbarbutton-1,
 .urlbar-page-action,
 .identity-box-button {
   fill: var(--gnome-toolbar-icon-fill) !important;
-}
+}*/
 
-/* Fix icons color */
+/* Fix icons color 
 #tabs-newtab-button image,
 .zen-workspaces-actions {
   opacity: 0.5 !important;
@@ -30,7 +30,7 @@
 }
 .zen-glance-sidebar-container .toolbarbutton-1 {
   fill: color-mix(in srgb, currentColor 70%, transparent) !important;
-}
+}*/
 
 /* Menu checkbox/radio */
 menuitem[type="checkbox"],
@@ -592,7 +592,7 @@ menuitem[type="radio"] {
 
 /* tab sound icons */
 .tab-icon-overlay[soundplaying] {
-  list-style-image: var(--gnome-icon-audio-speakers-symbolic) !important;
+  list-style-image: var(--gnome-icon-speaker-3-symbolic) !important;
 }
 .tab-icon-overlay[muted] {
   list-style-image: var(--gnome-icon-audio-volume-muted-symbolic) !important;
@@ -660,22 +660,22 @@ menuitem[type="radio"] {
   list-style-image: var(--gnome-icon-pan-down-symbolic) !important;
 }
 .zen-media-playpause-button {
-  list-style-image: url("media-play.svg", unset);
+  list-style-image: var(--gnome-icon-play-large-symbolic) !important;
 }
 .zen-media-card.playing .zen-media-playpause-button {
-  list-style-image: url("media-pause.svg", unset);
+  list-style-image: var(--gnome-icon-pause-large-symbolic) !important;
 }
 .zen-media-nexttrack-button {
-  list-style-image: url("media-next.svg", unset);
+  list-style-image: var(--gnome-icon-skip-forward-large-symbolic) !important;
 }
 .zen-media-previoustrack-button {
-  list-style-image: url("media-previous.svg", unset);
+  list-style-image: var(--gnome-icon-skip-backward-large-symbolic) !important;
 }
 .zen-media-card[muted] .zen-media-mute-button {
   list-style-image: var(--gnome-icon-audio-volume-muted-symbolic) !important;
 }
 .zen-media-mute-button {
-  list-style-image: var(--gnome-icon-audio-speakers-symbolic) !important;
+  list-style-image: var(--gnome-icon-speaker-3-symbolic) !important;
 }
 .zen-media-close-button {
   list-style-image: var(--gnome-icon-window-close-symbolic) !important;
