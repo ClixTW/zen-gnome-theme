@@ -18,6 +18,10 @@
     padding-inline: 10px 0 !important;
   }
 }
+/* Ensure the last item is fully visible */
+.urlbarView-row {
+  height: 47px !important;
+}
 
 /* Site Data popup */
 /* Fix bottom padding for the clear site data footer */
