@@ -26,7 +26,7 @@ menuitem[badge]::after {
   border-radius: 99px !important;
   border: none !important;
   color: var(--gnome-window-color) !important;
-  background-color: var(--gnome-button-background) !important;
+  background-color: var(--gnome-trough-background) !important;
   font-size: 0.85em !important;
 }
 menu,
