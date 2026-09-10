@@ -404,7 +404,7 @@ menuitem[type="radio"] {
   list-style-image: var(--gnome-icon-go-previous-symbolic) !important;
 }
 #appmenu-moreTools-button {
-  list-style-image: url("customize.svg", unset) !important;
+  list-style-image: var(--gnome-icon-magic-wand-symbolic) !important;
 }
 #zen-copy-current-url-button,
 #share-tab-button,
