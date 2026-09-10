@@ -27,7 +27,7 @@
   justify-content: center !important;
   min-height: var(--gnome-button-size) !important;
   min-width: var(--gnome-button-size) !important;
-  transition: background var(--gnome-animation-time);
+  transition: background var(--gnome-animation-time) !important;
   &:not([disabled]) {
     &:hover {
       background-color: var(--gnome-button-hover-background) !important;
