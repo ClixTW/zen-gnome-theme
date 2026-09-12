@@ -27,10 +27,10 @@
   --toolbarbutton-icon-fill-attention: var(--gnome-toolbar-icon-fill) !important;
 }
 
-/* Site Data popup */
-/* Fix bottom padding for the clear site data footer */
-#identity-popup-clear-sitedata-footer {
-  padding-bottom: var(--gnome-menu-padding) !important;
+/* Toolbar */
+/* Fix alignment for zoom button label */
+#zoom-reset-button label {
+  padding-top: 1px !important;
 }
 
 /* Main menu */
@@ -42,6 +42,31 @@
   padding-top: 10px !important;
 /* Fix Zoom label alignment */
   margin-left: 2px !important;
+}
+
+/* Site Data popup */
+/* Fix bottom padding for the clear site data footer */
+#identity-popup-clear-sitedata-footer {
+  padding-bottom: var(--gnome-menu-padding) !important;
+}
+
+/* Download panel */
+/* Add missing padding before TypeIcon */
+.downloadMainArea {
+  margin-left: var(--gnome-menu-padding) !important;
+}
+
+/* Folder tabs popup */
+/* Add missing item background padding */
+#zen-folder-tabs-popup .folders-tabs-list-item-content {
+  padding-block: 4px !important;
+  margin-block: 0px !important;
+}
+
+/* Notification popup */
+/* Remove excessive left margin from the site list section */
+popupnotification .webext-perm-domains-list {
+  margin-left: 0px !important;
 }
 
 /* Status panel */
