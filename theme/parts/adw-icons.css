@@ -2,8 +2,7 @@
 
 /* Icon colors */
 toolbarbutton:not(#zen-media-controls-toolbar toolbarbutton) {
-  --toolbarbutton-icon-fill: light-dark(currentColor,
-  var(--gnome-toolbar-icon-fill)) !important;
+  --toolbarbutton-icon-fill: var(--gnome-toolbar-icon-fill) !important;
 }
 toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inactive {
   opacity: 0.5 !important;
