@@ -19,6 +19,10 @@
 @import "parts/adw-single-components.css";
 @import "parts/adw-toolbar.css";
 
+@import "parts/panels/adw-bookmarks.css";
+@import "parts/panels/adw-dialog.css";
+@import "parts/panels/adw-print.css";
+
 @import "parts/adw-fixes.css";
 
 @import "parts/adw-icons.css";
