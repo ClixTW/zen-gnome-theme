@@ -5,6 +5,7 @@ menupopup,
 panel {
   --menuitem-padding: 4px 12px !important;
   --panel-border-radius: var(--gnome-popover-radius) !important;
+  --panel-text-color: var(--gnome-menu-color) !important;
 }
 
 /* Separator */
