@@ -16,6 +16,15 @@
   }
 }
 
+/* Center text */
+.urlbar-input,
+.urlbar-input[aria-expanded="false"] {
+  text-align: center !important;
+}
+.urlbar-input[aria-expanded="true"] {
+  text-align: match-parent !important;
+}
+
 /* URL bar results */
 .urlbarView-row {
   border-radius: var(--gnome-popover-radius) !important;
@@ -81,11 +90,3 @@
   }
 }
 
-/* Center URL bar text */
-.urlbar-input,
-.urlbar-input[aria-expanded="false"] {
-  text-align: center !important;
-}
-.urlbar-input[aria-expanded="true"] {
-  text-align: match-parent !important;
-}
