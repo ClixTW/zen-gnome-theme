@@ -36,6 +36,14 @@ menuitem {
   }
 }
 
+/* Folder tabs popup */
+#zen-folder-tabs-popup {
+  --panel-padding: var(--gnome-menu-padding) !important;
+  .tabs-list-header {
+    margin-bottom: var(--gnome-menu-padding) !important;
+  }
+}
+
 /* Toast notifications */
 #zen-toast-container {
   --zen-toast-spacing: max(8px, var(--zen-element-separation)) !important;
