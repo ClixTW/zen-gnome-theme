@@ -1,5 +1,9 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Buttons */
+button {
+  --panel-item-button-border-radius: var(--gnome-button-radius) !important;
+}
 /* Animation */
 toolbarbutton {
   transition: all 0.15s ease-out !important;
