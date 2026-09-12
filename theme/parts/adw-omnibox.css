@@ -38,7 +38,7 @@
   &[selected] {
     --zen-selected-bg: var(--gnome-active-color) !important;
     --zen-selected-color: var(--gnome-window-color) !important;
-    background-color: var(--zen-selected-bg) !important;
+    background-color: var(--gnome-active-color) !important;
     &:where([type="switchtab"],
     [type="dynamic"],
     [type^="history"],
@@ -69,24 +69,25 @@
 .urlbarView-row[has-action]:is([type="switchtab"],
 [type="remotetab"],
 [type="clipboard"]) {
-  & .urlbarView-action:last-child {
-    background: var(--gnome-trough-background) !important;
+  & .urlbarView-action {
+    background-color: var(--gnome-trough-background) !important;
     border-radius: 99px !important;
     padding-inline: var(--gnome-menu-item-padding) !important;
     font-size: 14px !important;
     font-weight: 500 !important;
   }
   &:is([type="switchtab"],
-  [type="remotetab"]) .urlbarView-action:last-child {
+  [type="remotetab"]) .urlbarView-action {
     margin-right: 0px !important;
     scale: 1 !important;
     opacity: 1 !important;
     &::after {
       display: none !important;
     }
-  }
-  .urlbarView-button {
-    display: none !important;
+    &.urlbarView-tabGroup {
+      margin-right: 6px !important;
+      color: var(--gnome-window-color) !important;
+      background-color:  var(--gnome-accent-bg) !important;
+    }
   }
 }
-
