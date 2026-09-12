@@ -4,6 +4,9 @@
 #tabs-newtab-button {
   --toolbarbutton-border-radius: 0px !important;
 }
+.zen-current-workspace-indicator.zen-drop-target {
+  --border-radius-medium: 12px !important;
+}
 #appMenu-zoom-controls {
   --uc-arrowpanel-menuitem-margin-block: -2px !important;
 }
@@ -17,8 +20,17 @@
 #appMenu-fullscreen-button2 {
   --border-radius-xsmall: 0px !important;
 }
-.zen-current-workspace-indicator.zen-drop-target {
-  --border-radius-medium: 12px !important;
+.downloadButton {
+  min-width: var(--gnome-button-size) !important;
+  &:hover:not(:active) {
+    border: none !important;
+  }
+}
+.zen-glance-sidebar-container toolbarbutton {
+  background-color: var(--gnome-menu-background) !important;
+  &:hover {
+    background-color: color-mix(in srgb, var(--gnome-menu-background) 95%, #FFF) !important;
+  }
 }
 
 /* Combined buttons */

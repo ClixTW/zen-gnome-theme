@@ -1,9 +1,1 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
-/* Download panel */
-.downloadButton {
-  min-width: var(--gnome-button-size) !important;
-}
-.downloadButton:hover:not(:active) {
-  border: none !important;
-}
