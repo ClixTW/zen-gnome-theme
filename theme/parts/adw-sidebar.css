@@ -17,3 +17,11 @@
     }
   }
 }
+
+/* Glance */
+.zen-glance-sidebar-container toolbarbutton {
+  background-color: var(--gnome-menu-background) !important;
+}
+.zen-glance-sidebar-container toolbarbutton:hover {
+  background-color: color-mix(in srgb, var(--gnome-menu-background) 95%, #FFF) !important;
+}
