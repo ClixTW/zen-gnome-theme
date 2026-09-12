@@ -1,6 +1,11 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* Essentials */
+/* URL bar and tabs */
+#navigator-toolbox {
+  --border-radius-medium: var(--gnome-entry-radius) !important;
+}
+
+/* Essentials tabs */
 .zen-essentials-container .tabbrowser-tab {
   --tab-background-color-hover: var(--gnome-trough-hover-background) !important;
   &[visuallyselected] .tab-background {
