@@ -63,6 +63,12 @@ popupnotification .webext-perm-domains-list {
   margin-left: 0px !important;
 }
 
+/* Panel */
+/* Fix excessive height issue */
+.PanelUI-subView {
+  max-height: 600px !important;
+}
+
 /* Download panel */
 /* Add missing padding before TypeIcon */
 #downloadsPanel {
