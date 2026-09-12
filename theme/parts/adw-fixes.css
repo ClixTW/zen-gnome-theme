@@ -43,6 +43,14 @@
 /* Fix Zoom label alignment */
   margin-left: 2px !important;
 }
+/* Remove unnecessary left padding for items without icons */
+#appmenu-developer-tools-view,
+#PanelUI-helpItems
+ {
+  .toolbarbutton-text {
+    padding-left: 0px !important;
+  }
+}
 
 /* Site Data popup */
 /* Fix bottom padding for the clear site data footer */
