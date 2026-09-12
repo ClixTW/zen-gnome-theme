@@ -41,8 +41,8 @@ menuitem {
   --zen-toast-spacing: max(8px, var(--zen-element-separation)) !important;
 }
 
-/* Context Menu Cleanup */
-/* Tab & UI items */
+/* Context menu cleanup */
+/* Tab and UI items */
 #context_openANewTab,
 #context_reloadTab,
 #context_reloadSelectedTabs,
@@ -61,7 +61,7 @@ menuitem {
 #zen-toolbar-context-tabs-right,
 .share-tab-url-item,
 
-/* Page & link items */
+/* Page and link items */
 #context-zenSplitLink,
 #context-bookmarklink,
 #context-savelink,

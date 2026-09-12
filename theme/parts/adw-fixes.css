@@ -18,7 +18,7 @@
     padding-inline: 10px 0 !important;
   }
 }
-/* Ensure the last item is fully visible */
+/* Ensure the last result is fully visible */
 .urlbarView-row {
   height: 47px !important;
 }
@@ -45,7 +45,7 @@
 }
 
 /* Status panel */
-/* Waiting for the new Status panel to be implemented in Zen */
+/* Wait for the new status panel implementation in Zen */
 #statuspanel {
   padding: 6px !important;
   & > #statuspanel-label {

@@ -1,6 +1,6 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* Buttons glitches fixes */
+/* Fix button glitches */
 #tabs-newtab-button {
   --toolbarbutton-border-radius: 0px !important;
 }

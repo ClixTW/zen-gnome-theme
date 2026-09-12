@@ -72,7 +72,6 @@ menuitem[type="radio"] {
 }
 
 /* Replace icons */
-
 /* Context menu */
 #context-back {
   --menuitem-icon: var(--gnome-icon-go-previous-symbolic) !important;

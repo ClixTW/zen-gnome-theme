@@ -16,7 +16,7 @@
   font-weight: 500 !important;
 }
 
-/* Site Data popup */
+/* Site data popup */
 #zen-site-data-header toolbarbutton {
   border-radius: var(--gnome-button-radius) !important;
   overflow: hidden !important;

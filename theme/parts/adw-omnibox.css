@@ -1,6 +1,6 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* URL and tool bars */
+/* URL bar and toolbars */
 .urlbar {
   --urlbarview-separator-color: var(--gnome-menu-separator-color) !important;
 }
