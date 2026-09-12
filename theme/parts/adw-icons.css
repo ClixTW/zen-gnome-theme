@@ -88,7 +88,6 @@ menuitem[type="radio"] {
     --menuitem-icon: var(--gnome-icon-starred-symbolic) !important;
   }
 }
-
 /* UI */
 .private-browsing-indicator-icon {
   list-style-image: url("account-private.svg", unset) !important;
@@ -321,7 +320,7 @@ menuitem[type="radio"] {
   list-style-image: var(--gnome-icon-library-symbolic) !important;
 }
 
-/* identity icons */
+/* Identity icons */
 #identity-icon {
   list-style-image: var(--gnome-icon-edit-find-symbolic) !important;
 }
@@ -342,8 +341,7 @@ menuitem[type="radio"] {
 #urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box > #tracking-protection-icon {
   list-style-image: var(--gnome-icon-shield-full-symbolic) !important;
 }
-
-/* security */
+/* Security */
 .identity-popup-security-connection,
 #appMenu-report-broken-site-button {
   list-style-image: var(--gnome-icon-warning-outline-symbolic) !important;
@@ -441,8 +439,7 @@ menuitem[type="radio"] {
 #sidebar-switcher-tabs {
   list-style-image: url("send-to-device.svg", unset) !important;
 }
-
-/* tab icons */
+/* Tab icons */
 .tab-icon-image[src="chrome://branding/content/icon32.png"],
 .tab-icon-image[src="chrome://browser/skin/privatebrowsing/favicon.svg"]
  {
@@ -461,7 +458,7 @@ menuitem[type="radio"] {
   content: url("customize.svg", unset) !important;
 }
 
-/* permissions */
+/* Permissions */
 #zen-site-data-icon-button {
   & image {
     list-style-image: url("permissions.svg", unset);
@@ -596,7 +593,7 @@ menuitem[type="radio"] {
   list-style-image: url("cookies-fill.svg", unset);
 }
 
-/* tab sound icons */
+/* Tab sound icons */
 .tab-icon-overlay[soundplaying] {
   list-style-image: var(--gnome-icon-speaker-3-symbolic) !important;
 }
@@ -785,6 +782,7 @@ menuitem[type="radio"] {
 .sr-airplane {
   list-style-image: url("selectable/airplane.svg", unset);
 }
+/* Others */
 #import-button {
   list-style-image: var(--gnome-icon-arrow-into-box-symbolic) !important;
 }
