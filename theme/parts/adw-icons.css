@@ -19,8 +19,14 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 .zen-workspaces-actions[open] {
   opacity: 0.8 !important;
 }
-#downloads-button:-moz-window-inactive {
-  opacity: 0.2 !important;
+#protections-popup-mainView .subviewbutton-nav:not(.notFound),
+.widget-overflow-list .subviewbutton-nav,
+.PanelUI-subView .subviewbutton-nav,
+.tab-preview-add-note.subviewbutton-nav {
+  &::after {
+    fill-opacity: 0.4 !important;
+  }
+}
 }
 .zen-glance-sidebar-container .toolbarbutton-1 {
   fill: color-mix(in srgb, currentColor 70%, transparent) !important;
