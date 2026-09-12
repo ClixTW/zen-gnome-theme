@@ -91,3 +91,11 @@
     }
   }
 }
+.urlbarView-button-result-menu {
+  margin-right: var(--gnome-menu-item-padding) !important;
+/*   display: none !important; */
+}
+.urlbarView-result-menu {
+  padding: var(--gnome-menu-padding) !important;
+  border: none !important;
+}
