@@ -19,5 +19,12 @@ textarea {
 
 /* Split-screen border */
 .browserSidebarContainer.deck-selected {
- outline: none  !important;
+  outline: none !important;
+}
+
+/* Custom toolbar interface */
+#customization-panelWrapper .panel-arrowcontent {
+  --panel-border-radius: var(--gnome-popover-radius) !important;
+  --panel-background-color: var(--gnome-card-background) !important;
+  padding: var(--gnome-menu-padding) !important;
 }
