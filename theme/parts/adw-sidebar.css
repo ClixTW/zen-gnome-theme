@@ -21,4 +21,13 @@
   }
 }
 
+/* Sidebars */
+#zen-tabbox-wrapper {
+  #sidebar-box {
+    --zen-native-inner-radius: 0px !important;
+  }
+  #sidebar-splitter {
+    width: 8px !important;
+    margin-inline: -4px !important;
+  }
 }
