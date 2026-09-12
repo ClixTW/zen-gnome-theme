@@ -11,6 +11,9 @@
     border-radius: var(--gnome-dialog-radius) !important;
     box-shadow: var(--gnome-menu-shadow), var(--gnome-menu-shadow) !important;
   }
+  #urlbar:not([breakout-extend]) &:-moz-window-inactive {
+    opacity: 0.7 !important;
+  }
 }
 
 /* URL bar results */
@@ -45,7 +48,6 @@
 
 /* Action badges */
 #urlbar-search-mode-indicator {
-  background-color: var(--gnome-trough-background) !important;
   padding-inline: var(--gnome-menu-item-padding) !important;
 }
 .urlbarView-prettyName,
