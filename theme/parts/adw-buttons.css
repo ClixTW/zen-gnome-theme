@@ -4,6 +4,11 @@
 button {
   --panel-item-button-border-radius: var(--gnome-button-radius) !important;
 }
+.tab-close-button,
+.tab-reset-button {
+  border-radius: 99px !important;
+}
+
 /* Animation */
 toolbarbutton {
   transition: all 0.15s ease-out !important;
