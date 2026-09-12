@@ -65,3 +65,28 @@
 #zen-site-data-new-addon-button {
   opacity: 0.5 !important;
 }
+
+/* Boost */
+#zenBoostWindow {
+  --zen-boosts-primary-background: var(--gnome-window-background) !important;
+  --zen-boosts-secondary-background: var(--gnome-window-background) !important;
+  --zen-boosts-primary-color: var(--gnome-window-color) !important;
+  --zen-boosts-secondary-color: var(--gnome-window-color) !important;
+  --zen-boosts-button-background: var(--gnome-button-background) !important;
+  --mod-button-c1:  var(--gnome-button-background) !important;
+  --mod-button-c2:  var(--gnome-button-background) !important;
+  --zen-boosts-active-button-background: var(--gnome-button-checked-background) !important;
+  --zen-boosts-active-button-hover-background: var(--gnome-button-checked-hover-background) !important;
+  --zen-boosts-active-button-color: var(--gnome-button-background) !important;
+  --zen-boosts-back-button-hover-background: var(--gnome-button-hover-background) !important;
+  --zen-boosts-magic-theme-background: var(--gnome-menu-background) !important;
+  --zen-boosts-magic-theme-active-background: var(--gnome-menu-background) !important;
+  --zen-boosts-font-wrapper-background: var(--gnome-sidebar-background) !important;
+  --zen-boosts-primary-border-color: var(--gnome-border-color) !important;
+  button {
+    border-radius: var(--gnome-button-radius) !important;
+  }
+  #zen-boost-font-wrapper {
+    border-radius: var(--gnome-button-radius) !important;
+  }
+}
