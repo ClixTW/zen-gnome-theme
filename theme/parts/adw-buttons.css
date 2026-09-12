@@ -17,6 +17,9 @@
 #appMenu-fullscreen-button2 {
   --border-radius-xsmall: 0px !important;
 }
+.zen-current-workspace-indicator.zen-drop-target {
+  --border-radius-medium: 12px !important;
+}
 
 /* Combined buttons */
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton,
