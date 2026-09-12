@@ -50,12 +50,6 @@
   padding-bottom: var(--gnome-menu-padding) !important;
 }
 
-/* Download panel */
-/* Add missing padding before TypeIcon */
-.downloadMainArea {
-  margin-left: var(--gnome-menu-padding) !important;
-}
-
 /* Folder tabs popup */
 /* Add missing item background padding */
 #zen-folder-tabs-popup .folders-tabs-list-item-content {
@@ -67,6 +61,18 @@
 /* Remove excessive left margin from the site list section */
 popupnotification .webext-perm-domains-list {
   margin-left: 0px !important;
+}
+
+/* Download panel */
+/* Add missing padding before TypeIcon */
+#downloadsPanel {
+  .downloadMainArea, #emptyDownloads {
+    margin-left: 3px !important;
+  }
+/* Fix excessive left and right padding on separators */
+  toolbarseparator {
+    padding-inline: 1px !important;
+  }
 }
 
 /* Status panel */
