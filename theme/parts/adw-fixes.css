@@ -65,7 +65,7 @@ popupnotification .webext-perm-domains-list {
 
 /* Panel */
 /* Fix excessive height issue */
-.PanelUI-subView {
+.PanelUI-subView:not(#appMenu-mainView) {
   max-height: 600px !important;
 }
 
