@@ -30,6 +30,7 @@
   /* Toolbar */
   --toolbarbutton-background-color-hover: var(--gnome-button-hover-background) !important;
   --toolbarbutton-background-color-active: var(--gnome-button-active-background) !important;
+  --toolbar-background-color: var(--gnome-toolbar-background) !important;
   /* XUL */
   --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
   --zen-squircle-value: 1 !important;

@@ -1,11 +1,5 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* Tooltips */
-tooltip {
-  border-radius: var(--gnome-button-radius) !important;
-  border: 0.5px solid var(--gnome-border-color) !important;
-}
-
 /* Input box */
 input:where([type="email"],
 [type="tel"],
@@ -17,7 +11,30 @@ textarea {
   border: none !important;
 }
 
-/* Split-screen border */
+/* Find bar  */
+findbar {
+  --findbar-container-height: var(--gnome-entry-height) !important;
+  align-items: center;
+  .findbar-closebutton {
+    border-radius: 99px !important;
+    outline: none !important;
+    height: 28px !important;
+    width: 28px !important;
+  }
+}
+.findbar-textbox {
+  min-height: var(--gnome-entry-height) !important;
+  padding-inline: 9px !important;
+  border: none !important;
+}
+
+/* Tooltips */
+tooltip {
+  border-radius: var(--gnome-button-radius) !important;
+  border: 0.5px solid var(--gnome-border-color) !important;
+}
+
+/* Split-screen */
 .browserSidebarContainer.deck-selected {
   outline: none !important;
 }
