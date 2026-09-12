@@ -44,6 +44,20 @@ menuitem {
   }
 }
 
+/* Notification popup */
+popupnotification {
+  .popup-notification-body {
+    padding: 2px !important;
+  }
+  .popup-notification-icon {
+    display: none !important;
+  }
+  .popup-notification-description {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+  }
+}
+  
 /* Toast notifications */
 #zen-toast-container {
   --zen-toast-spacing: max(8px, var(--zen-element-separation)) !important;
