@@ -39,6 +39,10 @@ menuitem {
 /* Toast notifications */
 #zen-toast-container {
   --zen-toast-spacing: max(8px, var(--zen-element-separation)) !important;
+  .zen-toast {
+    border-radius: var(--gnome-card-radius) !important;
+    box-shadow: var(--gnome-menu-shadow) !important;
+  }
 }
 
 /* Context menu cleanup */
