@@ -13,8 +13,11 @@ menuseparator,
 panel toolbarseparator {
   padding-block: var(--gnome-menu-padding) !important;
 }
-#PlacesToolbarItems menuseparator {
-  margin-inline: var(--gnome-menu-padding) !important;
+#PlacesToolbarItems,
+#BMB_bookmarksPopup {
+  menuseparator {
+    margin-inline: var(--gnome-menu-padding) !important;
+  }
 }
 
 /* Menu items */
