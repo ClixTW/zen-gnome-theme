@@ -88,13 +88,3 @@ popupnotification .webext-perm-domains-list {
     padding-inline: 1px !important;
   }
 }
-
-/* Status panel */
-/* Wait for the new status panel implementation in Zen */
-#statuspanel {
-  padding: 6px !important;
-  & > #statuspanel-label {
-    background: color-mix(in srgb, var(--zen-primary-color), black 70%) !important;
-    color: rgba(255, 255, 255, 0.8) !important;
-  }
-}
