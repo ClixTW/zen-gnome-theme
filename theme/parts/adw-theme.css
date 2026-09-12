@@ -47,5 +47,5 @@
   --panel-menuitem-padding-block: 4px !important;
   --panel-menuitem-padding-inline: 12px !important;
   --panel-padding-block: var(--gnome-menu-padding) !important;
-  --background-color-box: var(--gnome-entry-background) !important;
+  --background-color-box: var(--gnome-menu-background) !important;
 }
