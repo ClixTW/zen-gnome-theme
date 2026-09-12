@@ -36,7 +36,7 @@
   --arrowpanel-background: var(--gnome-menu-background) !important;
   /* Sidebar Notifications */
   --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
-  
+
   /* tokens-shared.css */
   --border-radius-xsmall: var(--gnome-button-radius) !important;
   --border-radius-small: var(--gnome-menu-radius) !important;
