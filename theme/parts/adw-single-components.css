@@ -1,5 +1,13 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Emojis picker */
+#PanelUI-zen-emojis-picker {
+  zoom: 1.2 !important;
+  .zen-emojis-picker-svg {
+    border-radius: 6px !important;
+  }
+}
+
 /* Status panel */
 #statuspanel > #statuspanel-label {
   border-radius: var(--gnome-menu-radius) !important;
