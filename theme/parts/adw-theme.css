@@ -1,14 +1,50 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/**/
+/* Global CSS variables */
 :host(:is(.anonymous-content-host, notification-message)),
 :root {
   /* Default values */
   --zen-border-radius: 9px !important;
+  --zen-primary-color: AccentColor !important;
+  /* Branding */
+  --zen-branding-dark: #222226 !important;
+  --zen-branding-paper: #fafafb !important;
+  /** Zen colors are generated automatically from the primary color */
+  --zen-dialog-background: var(--gnome-menu-background) !important;
+  --in-content-primary-button-background: var(--gnome-button-suggested-background) !important;
+  --in-content-primary-button-background-hover: color-mix(in srgb,
+  var(--in-content-primary-button-background) 95%,
+  #FFF) !important;
+  --in-content-primary-button-background-active: color-mix(in srgb,
+  var(--in-content-primary-button-background) 90%,
+  #FFF) !important;
+  --in-content-primary-button-text-color: var(--gnome-window-color) !important;
   /* This is like the secondary button */
   --button-border-radius: var(--gnome-button-radius) !important;
+  --button-background-color: var(--gnome-button-background) !important;
+  --button-background-color-hover: var(--gnome-button-hover-background) !important;
+  --button-background-color-active: var(--gnome-button-active-background) !important;
+  --button-background-color-ghost-hover: var(--gnome-hover-color) !important;
+  --button-background-color-ghost-active: var(--gnome-active-color) !important;
+  --zen-toolbar-element-bg-hover: var(--gnome-trough-hover-background) !important;
+  /* Toolbar */
+  --toolbarbutton-background-color-hover: var(--gnome-button-hover-background) !important;
+  --toolbarbutton-background-color-active: var(--gnome-button-active-background) !important;
   /* XUL */
   --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
   --zen-squircle-value: 1 !important;
   --arrowpanel-background: var(--gnome-menu-background) !important;
+  /* Sidebar Notifications */
+  --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
+  
+  /* tokens-shared.css */
+  --border-radius-xsmall: var(--gnome-button-radius) !important;
+  --border-radius-small: var(--gnome-menu-radius) !important;
+  --border-radius-medium: var(--gnome-entry-radius) !important;
+  --border-radius-large: var(--gnome-popover-radius) !important;
+  --panel-border-color: transparent !important;
+  --panel-menuitem-padding-block: 4px !important;
+  --panel-menuitem-padding-inline: 12px !important;
+  --panel-padding-block: var(--gnome-menu-padding) !important;
+  --background-color-box: var(--gnome-entry-background) !important;
 }
