@@ -10,3 +10,19 @@ tooltip {
   border-radius: var(--gnome-button-radius) !important;
   border: 0.5px solid var(--gnome-border-color) !important;
 }
+
+/* Input box */
+input:where([type="email"],
+[type="tel"],
+[type="text"],
+[type="password"],
+[type="url"],
+[type="number"]),
+textarea {
+  border: none !important;
+}
+
+/* Split-screen border */
+.browserSidebarContainer.deck-selected {
+ outline: none  !important;
+}
