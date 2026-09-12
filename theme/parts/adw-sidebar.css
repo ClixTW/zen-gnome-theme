@@ -3,6 +3,9 @@
 /* URL bar and tabs */
 #navigator-toolbox {
   --border-radius-medium: var(--gnome-entry-radius) !important;
+  :root[zen-no-padding='true'] & {
+    --zen-compact-mode-no-padding-radius-fix: -4px !important;
+  }
 }
 
 /* Essentials tabs */
