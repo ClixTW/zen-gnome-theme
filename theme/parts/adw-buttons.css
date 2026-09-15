@@ -29,6 +29,12 @@ button {
 .tab-reset-button {
   border-radius: 99px !important;
 }
+.select {
+  min-height: var(--gnome-button-size) !important;
+  &:hover {
+    --select-background-color: var(--gnome-button-hover-background) !important;
+  }
+}
 
 /* Animation */
 toolbarbutton {
