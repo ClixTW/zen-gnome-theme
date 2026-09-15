@@ -8,10 +8,10 @@
 /* Core */
 @import "parts/adw-browser-ui.css";
 @import "parts/adw-buttons.css";
-@import "parts/adw-dialog.css";
+@import "parts/adw-dialogs.css";
 @import "parts/adw-features.css";
 @import "parts/adw-omnibox.css";
-@import "parts/adw-popup.css";
+@import "parts/adw-popups.css";
 @import "parts/adw-sidebar.css";
 @import "parts/adw-toolbar.css";
 
