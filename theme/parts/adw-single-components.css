@@ -25,6 +25,9 @@
 #zen-site-data-header toolbarbutton {
   border-radius: var(--gnome-button-radius) !important;
   overflow: hidden !important;
+  &.active:hover::before {
+    background: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #fff) !important;
+  }
 }
 #zen-site-data-addons {
   #overflowed-extensions-list,
@@ -35,14 +38,6 @@
       border-radius: var(--gnome-button-radius) !important;
     }
   }
-}
-#zen-site-data-security-info,
-#zen-site-data-boost {
-  border-radius: var(--gnome-button-radius) !important;
-}
-#zen-site-data-actions {
-  border-radius: 99px !important;
-  margin-top: 3px !important;
 }
 #zen-site-data-header toolbarbutton,
 #zen-site-data-footer toolbarbutton,
@@ -64,6 +59,36 @@
 }
 #zen-site-data-new-addon-button {
   opacity: 0.5 !important;
+}
+.permission-popup-permission-icon,
+.permission-popup-boost-icon {
+  &::before {
+    background: var(--gnome-button-background) !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: background 0.15s ease !important;
+  }
+  &:hover::before {
+    background: var(--gnome-button-hover-background) !important;
+  }
+  :is(.permission-popup-permission-item[state="allow"],
+  .permission-popup-boost-item[state="enabled"]) & {
+    &::before {
+      background: var(--zen-sidebar-themed-icon-fill) !important;
+      opacity: 1;
+    }
+    &:hover::before {
+      background: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #FFF) !important;
+    }
+  }
+}
+#zen-site-data-security-info,
+#zen-site-data-boost {
+  border-radius: var(--gnome-button-radius) !important;
+}
+#zen-site-data-actions {
+  border-radius: 99px !important;
+  margin-top: 3px !important;
 }
 
 /* Boost */
