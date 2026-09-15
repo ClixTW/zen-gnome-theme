@@ -38,8 +38,8 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
   }
 }
 
-/* From firefox-gnome-theme */
 /* Menu checkbox/radio */
+/* From firefox-gnome-theme */
 menuitem[type="checkbox"],
 menuitem[type="radio"] {
   &::before {

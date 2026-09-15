@@ -46,8 +46,8 @@ tooltip {
   padding: var(--gnome-menu-padding) !important;
 }
 
-/* From firefox-gnome-theme */
 /* Checkbox */
+/* From firefox-gnome-theme */
 input[type="checkbox"],
 checkbox:not(.treenode-checkbox) > .checkbox-check {
   appearance: none !important;

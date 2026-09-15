@@ -47,8 +47,8 @@ toolbarbutton {
   }
 }
 
-/* Adapted from firefox-gnome-theme */
 /* Combined buttons */
+/* Adapted from firefox-gnome-theme */
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton,
 #context-navigation menuitem {
   background-color: var(--gnome-button-background) !important;
