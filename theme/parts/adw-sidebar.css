@@ -58,6 +58,10 @@ zen-workspace {
     }
   }
 }
+.tab-close-button,
+.tab-reset-button {
+  border-radius: 99px !important;
+}
 
 /* Tab group */
 tab-group[split-view-group] {

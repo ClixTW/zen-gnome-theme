@@ -31,10 +31,6 @@ button {
     --select-background-color: var(--gnome-button-active-background) !important;
   }
 }
-.tab-close-button,
-.tab-reset-button {
-  border-radius: 99px !important;
-}
 .select {
   min-height: var(--gnome-button-size) !important;
   &:hover {
