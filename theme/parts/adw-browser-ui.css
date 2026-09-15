@@ -26,6 +26,11 @@ findbar {
   min-height: var(--gnome-entry-height) !important;
   padding-inline: 9px !important;
   border: none !important;
+    &[status="notfound"] {
+    background-color: var(--gnome-button-destructive-background) !important;
+    color: var(--gnome-error) !important;
+		outline-color: var(--gnome-entry-error-focused-border-color) !important;      
+  }
 }
 
 /* Tooltips */
