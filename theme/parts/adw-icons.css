@@ -7,7 +7,7 @@ toolbarbutton:not(#zen-media-controls-toolbar toolbarbutton) {
 }
 toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inactive {
   opacity: 0.5 !important;
-  transition: opacity 0.15s ease-out !important;
+  transition: opacity 0.2s ease !important;
 }
 
 /* Fix icon colors */
