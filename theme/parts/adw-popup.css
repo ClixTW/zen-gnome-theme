@@ -1,5 +1,15 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Override vars */
+:root {
+  --panel-border-color: transparent !important;
+  --panel-separator-color: var(--gnome-menu-separator-color) !important;
+  --panel-menuitem-padding-block: 4px !important;
+  --panel-menuitem-padding-inline: 12px !important;
+  --panel-padding-block: var(--gnome-menu-padding) !important;
+  --arrowpanel-background: var(--gnome-menu-background) !important;
+}
+
 /* Popup menus and context menus */
 menupopup,
 panel {

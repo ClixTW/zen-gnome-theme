@@ -1,5 +1,10 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Override vars */
+:root {
+  --zen-dialog-background: var(--gnome-menu-background) !important;
+}
+
 /* Dialogs */
 window {
   width: initial !important;

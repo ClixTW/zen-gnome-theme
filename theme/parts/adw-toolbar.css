@@ -1,5 +1,12 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Override vars */
+:root {
+  --zen-toolbar-element-bg: var(--gnome-selected-color) !important;
+  --zen-toolbar-element-bg-hover: var(--gnome-selected-hover-color) !important;
+  --toolbar-background-color: var(--gnome-toolbar-background) !important;
+}
+
 /* Main menu and overflow buttons */
 #PanelUI-button {
   order: 1 !important;
