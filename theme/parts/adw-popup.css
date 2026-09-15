@@ -94,39 +94,32 @@ popupnotification {
 #context_duplicateTabs,
 #context_bookmarkTab,
 #context_bookmarkSelectedTabs,
+.share-tab-url-item,
 #context_selectAllTabs,
 #context_sendTabToDevice,
+#context_closeDuplicateTabs,
 #context_zenReorderWorkspaces,
-#toolbar-context-openANewTab,
-#zen-toolbar-context-tabs-right,
-.share-tab-url-item,
-
 /* Page and link items */
+#context-openlink,
+#context-openlinkprivate,
 #context-zenSplitLink,
 #context-bookmarklink,
 #context-savelink,
-#context-savelinktopocket,
 #context-stripOnShareLink,
 #context-sendlinktodevice,
-#context-pocket,
 #context-sendimage,
-#context-sendvideo,
 #context-media-showcontrols,
-#context-translate-selection,
+#context-sendvideo,
 #context-print-selection,
-#context-copy-link-to-highlight,
 #context-copy-clean-link-to-highlight,
 #context-viewpartialsource-selection,
 #context-viewsource,
 #context-inspect-a11y,
-#strip-on-share,
-
 /* Separators */
+#tabContextMenu > menuseparator:nth-child(22),
+#tabContextMenu > menuseparator:nth-child(25),
 #context_sendTabToDeviceSeparator,
-#context-sep-sendlinktodevice,
-#context-sep-highlights,
-#context-sep-sharing,
-#tabContextMenu > menuseparator:nth-child(21),
-#tabContextMenu > menuseparator:nth-child(24) {
+#context-sep-sendlinktodevice {
   display: none !important;
+  color: red !important;
 }
