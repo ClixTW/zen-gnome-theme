@@ -59,7 +59,7 @@ toolbarbutton {
 #tabs-newtab-button {
   --toolbarbutton-border-radius: 0px !important;
 }
-.zen-current-workspace-indicator.zen-drop-target {
+.zen-current-workspace-indicator.zen-drop-target toolbarbutton {
   --border-radius-medium: 12px !important;
 }
 #appMenu-zoom-controls {
