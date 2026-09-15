@@ -45,6 +45,44 @@
   }
 }
 
+/* Tabs */
+zen-workspace {
+  --tab-background-color-hover: var(--gnome-hover-color) !important;
+  --tab-background-color-selected: var(--gnome-selected-color) !important;
+  .tabbrowser-tab {
+    &:hover {
+      --tab-background-color-selected: var(--gnome-selected-hover-color) !important;
+    }
+    &:active {
+      --tab-background-color-selected: var(--gnome-selected-active-color) !important;
+    }
+  }
+}
+
+/* Tab group */
+tab-group[split-view-group] {
+  --zen-split-view-active-tab-bg: transparent !important;
+  & tab.tabbrowser-tab .tab-background {
+    tab.tabbrowser-tab:hover & {
+      background-color: var(--gnome-hover-color) !important;
+    }
+    tab.tabbrowser-tab[visuallyselected] & {
+      background-color: var(--gnome-selected-color) !important;
+      tab.tabbrowser-tab[visuallyselected]:hover & {
+        background-color: var(--gnome-selected-hover-color) !important;
+      }
+      tab.tabbrowser-tab[visuallyselected]:active & {
+        background-color: var(--gnome-selected-active-color) !important;
+      }
+    }
+  }
+  & .tab-group-container {
+    &:hover {
+      background-color: var(--gnome-hover-color) !important;
+    }
+    &:has(> tab:is([multiselected],
+    [visuallyselected])):hover {
+      background-color: var(--gnome-selected-color) !important;
     }
   }
 }
