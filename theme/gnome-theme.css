@@ -8,6 +8,7 @@
 /* Core */
 @import "parts/adw-browser-ui.css";
 @import "parts/adw-buttons.css";
+@import "parts/adw-dialog.css";
 @import "parts/adw-omnibox.css";
 @import "parts/adw-panel-ui.css";
 @import "parts/adw-popup.css";
@@ -15,7 +16,6 @@
 @import "parts/adw-single-components.css";
 @import "parts/adw-toolbar.css";
 
-@import "parts/panels/adw-dialog.css";
 @import "parts/adw-fixes.css";
 
 @import "parts/adw-icons.css";
