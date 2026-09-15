@@ -38,3 +38,12 @@
     margin-inline: -4px !important;
   }
 }
+
+/* Animation */
+.tab-background,
+.tab-group-label-container::before {
+  transition: background 0.15s ease !important;
+}
+.tab-background::after {
+  transition: filter 0.15s ease !important;
+}
