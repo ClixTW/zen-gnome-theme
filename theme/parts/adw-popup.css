@@ -14,8 +14,21 @@
 menupopup,
 panel {
   --menuitem-padding: 4px 12px !important;
+  --panel-background-color: var(--gnome-menu-background) !important;
   --panel-border-radius: var(--gnome-popover-radius) !important;
   --panel-text-color: var(--gnome-menu-color) !important;
+}
+menulist {
+  padding: var(--gnome-menu-padding) !important;
+  menupopup {
+    --panel-padding: var(--gnome-menu-padding) !important;
+  }
+}
+panel-list {
+  --panel-list-background-color: var(--gnome-menu-background) !important;
+}
+.panel-subview-footer-button {
+  padding-block: var(--gnome-menu-padding) !important;
 }
 
 /* Separator */
