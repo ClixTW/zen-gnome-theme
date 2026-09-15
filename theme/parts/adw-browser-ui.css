@@ -64,8 +64,36 @@ tooltip {
   padding: var(--gnome-menu-padding) !important;
 }
 
-/* Checkbox */
+/* Menu checkbox/radio */
 /* From firefox-gnome-theme */
+menuitem[type="checkbox"],
+menuitem[type="radio"] {
+  &::before {
+    align-items: center !important;
+    content: "" !important;
+    display: flex !important;
+    height: 16px !important;
+    justify-content: center !important;
+    margin-inline-end: 0.5em !important;
+    width: 16px !important;
+  }
+  &[disabled="true"]::before {
+    opacity: 0.5 !important;
+  }
+}
+menuitem[type="checkbox"][checked]::before {
+  content: var(--gnome-icon-select-symbolic) !important;
+}
+menuitem[type="radio"] {
+  &::before {
+    border-radius: 100% !important;
+    border: 1px solid var(--gnome-toolbar-icon-fill) !important;
+  }
+  &[checked]::before {
+    content: var(--gnome-icon-bullet-symbolic) !important;
+  }
+}
+/* Checkbox */
 input[type="checkbox"],
 checkbox:not(.treenode-checkbox) > .checkbox-check {
   appearance: none !important;
