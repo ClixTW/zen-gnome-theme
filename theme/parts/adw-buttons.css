@@ -24,6 +24,12 @@
 /* Buttons */
 button {
   --panel-item-button-border-radius: var(--gnome-button-radius) !important;
+  &:hover {
+    --select-background-color: var(--gnome-button-hover-background) !important;
+  }
+  &:active {
+    --select-background-color: var(--gnome-button-active-background) !important;
+  }
 }
 .tab-close-button,
 .tab-reset-button {
@@ -38,7 +44,15 @@ button {
 
 /* Animation */
 toolbarbutton {
-  transition: all 0.15s ease-out !important;
+  transition: background 0.15s ease !important;
+}
+.toolbarbutton-1:not(#tabs-newtab-button),
+.urlbar-page-action,
+.identity-box-button {
+  transition: background 0.15s ease !important;
+  &:not([open="true"]):active:hover {
+    transform: none !important;
+  }
 }
 
 /* Fix button glitches */
@@ -71,6 +85,9 @@ toolbarbutton {
   background-color: var(--gnome-menu-background) !important;
   &:hover {
     background-color: color-mix(in srgb, var(--gnome-menu-background) 95%, #FFF) !important;
+  }
+  &:active:hover {
+    background-color: color-mix(in srgb, var(--gnome-menu-background) 90%, #FFF) !important;
   }
 }
 
