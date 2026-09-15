@@ -8,19 +8,6 @@
   }
 }
 
-/* Status panel */
-#statuspanel {
-  padding: var(--gnome-toolbar-padding) !important;
-  & > #statuspanel-label {
-    border-radius: var(--gnome-menu-radius) !important;
-    border: none !important;
-    padding: 4px 12px !important;
-    font-weight: 500 !important;
-    background: var(--gnome-menu-background) !important;
-    color: var(--gnome-menu-color) !important;
-  }
-}
-
 /* Site data popup */
 #zen-site-data-header toolbarbutton {
   border-radius: var(--gnome-button-radius) !important;
