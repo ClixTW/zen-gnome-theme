@@ -22,6 +22,7 @@ panel {
 menuseparator,
 panel toolbarseparator {
   padding-block: var(--gnome-menu-padding) !important;
+  border: none !important;
 }
 #PlacesToolbarItems,
 #BMB_bookmarksPopup {
