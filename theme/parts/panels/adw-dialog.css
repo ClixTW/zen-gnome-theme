@@ -93,3 +93,6 @@ dialog {
 #sanitizeEverythingWarningBox {
   border: none !important;
 }
+#zen-share-confirm-dont-ask {
+  margin-bottom: var(--gnome-menu-item-padding) !important;
+}
