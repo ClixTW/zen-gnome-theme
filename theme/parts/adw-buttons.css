@@ -122,8 +122,3 @@ toolbarbutton {
   margin-inline-start: 0 !important;
 }
 
-/* Notification popup buttons */
-.popup-notification-panel moz-button {
-  margin-top: var(--gnome-menu-padding) !important;
-  flex: 1 !important;
-}

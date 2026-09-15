@@ -85,6 +85,10 @@ popupnotification {
     font-weight: 800 !important;
   }
 }
+.popup-notification-panel moz-button {
+  margin-top: var(--gnome-menu-padding) !important;
+  flex: 1 !important;
+}
   
 /* Toast notifications */
 #zen-toast-container {
