@@ -21,14 +21,30 @@
 }
 
 /* Essentials tabs */
-.zen-essentials-container .tabbrowser-tab {
-  --tab-background-color-hover: var(--gnome-trough-hover-background) !important;
-  &[visuallyselected] .tab-background {
-    &::before {
-      display: none !important;
+#zen-essentials {
+  --tab-background-color-hover: var(--gnome-selected-hover-color) !important;
+  .tabbrowser-tab {
+    &[visuallyselected] .tab-background {
+      &::before {
+        display: none !important;
+      }
+      &::after {
+        filter: blur(35px) saturate(50%) contrast(0.7) !important;
+      }
     }
-    &::after {
-      filter: blur(35px) saturate(50%) contrast(0.7) !important;
+    &[visuallyselected]:hover .tab-background {
+      &::after {
+        filter: blur(35px) saturate(50%) contrast(0.7) brightness(1.1) !important;
+      }
+    }
+    &[visuallyselected]:active .tab-background {
+      &::after {
+        filter: blur(35px) saturate(50%) contrast(0.7) brightness(1.2) !important;
+      }
+    }
+  }
+}
+
     }
   }
 }
