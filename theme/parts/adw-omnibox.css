@@ -37,7 +37,7 @@
   }
   &[selected] {
     --zen-selected-bg: var(--gnome-active-color) !important;
-    --zen-selected-color: var(--gnome-window-color) !important;
+    --zen-selected-color: var(--gnome-menu-color) !important;
     background-color: var(--gnome-active-color) !important;
     &:where([type="switchtab"],
     [type="dynamic"],
@@ -86,7 +86,7 @@
     }
     &.urlbarView-tabGroup {
       margin-right: 6px !important;
-      color: var(--gnome-window-color) !important;
+      color: var(--gnome-menu-color) !important;
       background-color:  var(--gnome-accent-bg) !important;
     }
   }
