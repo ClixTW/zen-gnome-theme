@@ -33,6 +33,8 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
     fill-opacity: 0.4 !important;
   }
 }
+.urlbarView-type-icon {
+  --toolbarbutton-icon-fill-attention: var(--gnome-toolbar-icon-fill) !important;
 }
 
 /* Adjust icon size */

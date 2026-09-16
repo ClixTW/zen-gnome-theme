@@ -22,10 +22,6 @@
 .urlbarView-row {
   height: 47px !important;
 }
-/* Fix star icons that are hard to see in light mode */
-.urlbarView-type-icon {
-  --toolbarbutton-icon-fill-attention: var(--gnome-toolbar-icon-fill) !important;
-}
 
 /* Toolbar */
 /* Fix alignment for zoom button label */
