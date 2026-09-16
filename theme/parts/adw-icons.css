@@ -35,6 +35,9 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 .urlbarView-type-icon {
   --toolbarbutton-icon-fill-attention: var(--gnome-toolbar-icon-fill) !important;
 }
+.zen-view-splitter-header toolbarbutton {
+  color: var(--gnome-toolbar-icon-fill) !important;
+}
 
 /* Adjust icon size */
 #restore-button,

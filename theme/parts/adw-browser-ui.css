@@ -53,6 +53,11 @@ tooltip {
 }
 
 /* Split View */
+.zen-view-splitter-header {
+  border-radius: 99px !important;
+  margin-top: 6px !important;
+  background-color: var(--gnome-menu-background) !important;
+}
 :root[zen-no-padding="true"] {
   .browserSidebarContainer.deck-selected {
     outline: none !important;
