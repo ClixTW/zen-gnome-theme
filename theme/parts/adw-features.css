@@ -9,6 +9,9 @@
 }
 
 /* Site data popup */
+#unified-extensions-view {
+  --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
+}
 #zen-site-data-header toolbarbutton {
   border-radius: var(--gnome-button-radius) !important;
   overflow: hidden !important;

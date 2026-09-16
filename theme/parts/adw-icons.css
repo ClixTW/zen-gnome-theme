@@ -2,7 +2,8 @@
 
 /* Override vars */
 :root {
-  --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
+  --toolbarbutton-icon-fill: var(--gnome-toolbar-icon-fill) !important;
+  --toolbarbutton-icon-fill-attention: var(--gnome-accent) !important;
 }
 
 /* Icon colors */
@@ -32,10 +33,6 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
     fill-opacity: 0.4 !important;
   }
 }
-#identity-box,
-#trust-icon-container,
-#tracking-protection-icon-container {
-  --zen-sidebar-themed-icon-fill: var(--gnome-accent) !important;
 }
 
 /* Adjust icon size */
