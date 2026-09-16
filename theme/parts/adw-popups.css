@@ -132,7 +132,7 @@ popupnotification {
 #context-viewsource,
 #context-inspect-a11y,
 /* Separators */
-#tabContextMenu > menuseparator:nth-child(22),
+#tabContextMenu:has(#context_zen-add-essential[hidden]):has(#context_zen-remove-essential[hidden]) menuseparator:nth-child(22),
 #tabContextMenu > menuseparator:nth-child(25),
 #context_sendTabToDeviceSeparator,
 #context-sep-sendlinktodevice {
