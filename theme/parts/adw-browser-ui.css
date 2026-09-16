@@ -84,6 +84,33 @@ tooltip {
   padding: var(--gnome-menu-padding) !important;
 }
 
+/* Fullscreen warning */
+.pointerlockfswarning {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: var(--gnome-menu-shadow) !important;
+  border-radius: 99px !important;
+  border: none !important;
+  padding: 6px 12px !important;
+  &[data-identity="verifiedDomain"]::before {
+    background-image: var(--gnome-icon-channel-secure-symbolic) !important;
+    height: 16px !important;
+    width: 16px !important;
+  }
+  &[data-identity="unknownIdentity"]::before {
+    background-image: var(--gnome-icon-channel-insecure-symbolic) !important;
+    height: 16px !important;
+    width: 16px !important;
+  }
+}
+.pointerlockfswarning-domain-text,
+.pointerlockfswarning-generic-text {
+  font-size: 16px !important;
+  margin-inline: 6px 0 !important;
+}
+#fullscreen-exit-button {
+  display: none !important;
+}
+
 /* Menu checkbox/radio */
 /* From firefox-gnome-theme */
 menuitem[type="checkbox"],
