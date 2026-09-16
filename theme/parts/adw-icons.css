@@ -1,5 +1,10 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Override vars */
+:root {
+  --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
+}
+
 /* Icon colors */
 toolbarbutton:not(#zen-media-controls-toolbar toolbarbutton) {
   --toolbarbutton-icon-fill: light-dark(#2f2f2f,
@@ -26,6 +31,11 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
   &::after {
     fill-opacity: 0.4 !important;
   }
+}
+#identity-box,
+#trust-icon-container,
+#tracking-protection-icon-container {
+  --zen-sidebar-themed-icon-fill: var(--gnome-accent) !important;
 }
 
 /* Adjust icon size */

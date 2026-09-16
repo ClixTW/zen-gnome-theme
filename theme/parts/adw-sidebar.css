@@ -3,8 +3,7 @@
 /* Override vars */
 :root {
   --tab-box-shadow-selected: none !important;
-  --zen-active-tab-scale: 1 !important;  
-  --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
+  --zen-active-tab-scale: 1 !important;
 }
 
 /* URL bar and tabs */
@@ -13,11 +12,6 @@
   :root[zen-no-padding='true'] & {
     --zen-compact-mode-no-padding-radius-fix: -4px !important;
   }
-}
-#identity-box,
-#trust-icon-container,
-#tracking-protection-icon-container {
-  --zen-sidebar-themed-icon-fill: var(--gnome-accent) !important;
 }
 
 /* Essentials tabs */
