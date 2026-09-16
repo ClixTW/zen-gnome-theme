@@ -41,6 +41,7 @@
 
 /* Tabs */
 zen-workspace {
+  --toolbox-textcolor: var(--gnome-menu-color) !important;
   --tab-background-color-hover: var(--gnome-hover-color) !important;
   --tab-background-color-selected: var(--gnome-selected-color) !important;
   .tabbrowser-tab {
