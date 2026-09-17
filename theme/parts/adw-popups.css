@@ -67,6 +67,11 @@ menuitem {
   }
 }
 
+/* Main menu */
+#PanelUI-fxa-menu-manage-account-button {
+  border-radius: var(--gnome-menu-radius) !important;
+}
+
 /* Folder tabs popup */
 #zen-folder-tabs-popup {
   .tabs-list-header {
