@@ -30,7 +30,7 @@
 }
 
 /* Main menu */
-/* Hide Firefox promotional banners */
+/* Hide firefox promotional banners */
 moz-promo {
   display: none !important;
 }

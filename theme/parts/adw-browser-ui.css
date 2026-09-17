@@ -82,7 +82,7 @@ tooltip {
   padding: var(--gnome-menu-padding) !important;
 }
 
-/* Fullscreen warning */
+/* Fullscreen and pointerlock warning */
 .pointerlockfswarning {
   background-color: rgba(0, 0, 0, 0.7) !important;
   box-shadow: var(--gnome-menu-shadow) !important;
