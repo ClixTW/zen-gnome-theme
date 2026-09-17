@@ -95,9 +95,16 @@ dialog {
   padding-bottom: 8px !important;
 }
 
-/* Miscellaneous */
-#sanitizeEverythingWarningBox {
-  border: none !important;
+/* Misc */
+#SanitizeDialog {
+  #SanitizeDurationBox {
+    padding-block: var(--gnome-menu-padding) !important;
+  }
+  #sanitizeEverythingWarningBox {
+    background-color: var(--gnome-warning-bg) !important;
+    color: var(--gnome-window-background) !important;
+    border: none !important;
+  }
 }
 #zen-share-confirm-dont-ask {
   margin-bottom: var(--gnome-menu-item-padding) !important;
