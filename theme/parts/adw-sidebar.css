@@ -2,6 +2,7 @@
 
 /* Override vars */
 :root {
+  --urlbar-icon-border-radius: var(--gnome-button-radius) !important;
   --tab-box-shadow-selected: none !important;
   --zen-active-tab-scale: 1 !important;
 }
@@ -10,6 +11,10 @@
 #navigator-toolbox {
   --border-radius-medium: var(--gnome-entry-radius) !important;
   --zen-compact-mode-no-padding-radius-fix: -4px !important;
+}
+#urlbar-zoom-button {
+  border-radius: var(--gnome-button-radius) !important;
+  animation: none !important;
 }
 
 /* Essentials tabs */
