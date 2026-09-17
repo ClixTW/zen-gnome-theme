@@ -66,9 +66,21 @@ menuitem {
 
 /* Folder tabs popup */
 #zen-folder-tabs-popup {
-  --panel-padding: var(--gnome-menu-padding) !important;
   .tabs-list-header {
+    margin-inline: var(--gnome-menu-padding) !important;
     margin-bottom: var(--gnome-menu-padding) !important;
+    .zen-folder-tabs-list-search-icon {
+      margin-left: 6px !important;
+    }
+    #zen-folder-tabs-list-search {
+      margin-right: -10px !important;
+    }
+    ::-moz-search-clear-button {
+      border-radius: var(--gnome-button-radius) !important;
+    }
+  }
+  .folders-tabs-list-item {
+    margin-block: 2px !important;
   }
 }
 
