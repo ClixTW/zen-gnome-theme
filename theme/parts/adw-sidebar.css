@@ -9,9 +9,7 @@
 /* URL bar and tabs */
 #navigator-toolbox {
   --border-radius-medium: var(--gnome-entry-radius) !important;
-  [zen-no-padding="true"] & {
-    --zen-compact-mode-no-padding-radius-fix: -4px !important;
-  }
+  --zen-compact-mode-no-padding-radius-fix: -4px !important;
 }
 
 /* Essentials tabs */

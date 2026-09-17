@@ -58,22 +58,20 @@ tooltip {
   margin-top: 6px !important;
   background-color: var(--gnome-menu-background) !important;
 }
-:root[zen-no-padding="true"] {
-  .browserSidebarContainer.deck-selected {
-    outline: none !important;
-  }
-  #tabbrowser-tabbox[zen-split-view="true"] {
-    --zen-split-row-gap: 2px !important;
-    --zen-split-column-gap: 2px !important;
-  }
-  .zen-split-view-splitter {
-    min-width: 12px !important;
-    min-height: 12px !important;
-    margin-left: -8px !important;
-    margin-top: -4px !important;
-    &::before {
-      display: none !important;
-    }
+.browserSidebarContainer.deck-selected {
+  outline: none !important;
+}
+#tabbrowser-tabbox[zen-split-view="true"] {
+  --zen-split-row-gap: 2px !important;
+  --zen-split-column-gap: 2px !important;
+}
+.zen-split-view-splitter {
+  min-width: 12px !important;
+  min-height: 12px !important;
+  margin-left: -8px !important;
+  margin-top: -4px !important;
+  &::before {
+    display: none !important;
   }
 }
 
