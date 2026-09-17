@@ -30,6 +30,9 @@ panel-list {
 .panel-subview-footer-button {
   padding-block: var(--gnome-menu-padding) !important;
 }
+.row-item {
+  border-radius: var(--gnome-menu-radius) !important;
+}
 
 /* Separator */
 menuseparator,
@@ -101,7 +104,13 @@ popupnotification {
   margin-top: var(--gnome-menu-padding) !important;
   flex: 1 !important;
 }
-  
+
+/* AutoComplete popup */
+#PopupAutoComplete richlistbox {
+  padding-block: 0 !important;
+  padding-inline: var(--gnome-menu-padding) !important;
+}
+
 /* Toast notifications */
 #zen-toast-container {
   --zen-primary-color: var(--gnome-accent-bg) !important;
