@@ -104,6 +104,7 @@ popupnotification {
   
 /* Toast notifications */
 #zen-toast-container {
+  --zen-primary-color: var(--gnome-accent-bg) !important;
   --zen-toast-spacing: max(8px, var(--zen-element-separation)) !important;
   .zen-toast {
     border-radius: var(--gnome-card-radius) !important;
