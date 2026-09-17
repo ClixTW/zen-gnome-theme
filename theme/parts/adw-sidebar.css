@@ -84,6 +84,34 @@ tab-group[split-view-group] {
   }
 }
 
+/* Workspace icon */
+#zen-workspaces-button .zen-workspace-icon[no-icon="true"] {
+  toolbarbutton & {
+    width: 6px !important;
+    height: 6px !important;
+    background-color: white !important;
+    opacity: 0.5 !important;
+    border-radius: 99px !important;
+  }
+  toolbarbutton[active="true"] & {
+    width: 8px !important;
+    height: 8px !important;
+    opacity: 0.9 !important;
+  }
+  transition: width 0.15s ease,
+  height 0.15s ease !important;
+}
+#zen-workspaces-button .zen-workspace-icon {
+  toolbarbutton & {
+    fill: white !important;
+    fill-opacity: 0.5 !important;
+  }
+  toolbarbutton[active="true"] & {
+    fill-opacity: 0.9 !important;
+  }
+  transition: fill-opacity 0.15s ease !important;
+}
+
 /* Sidebars */
 #zen-tabbox-wrapper {
   #sidebar-box {
