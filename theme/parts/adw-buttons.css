@@ -2,15 +2,15 @@
 
 /* Override vars */
 :root {
+  --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
+  --toolbarbutton-background-color-hover: var(--gnome-hover-color) !important;
+  --toolbarbutton-background-color-active: var(--gnome-active-color) !important;
   --button-border-radius: var(--gnome-button-radius) !important;
   --button-background-color: var(--gnome-button-background) !important;
   --button-background-color-hover: var(--gnome-button-hover-background) !important;
   --button-background-color-active: var(--gnome-button-active-background) !important;
   --button-background-color-ghost-hover: var(--gnome-hover-color) !important;
   --button-background-color-ghost-active: var(--gnome-active-color) !important;
-  --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
-  --toolbarbutton-background-color-hover: var(--gnome-hover-color) !important;
-  --toolbarbutton-background-color-active: var(--gnome-active-color) !important;
   --in-content-primary-button-background: var(--gnome-button-suggested-background) !important;
   --in-content-primary-button-background-hover: color-mix(in srgb,
   var(--in-content-primary-button-background) 95%,
