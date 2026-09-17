@@ -44,9 +44,11 @@ moz-promo {
   margin-left: 2px !important;
 }
 /* Remove unnecessary left padding for items without icons */
+#PanelUI-fxa-menu-account-signout-button,
+#PanelUI-fxa-menu-devices-list toolbarbutton[closemenu="none"],
+#PanelUI-fxa-menu-secure-sync-subpanel,
 #appmenu-developer-tools-view,
-#PanelUI-helpItems
- {
+#PanelUI-helpItems {
   .toolbarbutton-text {
     padding-left: 0px !important;
   }
