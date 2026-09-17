@@ -592,7 +592,8 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 #unified-extensions-manage-extensions {
   list-style-image: url("manage.svg", unset) !important;
 }
-#appMenuRecentlyClosedTabs {
+#appMenuRecentlyClosedTabs,
+.restoreallitem.panel-subview-footer-button {
   list-style-image: var(--gnome-icon-history-undo-symbolic) !important;
 }
 #PanelUI-zen-gradient-generator-color-toggle-algo {
