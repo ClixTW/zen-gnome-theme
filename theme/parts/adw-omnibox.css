@@ -16,6 +16,9 @@
     opacity: 0.7 !important;
   }
 }
+#urlbar[breakout-extend]::before {
+  animation: none !important;
+}
 
 /* Center text */
 .urlbar-input,
