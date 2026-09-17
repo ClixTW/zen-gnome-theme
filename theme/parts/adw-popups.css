@@ -76,7 +76,6 @@ menuitem {
 #zen-folder-tabs-popup {
   .tabs-list-header {
     margin-inline: var(--gnome-menu-padding) !important;
-    margin-bottom: var(--gnome-menu-padding) !important;
     .zen-folder-tabs-list-search-icon {
       margin-left: 6px !important;
     }
@@ -87,8 +86,11 @@ menuitem {
       border-radius: var(--gnome-button-radius) !important;
     }
   }
+  .zen-folder-tabs-list-scrollbox {
+    margin-block: var(--gnome-menu-padding) !important;
+  }
   .folders-tabs-list-item {
-    margin-block: 2px !important;
+    margin-inline: 2px !important;
   }
 }
 
