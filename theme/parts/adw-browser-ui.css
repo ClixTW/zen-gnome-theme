@@ -109,6 +109,43 @@ tooltip {
   display: none !important;
 }
 
+/* Picture-in-Picture */
+#controls {
+  .control-button {
+    border-radius: 99px !important;
+    transition: background-color 0.15s ease !important;
+    &:hover {
+      background-color: var(--gnome-trough-background) !important;
+    }
+  }
+  #close,
+  #minimize,
+  #unpip {
+    background-color: transparent !important;
+    fill: var(--player-control-icon-fill) !important;
+    &:hover {
+      background-color: var(--gnome-trough-background) !important;
+    }
+  }
+  #scrubber {
+    &::-moz-range-thumb {
+      background-color: white !important;
+      border-radius: 99px !important;
+      border: none !important;
+      width: 20px !important;
+      height: 20px !important;
+      transition: scale 0.15s ease !important;
+    }
+    &::-moz-range-thumb:hover {
+      scale: 1.2 !important;
+    }
+  }
+}
+body:not(:fullscreen) #controls:hover .control-item:not(:hover),
+#controls[donthide] .control-item {
+  opacity: 1 !important;
+}
+
 /* Menu checkbox/radio */
 /* From firefox-gnome-theme */
 menuitem[type="checkbox"],
