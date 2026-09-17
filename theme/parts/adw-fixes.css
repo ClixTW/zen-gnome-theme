@@ -30,6 +30,10 @@
 }
 
 /* Main menu */
+/* Hide Firefox promotional banners */
+moz-promo {
+  display: none !important;
+}
 /* Add missing spacing for separator before zoom item */
 #appMenu-find-button2 {
   margin-bottom: var(--gnome-menu-padding) !important;
