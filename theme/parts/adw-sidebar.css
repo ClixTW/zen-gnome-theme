@@ -13,7 +13,7 @@
   --zen-compact-mode-no-padding-radius-fix: -4px !important;
 }
 #urlbar-zoom-button {
-  border-radius: var(--gnome-button-radius) !important;
+  border-radius: 99px !important;
   animation: none !important;
 }
 
