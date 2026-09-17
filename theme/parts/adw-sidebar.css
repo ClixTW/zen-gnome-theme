@@ -9,7 +9,7 @@
 /* URL bar and tabs */
 #navigator-toolbox {
   --border-radius-medium: var(--gnome-entry-radius) !important;
-  :root[zen-no-padding='true'] & {
+  [zen-no-padding="true"] & {
     --zen-compact-mode-no-padding-radius-fix: -4px !important;
   }
 }
@@ -61,7 +61,7 @@ zen-workspace {
 /* Tab group */
 tab-group[split-view-group] {
   --zen-split-view-active-tab-bg: transparent !important;
-  & tab.tabbrowser-tab .tab-background {
+  tab.tabbrowser-tab .tab-background {
     tab.tabbrowser-tab:hover & {
       background-color: var(--gnome-hover-color) !important;
     }

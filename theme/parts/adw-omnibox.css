@@ -73,7 +73,7 @@
 .urlbarView-row[has-action]:is([type="switchtab"],
 [type="remotetab"],
 [type="clipboard"]) {
-  & .urlbarView-action {
+  .urlbarView-action {
     background-color: var(--gnome-trough-background) !important;
     border-radius: 99px !important;
     padding-inline: var(--gnome-menu-item-padding) !important;

@@ -36,7 +36,7 @@ findbar {
 /* Status panel */
 #statuspanel {
   padding: var(--gnome-toolbar-padding) !important;
-  & > #statuspanel-label {
+  #statuspanel-label {
     border-radius: var(--gnome-menu-radius) !important;
     border: none !important;
     padding: 4px 12px !important;
