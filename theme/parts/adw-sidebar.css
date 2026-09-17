@@ -5,6 +5,9 @@
   --urlbar-icon-border-radius: var(--gnome-button-radius) !important;
   --tab-box-shadow-selected: none !important;
   --zen-active-tab-scale: 1 !important;
+  --zen-sidebar-notification-bg: var(--gnome-card-background) !important;
+  --zen-sidebar-notification-outline: none !important;
+  --zen-sidebar-notification-shadow: none !important;
 }
 
 /* URL bar and tabs */
