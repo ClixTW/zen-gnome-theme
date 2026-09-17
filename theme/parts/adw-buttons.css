@@ -22,6 +22,9 @@
 }
 
 /* Buttons */
+toolbarbutton {
+  --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
+}
 button {
   --panel-item-button-border-radius: var(--gnome-button-radius) !important;
   &:hover {
