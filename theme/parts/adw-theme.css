@@ -31,7 +31,7 @@
   --input-background-color: var(--gnome-card-background) !important;
 }
 
-/* Window and sidebar background */
+/* Override window and sidebar background colors */
 :root {
   --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
   --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
