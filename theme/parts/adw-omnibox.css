@@ -20,6 +20,11 @@
   animation: none !important;
 }
 
+#urlbar-zoom-button {
+  border-radius: 99px !important;
+  animation: none !important;
+}
+
 /* Center text */
 .urlbar-input,
 .urlbar-input[aria-expanded="false"] {

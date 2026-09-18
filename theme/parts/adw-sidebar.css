@@ -15,10 +15,6 @@
   --border-radius-medium: var(--gnome-entry-radius) !important;
   --zen-compact-mode-no-padding-radius-fix: -4px !important;
 }
-#urlbar-zoom-button {
-  border-radius: 99px !important;
-  animation: none !important;
-}
 
 /* Essentials tabs */
 #zen-essentials {
