@@ -2,7 +2,6 @@
 
 /* URL bar and toolbars */
 .urlbar {
-  --zen-primary-color: var(--gnome-accent-bg) !important;
   --urlbarview-separator-color: var(--gnome-menu-separator-color) !important;
 }
 .urlbar-background {

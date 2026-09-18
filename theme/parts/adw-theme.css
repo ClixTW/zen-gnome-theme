@@ -41,7 +41,6 @@ browser {
   &::after {
     opacity: 1 !important;
     transition: none !important;
-    animation: none !important;
   }
 }
 #zen-sidebar-splitter {
