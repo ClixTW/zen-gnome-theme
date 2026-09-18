@@ -106,7 +106,7 @@
   --mod-button-c2: var(--gnome-button-background) !important;
   --zen-boosts-active-button-background: var(--gnome-accent-bg) !important;
   --zen-boosts-active-button-hover-background: color-mix(in srgb, var(--zen-boosts-active-button-background) 90%, #FFF) !important;
-  --zen-boosts-active-button-color: var(--gnome-accent) !important;
+  --zen-boosts-active-button-color: var(--gnome-window-color) !important;
   --zen-boosts-back-button-hover-background: var(--gnome-hover-color) !important;
   --zen-boosts-magic-theme-background: var(--gnome-menu-background) !important;
   --zen-boosts-magic-theme-active-background: var(--gnome-menu-background) !important;
