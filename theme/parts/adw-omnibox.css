@@ -131,8 +131,15 @@
 }
 .urlbarView-button-result-menu {
   margin-right: var(--gnome-menu-item-padding) !important;
-/*   display: none !important; */
+  background-color: var(--gnome-button-background) !important;
+  color: var(--gnome-window-color) !important;
   transition: background var(--gnome-animation-time) !important;
+  &:hover {
+    background-color:  var(--gnome-button-hover-background) !important;
+  }
+  &:active {
+    background-color:  var(--gnome-button-active-background) !important;
+  }
 }
 .urlbarView-result-menu {
   padding: var(--gnome-menu-padding) !important;
