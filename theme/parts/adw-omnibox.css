@@ -81,6 +81,9 @@
       color: var(--gnome-menu-color) !important;
       background-color: var(--gnome-trough-background) !important;
     }
+    .urlbarView-title-separator::before,
+    .urlbarView-url {
+      color: var(--gnome-accent) !important;
       transition: color var(--gnome-tab-animation-time) !important;
     }
   }
