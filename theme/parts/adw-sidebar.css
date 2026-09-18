@@ -126,14 +126,24 @@ tab-group[split-view-group] {
 }
 
 /* Sidebars */
-#zen-tabbox-wrapper {
-  #sidebar-box {
-    --zen-native-inner-radius: 0px !important;
-  }
-  #sidebar-splitter {
-    width: 8px !important;
-    margin-inline: -4px !important;
+#sidebar-header {
+  --zen-native-inner-radius: 0px !important;
+  background-color: var(--gnome-secondary-sidebar-background) !important;
+  border: none !important;
+  padding-block: var(--gnome-toolbar-padding) !important;
+  #sidebar-close {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 99px !important;
   }
 }
+#sidebar {
+  background-color: var(--gnome-secondary-sidebar-background) !important;
 }
+#sidebar-search-container {
+  padding: var(--gnome-toolbar-padding) !important;
+}
+#sidebar-splitter {
+  width: 8px !important;
+  margin-inline: -4px !important;
 }
