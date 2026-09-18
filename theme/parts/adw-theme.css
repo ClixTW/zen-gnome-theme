@@ -4,7 +4,7 @@
 :host(:is(.anonymous-content-host, notification-message)),
 :root {
   --zen-border-radius: 9px !important;
-  --zen-primary-color: var(--gnome-accent-bg);
+  --zen-primary-color: AccentColor !important;
   --zen-branding-dark: #222226 !important;
   --zen-branding-paper: #fafafb !important;
   --zen-squircle-value: 1 !important;
@@ -32,6 +32,11 @@
 }
 
 /* Window and sidebar background */
+:root {
+  --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
+  --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
+  --zen-folder-stroke: var(--gnome-window-color) !important;
+}
 browser {
   background-color: var(--gnome-window-background) !important;
 }
