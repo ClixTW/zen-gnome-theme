@@ -1,5 +1,10 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Override vars */
+:root {
+  --urlbar-icon-border-radius: var(--gnome-button-radius) !important;
+}
+
 /* URL bar and toolbars */
 .urlbar {
   --urlbarview-separator-color: var(--gnome-menu-separator-color) !important;
