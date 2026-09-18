@@ -47,6 +47,9 @@ browser {
     opacity: 1 !important;
     transition: none !important;
   }
+  :root[privatebrowsingmode] & {
+    --zen-main-browser-background: #252F49 !important;
+  }
 }
 #zen-sidebar-splitter {
   background-color: transparent !important;
