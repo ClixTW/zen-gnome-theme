@@ -56,7 +56,7 @@
     background: var(--gnome-button-background) !important;
     opacity: 1 !important;
     transform: none !important;
-    transition: background 0.15s ease !important;
+    transition: background var(--gnome-animation-time) !important;
   }
   &:hover::before {
     background: var(--gnome-button-hover-background) !important;

@@ -80,8 +80,9 @@ dialog {
     border-radius: 12px !important;
     outline-offset: -2px !important;
     flex: 1 !important;
-    transition: background 0.2s !important;
+    &:hover,
     &:active {
+      transition: background 0.2s !important;
       scale: 1 !important;
     }
   }

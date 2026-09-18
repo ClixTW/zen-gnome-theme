@@ -11,6 +11,9 @@
     border-radius: var(--gnome-dialog-radius) !important;
     box-shadow: var(--gnome-menu-shadow), var(--gnome-menu-shadow) !important;
   }
+  #urlbar:not([breakout-extend]) & {
+    transition: background var(--gnome-animation-time) !important;
+  }
   #urlbar:not([breakout-extend]) &:-moz-window-inactive {
     opacity: 0.7 !important;
   }
@@ -27,6 +30,17 @@
   border-radius: 99px !important;
   animation: none !important;
 }
+#zen-site-data-icon-button,
+#page-action-buttons > *,
+#zen-copy-url-button {
+  transition: opacity var(--gnome-animation-time), background var(--gnome-animation-time) !important;
+}
+.urlbar-page-action,
+.identity-box-button {
+  &:not([open="true"]):active:hover {
+    transform: none !important;
+  }
+}
 
 /* Center text */
 .urlbar-input,
@@ -41,6 +55,7 @@
 .urlbarView-row {
   border-radius: var(--gnome-popover-radius) !important;
   color: var(--gnome-window-color) !important;
+  transition: background var(--gnome-tab-animation-time) !important;
   &:hover {
     &,
     & .urlbarView-favicon {
@@ -61,9 +76,12 @@
       color: var(--gnome-menu-color) !important;
       background-color: var(--gnome-trough-background) !important;
     }
+      transition: color var(--gnome-tab-animation-time) !important;
+    }
   }
   .urlbarView-favicon {
     border-radius: var(--gnome-button-radius) !important;
+    transition: background var(--gnome-tab-animation-time) !important;
   }
 }
 
@@ -106,6 +124,7 @@
 .urlbarView-button-result-menu {
   margin-right: var(--gnome-menu-item-padding) !important;
 /*   display: none !important; */
+  transition: background var(--gnome-animation-time) !important;
 }
 .urlbarView-result-menu {
   padding: var(--gnome-menu-padding) !important;

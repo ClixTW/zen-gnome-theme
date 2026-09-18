@@ -22,11 +22,13 @@
 }
 
 /* Buttons */
-toolbarbutton {
+toolbarbutton:not(.subviewbutton) {
   --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
+  transition: background var(--gnome-animation-time) !important;
 }
 button {
   --panel-item-button-border-radius: var(--gnome-button-radius) !important;
+  transition: background var(--gnome-animation-time) !important;
   &:hover {
     --select-background-color: var(--gnome-button-hover-background) !important;
   }
@@ -40,18 +42,12 @@ button {
     --select-background-color: var(--gnome-button-hover-background) !important;
   }
 }
-
-/* Animation */
-toolbarbutton {
-  transition: background 0.15s ease !important;
+.button-background {
+  transition: background var(--gnome-animation-time) !important;
 }
-.toolbarbutton-1:not(#tabs-newtab-button),
-.urlbar-page-action,
-.identity-box-button {
-  transition: background 0.15s ease !important;
-  &:not([open="true"]):active:hover {
-    transform: none !important;
-  }
+.toolbarbutton-icon,
+.toolbarbutton-badge-stack {
+  transition: background var(--gnome-animation-time) !important;
 }
 
 /* Fix button glitches */

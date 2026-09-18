@@ -14,8 +14,8 @@
 	--gnome-dialog-padding: 24px;
 	
 	/* Animations */
-	--gnome-animation-time: 300ms;
-	--gnome-tab-animation-time: 200ms;
+	--gnome-animation-time: 200ms;
+	--gnome-tab-animation-time: 150ms;
 
 	@media (prefers-reduced-motion) {
 		--gnome-animation-time: 0ms;
