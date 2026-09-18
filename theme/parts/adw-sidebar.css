@@ -10,7 +10,7 @@
   --zen-sidebar-notification-shadow: none !important;
 }
 
-/* URL bar and tabs */
+/* Sidebar */
 #navigator-toolbox {
   --border-radius-medium: var(--gnome-entry-radius) !important;
   --zen-compact-mode-no-padding-radius-fix: -4px !important;
