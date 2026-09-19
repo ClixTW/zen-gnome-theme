@@ -29,6 +29,8 @@
   --color-accent-primary-selected: var(--gnome-menu-background) !important;
   --select-background-color: var(--gnome-button-background) !important;
   --input-background-color: var(--gnome-card-background) !important;
+  /*  */
+  --inactive-window-transition:  var(--gnome-animation-time) !important;
 }
 
 /* Override window and sidebar background colors */
