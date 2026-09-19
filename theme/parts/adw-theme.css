@@ -34,25 +34,27 @@
 }
 
 /* Override window and sidebar background colors */
-:root {
-  --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
-  --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
-  --zen-folder-stroke: var(--gnome-window-color) !important;
-}
-browser {
-  background-color: var(--gnome-window-background) !important;
-}
-.zen-browser-generic-background {
-  --zen-main-browser-background: var(--gnome-sidebar-background) !important;
-  &::before,
-  &::after {
-    opacity: 1 !important;
-    transition: none !important;
+@media not all and (-moz-bool-pref: "zen.gnome.theme.color-override.disabled") {
+  :root {
+    --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
+    --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
+    --zen-folder-stroke: var(--gnome-window-color) !important;
   }
-  :root[privatebrowsingmode] & {
-    --zen-main-browser-background: #252F49 !important;
+  browser {
+    background-color: var(--gnome-window-background) !important;
   }
-}
-#zen-sidebar-splitter {
-  background-color: transparent !important;
+  .zen-browser-generic-background {
+    --zen-main-browser-background: var(--gnome-sidebar-background) !important;
+    &::before,
+    &::after {
+      opacity: 1 !important;
+      transition: none !important;
+    }
+    :root[privatebrowsingmode] & {
+      --zen-main-browser-background: #252F49 !important;
+    }
+  }
+  #zen-sidebar-splitter {
+    background-color: transparent !important;
+  }
 }
