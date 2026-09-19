@@ -7,6 +7,7 @@
   --panel-menuitem-padding-block: 4px !important;
   --panel-menuitem-padding-inline: 12px !important;
   --panel-padding-block: var(--gnome-menu-padding) !important;
+  --panel-box-shadow: var(--gnome-menu-shadow) !important;
   --arrowpanel-background: var(--gnome-menu-background) !important;
 }
 
