@@ -170,6 +170,7 @@ popupnotification {
 /* Separators */
 #tabContextMenu:has(#context_zen-add-essential[hidden]):has(#context_zen-remove-essential[hidden]) #context_zen-remove-essential + menuseparator,
 #tabContextMenu #context_zen-edit-tab-icon + menuseparator,
+#contentAreaContextMenu:has(#context-copylink[hidden]) #context-sep-copylink,
 #context_sendTabToDeviceSeparator,
 #context-sep-sendlinktodevice {
   display: none !important;
