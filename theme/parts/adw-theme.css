@@ -35,11 +35,6 @@
 
 /* Override window and sidebar background colors */
 @media not all and (-moz-bool-pref: "zen.gnome.theme.color-override.disabled") {
-  :root {
-    --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
-    --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
-    --zen-folder-stroke: var(--gnome-window-color) !important;
-  }
   browser {
     background-color: var(--gnome-window-background) !important;
   }
@@ -56,5 +51,11 @@
   }
   #zen-sidebar-splitter {
     background-color: transparent !important;
+  }
+  .tab-group-folder-icon svg {
+    --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
+    --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
+    --zen-folder-stroke: var(--gnome-window-color) !important;
+    filter: none !important;
   }
 }
