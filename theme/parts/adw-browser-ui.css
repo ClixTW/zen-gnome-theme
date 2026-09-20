@@ -113,7 +113,6 @@ tooltip {
 #controls {
   .control-button {
     border-radius: 99px !important;
-    transition: background-color 0.15s ease !important;
     &:hover {
       background-color: var(--gnome-trough-background) !important;
     }
@@ -134,7 +133,6 @@ tooltip {
       border: none !important;
       width: 20px !important;
       height: 20px !important;
-      transition: scale 0.15s ease !important;
     }
     &::-moz-range-thumb:hover {
       scale: 1.2 !important;

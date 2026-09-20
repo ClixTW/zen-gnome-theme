@@ -21,7 +21,6 @@ panel {
 }
 menulist {
   padding: var(--gnome-menu-padding) !important;
-  transition: background var(--gnome-animation-time) !important;
   menupopup {
     --panel-padding: var(--gnome-menu-padding) !important;
   }

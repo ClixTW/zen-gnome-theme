@@ -16,9 +16,6 @@
     border-radius: var(--gnome-dialog-radius) !important;
     box-shadow: var(--gnome-menu-shadow), var(--gnome-menu-shadow) !important;
   }
-  #urlbar:not([breakout-extend]) & {
-    transition: background var(--gnome-animation-time) !important;
-  }
   #urlbar:not([breakout-extend]) &:-moz-window-inactive {
     opacity: 0.7 !important;
   }
@@ -34,11 +31,6 @@
 #urlbar-zoom-button {
   border-radius: 99px !important;
   animation: none !important;
-}
-#zen-site-data-icon-button,
-#page-action-buttons > *,
-#zen-copy-url-button {
-  transition: opacity var(--gnome-animation-time), background var(--gnome-animation-time) !important;
 }
 .urlbar-page-action,
 .identity-box-button {
@@ -60,7 +52,6 @@
 .urlbarView-row {
   border-radius: var(--gnome-popover-radius) !important;
   color: var(--gnome-window-color) !important;
-  transition: background var(--gnome-tab-animation-time) !important;
   &:hover {
     &,
     & .urlbarView-favicon {
@@ -84,12 +75,10 @@
     .urlbarView-title-separator::before,
     .urlbarView-url {
       color: var(--gnome-accent) !important;
-      transition: color var(--gnome-tab-animation-time) !important;
     }
   }
   .urlbarView-favicon {
     border-radius: var(--gnome-button-radius) !important;
-    transition: background var(--gnome-tab-animation-time) !important;
   }
 }
 
@@ -133,7 +122,6 @@
   margin-right: var(--gnome-menu-item-padding) !important;
   background-color: var(--gnome-button-background) !important;
   color: var(--gnome-window-color) !important;
-  transition: background var(--gnome-animation-time) !important;
   &:hover {
     background-color:  var(--gnome-button-hover-background) !important;
   }

@@ -82,7 +82,6 @@ dialog {
     flex: 1 !important;
     &:hover,
     &:active {
-      transition: background 0.2s !important;
       scale: 1 !important;
     }
   }

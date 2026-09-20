@@ -12,7 +12,6 @@ toolbarbutton:not(#zen-media-controls-toolbar toolbarbutton) {
 }
 toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inactive {
   opacity: 0.5 !important;
-  transition: opacity var(--gnome-animation-time) !important;
 }
 
 /* Fix icon colors */

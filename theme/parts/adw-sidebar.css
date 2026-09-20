@@ -19,16 +19,12 @@
 #zen-essentials {
   --tab-background-color-hover: var(--gnome-selected-hover-color) !important;
   .tabbrowser-tab {
-    .tab-background {
-      transition: background var(--gnome-tab-animation-time) !important;
-    }
     &[visuallyselected] .tab-background {
       &::before {
         display: none !important;
       }
       &::after {
         filter: blur(35px) saturate(50%) contrast(0.7) !important;
-        transition: filter var(--gnome-tab-animation-time) !important;
       }
     }
     &[visuallyselected]:hover .tab-background {
@@ -56,21 +52,14 @@ zen-workspace {
     &:active {
       --tab-background-color-selected: var(--gnome-selected-active-color) !important;
     }
-    .tab-background {
-      transition: background var(--gnome-tab-animation-time) !important;
-    }
   }
 }
 .tab-close-button,
 .tab-reset-button {
   border-radius: 99px !important;
-  transition: background var(--gnome-animation-time) !important;
 }
 
 /* Tab group */
-.tab-group-label-container::before {
-  transition: background var(--gnome-tab-animation-time) !important;
-}
 tab-group[split-view-group] {
   --zen-split-view-active-tab-bg: transparent !important;
   tab.tabbrowser-tab .tab-background {
@@ -88,7 +77,6 @@ tab-group[split-view-group] {
     }
   }
   & .tab-group-container {
-    transition: background var(--gnome-tab-animation-time) !important;
     &:hover {
       background-color: var(--gnome-hover-color) !important;
     }
@@ -107,7 +95,6 @@ tab-group[split-view-group] {
     border-radius: 99px !important;
     background-color: white !important;
     opacity: 0.5 !important;
-    transition: scale 150ms !important;
   }
   toolbarbutton[active="true"] & {
     opacity: 0.9 !important;
@@ -118,7 +105,6 @@ tab-group[split-view-group] {
   toolbarbutton & {
     fill: white !important;
     fill-opacity: 0.5 !important;
-    transition: fill-opacity 150ms !important;
   }
   toolbarbutton[active="true"] & {
     fill-opacity: 0.9 !important;

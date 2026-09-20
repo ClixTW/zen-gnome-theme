@@ -56,7 +56,6 @@
     background: var(--gnome-button-background) !important;
     opacity: 1 !important;
     transform: none !important;
-    transition: background var(--gnome-animation-time) !important;
   }
   &:hover::before {
     background: var(--gnome-button-hover-background) !important;
@@ -89,7 +88,7 @@
     background: none !important;
   }
 }
-.zen-media-close-button image{
+.zen-media-close-button image {
   border-radius: 99px !important;
 }
 

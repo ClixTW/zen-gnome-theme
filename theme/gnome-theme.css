@@ -6,6 +6,7 @@
 @import "colors/black.css" screen and -moz-pref("gnomeTheme.oledBlack"); 
 
 /* Core */
+@import "parts/adw-animations.css";
 @import "parts/adw-browser-ui.css";
 @import "parts/adw-buttons.css";
 @import "parts/adw-dialogs.css";

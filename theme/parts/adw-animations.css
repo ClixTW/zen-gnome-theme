@@ -1,0 +1,68 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Override vars */
+:root {
+  --inactive-window-transition: var(--gnome-animation-time) !important;
+}
+  
+/* Background */
+/* gnome-animation-time */
+toolbarbutton:not(.subviewbutton),
+toolbarbutton::before,
+.toolbarbutton-icon,
+.toolbarbutton-badge-stack,
+menulist,
+.button-background,
+#appMenu-popup .toolbaritem-combined-buttons toolbarbutton,
+#context-navigation menuitem,
+#urlbar:not([breakout-extend]) .urlbar-background,
+.urlbarView-button,
+.dialog-button-box button:hover,
+.dialog-button-box button:active,
+.close-icon,
+.reset-icon,
+.control-button {
+  transition: background var(--gnome-animation-time) !important;
+}
+/* gnome-tab-animation-time */
+.urlbarView-row,
+.urlbarView-favicon,
+.urlbarView-title-separator::before,
+.urlbarView-url,
+.tabbrowser-tab .tab-background,
+.tab-group-label-container::before,
+.tab-group-container {
+  transition: background var(--gnome-tab-animation-time) !important;
+}
+
+/* Filter */
+/* gnome-tab-animation-time */
+#zen-essentials .tabbrowser-tab[visuallyselected] .tab-background::after {
+  transition: filter var(--gnome-tab-animation-time) !important;
+}
+
+/* Opacity */
+/* gnome-animation-time */
+toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inactive {
+  transition: opacity var(--gnome-animation-time) !important;
+}
+
+/* Fill opacity */
+/* gnome-animation-time */
+#zen-workspaces-button toolbarbutton .zen-workspace-icon {
+  transition: fill-opacity var(--gnome-animation-time) !important;
+}
+
+/* Scale */
+/* gnome-animation-time */
+#zen-workspaces-button toolbarbutton .zen-workspace-icon[no-icon="true"],
+#controls #scrubber::-moz-range-thumb {
+  transition: scale var(--gnome-animation-time) !important;
+}
+
+/* Multiple */
+#zen-copy-url-button,
+#zen-site-data-icon-button,
+#page-action-buttons .urlbar-page-action {
+  transition: opacity var(--gnome-animation-time), background var(--gnome-animation-time) !important;
+}
