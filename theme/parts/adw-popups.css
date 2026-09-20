@@ -61,10 +61,18 @@ menuitem[badge]::after {
   background-color: var(--gnome-trough-background) !important;
   font-size: 0.85em !important;
 }
-menu,
-menuitem {
-  &:where([_moz-menuactive]:not([disabled])) {
-    background: var(--gnome-selected-color) !important;
+:where([_moz-menuactive]:not([disabled])) {
+  menu& {
+    background: var(--gnome-hover-color) !important;
+  }
+  menuitem& {
+    background: transparent !important;
+    &:hover {
+      background: var(--gnome-hover-color) !important;
+    }
+    &:active {
+      background: var(--gnome-active-color) !important;
+    }
   }
 }
 
