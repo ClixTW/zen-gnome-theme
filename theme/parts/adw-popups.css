@@ -168,8 +168,8 @@ popupnotification {
 #context-viewsource,
 #context-inspect-a11y,
 /* Separators */
-#tabContextMenu:has(#context_zen-add-essential[hidden]):has(#context_zen-remove-essential[hidden]) menuseparator:nth-child(22),
-#tabContextMenu > menuseparator:nth-child(25),
+#tabContextMenu:has(#context_zen-add-essential[hidden]):has(#context_zen-remove-essential[hidden]) #context_zen-remove-essential + menuseparator,
+#tabContextMenu #context_zen-edit-tab-icon + menuseparator,
 #context_sendTabToDeviceSeparator,
 #context-sep-sendlinktodevice {
   display: none !important;
