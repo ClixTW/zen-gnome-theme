@@ -46,6 +46,7 @@ moz-promo {
 /* Remove unnecessary left padding for items without icons */
 #PanelUI-fxa-menu-account-signout-button,
 #PanelUI-fxa-menu-devices-list toolbarbutton[closemenu="none"],
+#PanelUI-fxa-menu-devices-list toolbarbutton[data-l10n-id="fxa-menu-device-send-current-page"],
 #PanelUI-fxa-menu-secure-sync-subpanel,
 #appmenu-developer-tools-view,
 #PanelUI-helpItems {
