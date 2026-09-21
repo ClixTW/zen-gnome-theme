@@ -100,7 +100,7 @@ zen-library {
   color: var(--gnome-menu-color) !important;
 }
 .zen-library-download-list-download {
-  border-radius: var(--gnome-menu-radius) !important;
+  border-radius: var(--gnome-card-radius) !important;
 }
 #zen-library-side {
   background: var(--gnome-secondary-sidebar-background) !important;

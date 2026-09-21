@@ -98,6 +98,9 @@ menuitem[badge]::after {
   .folders-tabs-list-item {
     margin-inline: 2px !important;
   }
+  .folders-tabs-list-item-content {
+    border-radius: var(--gnome-card-radius) !important;
+  }
 }
 
 /* Notification popup */
