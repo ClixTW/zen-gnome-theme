@@ -3,9 +3,21 @@
 /* Emojis picker */
 #PanelUI-zen-emojis-picker {
   zoom: 1.2 !important;
-  .zen-emojis-picker-svg {
+  toolbarbutton {
     border-radius: 6px !important;
+    &:hover {
+      background-color: var(--gnome-hover-color) !important;
+    }
+    &:active {
+      background-color: var(--gnome-active-color) !important;
+    }
   }
+}
+#PanelUI-zen-emojis-picker-none {
+  scale: 0.9 !important;
+}
+#PanelUI-zen-emojis-picker-search {
+  zoom: 0.9 !important;
 }
 
 /* Site data popup */
