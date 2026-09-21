@@ -91,9 +91,6 @@ menuitem[badge]::after {
     #zen-folder-tabs-list-search {
       margin-right: -10px !important;
     }
-    ::-moz-search-clear-button {
-      border-radius: var(--gnome-button-radius) !important;
-    }
   }
   .zen-folder-tabs-list-scrollbox {
     margin-block: var(--gnome-menu-padding) !important;
