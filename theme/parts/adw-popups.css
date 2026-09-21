@@ -144,43 +144,45 @@ popupnotification {
 }
 
 /* Context menu cleanup */
-/* Tab and UI items */
-#context_openANewTab,
-#context_reloadTab,
-#context_reloadSelectedTabs,
-#context_toggleMuteTab,
-#context_toggleMuteSelectedTabs,
-#context_zen-edit-tab-title,
-#context_zen-edit-tab-icon,
-#context_bookmarkTab,
-#context_bookmarkSelectedTabs,
-.share-tab-url-item,
-#context_selectAllTabs,
-#context_sendTabToDevice,
-#context_closeDuplicateTabs,
-#context_zenReorderWorkspaces,
-/* Page and link items */
-#context-openlink,
-#context-openlinkprivate,
-#context-zenSplitLink,
-#context-bookmarklink,
-#context-savelink,
-#context-stripOnShareLink,
-#context-sendlinktodevice,
-#context-sendimage,
-#context-media-showcontrols,
-#context-sendvideo,
-#context-print-selection,
-#context-copy-clean-link-to-highlight,
-#context-viewpartialsource-selection,
-#context-viewsource,
-#context-inspect-a11y,
-/* Separators */
-#tabContextMenu:has(#context_zen-add-essential[hidden]):has(#context_zen-remove-essential[hidden]) #context_zen-remove-essential + menuseparator,
-#tabContextMenu #context_zen-edit-tab-icon + menuseparator,
-#contentAreaContextMenu:has(#context-copylink[hidden]) #context-sep-copylink,
-#context_sendTabToDeviceSeparator,
-#context-sep-sendlinktodevice {
-  display: none !important;
-  color: red !important;
+@media not all and (-moz-bool-pref: "zen.gnome.theme.context-menu-cleanup.disabled") {
+  /* Tab and UI items */
+  #context_openANewTab,
+  #context_reloadTab,
+  #context_reloadSelectedTabs,
+  #context_toggleMuteTab,
+  #context_toggleMuteSelectedTabs,
+  #context_zen-edit-tab-title,
+  #context_zen-edit-tab-icon,
+  #context_bookmarkTab,
+  #context_bookmarkSelectedTabs,
+  .share-tab-url-item,
+  #context_selectAllTabs,
+  #context_sendTabToDevice,
+  #context_closeDuplicateTabs,
+  #context_zenReorderWorkspaces,
+  /* Page and link items */
+  #context-openlink,
+  #context-openlinkprivate,
+  #context-zenSplitLink,
+  #context-bookmarklink,
+  #context-savelink,
+  #context-stripOnShareLink,
+  #context-sendlinktodevice,
+  #context-sendimage,
+  #context-media-showcontrols,
+  #context-sendvideo,
+  #context-print-selection,
+  #context-copy-clean-link-to-highlight,
+  #context-viewpartialsource-selection,
+  #context-viewsource,
+  #context-inspect-a11y,
+  /* Separators */
+  #tabContextMenu:has(#context_zen-add-essential[hidden]):has(#context_zen-remove-essential[hidden]) #context_zen-remove-essential + menuseparator,
+  #tabContextMenu #context_zen-edit-tab-icon + menuseparator,
+  #contentAreaContextMenu:has(#context-copylink[hidden]) #context-sep-copylink,
+  #context_sendTabToDeviceSeparator,
+  #context-sep-sendlinktodevice {
+    display: none !important;
+    color: red !important;
+  }
 }
