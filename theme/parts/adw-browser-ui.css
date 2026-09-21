@@ -17,6 +17,9 @@ input::-moz-search-clear-button {
   margin-right: 0 !important;
   opacity: 0.5 !important;
 }
+input::-moz-search-clear-button:hover {
+  opacity: 1 !important;
+}
 
 /* Find bar  */
 findbar {
