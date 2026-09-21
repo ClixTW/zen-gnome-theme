@@ -221,8 +221,19 @@ zen-library {
   button {
     border-radius: var(--gnome-button-radius) !important;
   }
-  #zen-boost-font-wrapper {
-    border-radius: var(--gnome-button-radius) !important;
+}
+#zen-boost-font-wrapper {
+  border-radius: var(--gnome-button-radius) !important;
+}
+#zen-boost-filter-wrapper .mod-button:not(.zen-boost-button-active-transparent) {
+  &:hover {
+    opacity: 1 !important;
+    background-color: var(--gnome-button-hover-background) !important;
+  }
+  &:active {
+    opacity: 1 !important;
+    filter: none !important;
+    background-color: var(--gnome-button-active-background) !important;
   }
 }
 

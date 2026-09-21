@@ -24,7 +24,8 @@ button:not(.dialog-button-box button),
 .reset-icon,
 .control-button,
 .zen-library-tab::before,
-.zen-library-space-header::before {
+.zen-library-space-header::before,
+.mod-button {
   transition: background var(--gnome-animation-time) !important;
 }
 /* gnome-tab-animation-time */
