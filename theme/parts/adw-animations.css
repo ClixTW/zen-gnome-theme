@@ -22,7 +22,9 @@ button:not(.dialog-button-box button),
 .dialog-button-box button:active,
 .close-icon,
 .reset-icon,
-.control-button {
+.control-button,
+.zen-library-tab::before,
+.zen-library-space-header::before {
   transition: background var(--gnome-animation-time) !important;
 }
 /* gnome-tab-animation-time */

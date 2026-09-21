@@ -92,6 +92,96 @@
   margin-top: 3px !important;
 }
 
+/* Library */
+zen-library {
+  --zen-library-pill-bg: var(--gnome-button-background) !important;
+  --zen-library-pill-hover-bg: var(--gnome-button-hover-background) !important;
+  --zen-library-radius: var(--gnome-button-radius) !important;
+  color: var(--gnome-menu-color) !important;
+}
+.zen-library-download-list-download {
+  border-radius: var(--gnome-menu-radius) !important;
+}
+#zen-library-side {
+  background: var(--gnome-secondary-sidebar-background) !important;
+  box-shadow: none !important;
+}
+.zen-library-tab {
+  &::before {
+    border-radius: var(--gnome-dialog-radius) !important;
+  }
+  &:hover::before {
+    background: var(--gnome-hover-color) !important;
+  }
+  &:active::before {
+    background: var(--gnome-active-color) !important;
+  }
+  &:hover:active::before {
+    background: var(--gnome-active-color) !important;
+    transform: none !important;
+  }
+  &[active]::before {
+    background: var(--gnome-selected-color) !important;
+  }
+}
+.zen-library-filter-chip {
+  font-weight: bold !important;
+  &[active] {
+    background: var(--gnome-button-checked-background) !important;
+    color: var(--gnome-accent) !important;
+  }
+}
+.zen-library-row {
+  border-radius: var(--gnome-card-radius) !important;
+}
+.zen-library-boost-icon::before {
+  border: 3px solid var(--gnome-accent-bg) !important;
+  background: var(--gnome-button-checked-background) !important;
+}
+.zen-library-boost-row[disabled] {
+  .zen-library-boost-icon {
+    &::before, & img {
+      mask-image: none !important;
+    }
+    &::before {
+      border: 3px solid var(--gnome-button-background) !important;
+      background: var(--gnome-button-background) !important;
+    }
+    &::after {
+      display: none !important;
+    }
+  }
+}
+.zen-library-space,
+.zen-library-space::before {
+  border-radius: var(--gnome-popover-radius) !important;
+}
+.zen-library-space-body {
+  --border-radius-medium: var(--gnome-entry-radius) !important;
+  .tab-group-folder-icon svg {
+    --zen-folder-behind-bgcolor: unset !important;
+    --zen-folder-front-bgcolor: unset !important;
+    --zen-folder-stroke: unset !important;
+    filter: contrast(125%) !important;
+  }
+}
+.zen-library-space-icon {
+  &:hover {
+    background: var(--gnome-button-hover-background) !important;
+  }
+  &:active {
+    background: var(--gnome-button-active-background) !important;
+  }
+}
+#zen-library-panel .toolbarbutton-1 {
+  &:not([disabled]):hover > .toolbarbutton-icon {
+    background-color: var(--gnome-button-hover-background) !important;
+  }
+  &:not([disabled]):active > .toolbarbutton-icon {
+    background-color: var(--gnome-button-active-background) !important;
+  }
+}
+
 /* Media card */
 .zen-media-info-vbox {
   overflow: hidden !important;
