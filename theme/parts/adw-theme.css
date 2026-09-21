@@ -38,6 +38,7 @@
   }
   .zen-browser-generic-background {
     --zen-main-browser-background: var(--gnome-sidebar-background) !important;
+    --zen-main-browser-background-toolbar: var(--gnome-sidebar-background) !important;
     &::before,
     &::after {
       opacity: 1 !important;
