@@ -194,6 +194,11 @@ zen-library {
   border-radius: 99px !important;
 }
 
+/* Update info card */
+.zen-sidebar-notification-close-button {
+  border-radius: 99px !important;
+}
+
 /* Boost */
 #zenBoostWindow {
   --zen-boosts-primary-background: var(--gnome-menu-background) !important;
