@@ -10,6 +10,13 @@ input:where([type="email"],
 textarea {
   border: none !important;
 }
+input::-moz-search-clear-button {
+  background-image: var(--gnome-icon-edit-clear-symbolic) !important;
+  background-color: transparent !important;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  opacity: 0.5 !important;
+}
 
 /* Find bar  */
 findbar {
