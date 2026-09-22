@@ -113,7 +113,7 @@ tab-group[split-view-group] {
 
 /* Sidebars */
 #sidebar-header {
-  --zen-native-inner-radius: 0px !important;
+  --zen-native-inner-radius: 0 !important;
   background-color: var(--gnome-secondary-sidebar-background) !important;
   border: none !important;
   padding-block: var(--gnome-toolbar-padding) !important;

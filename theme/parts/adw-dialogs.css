@@ -16,7 +16,7 @@ dialog {
 /* Dialog boxes */
 .dialogBox {
   border-radius: var(--gnome-dialog-radius) !important;
-  border:  none !important;
+  border: none !important;
   outline: 0.5px solid var(--gnome-border-color) !important;
   box-shadow: var(--gnome-menu-shadow) !important;
   outline-offset: -1px !important;

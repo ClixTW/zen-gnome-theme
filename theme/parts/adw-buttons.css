@@ -46,7 +46,7 @@ button {
 
 /* Fix button glitches */
 #tabs-newtab-button {
-  --toolbarbutton-border-radius: 0px !important;
+  --toolbarbutton-border-radius: 0 !important;
 }
 .zen-current-workspace-indicator.zen-drop-target toolbarbutton {
   --border-radius-medium: 12px !important;
@@ -62,7 +62,7 @@ button {
   width: 60px !important;
 }
 #appMenu-fullscreen-button2 {
-  --border-radius-xsmall: 0px !important;
+  --border-radius-xsmall: 0 !important;
 }
 .downloadButton {
   min-width: var(--gnome-button-size) !important;

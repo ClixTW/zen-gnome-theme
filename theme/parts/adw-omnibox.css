@@ -105,7 +105,7 @@
   }
   &:is([type="switchtab"],
   [type="remotetab"]) .urlbarView-action {
-    margin-right: 0px !important;
+    margin-right: 0 !important;
     scale: 1 !important;
     opacity: 1 !important;
     &::after {
@@ -114,7 +114,7 @@
     &.urlbarView-tabGroup {
       margin-right: 6px !important;
       color: var(--gnome-menu-color) !important;
-      background-color:  var(--gnome-accent-bg) !important;
+      background-color: var(--gnome-accent-bg) !important;
     }
   }
 }
@@ -123,10 +123,10 @@
   background-color: var(--gnome-button-background) !important;
   color: var(--gnome-window-color) !important;
   &:hover {
-    background-color:  var(--gnome-button-hover-background) !important;
+    background-color: var(--gnome-button-hover-background) !important;
   }
   &:active {
-    background-color:  var(--gnome-button-active-background) !important;
+    background-color: var(--gnome-button-active-background) !important;
   }
 }
 .urlbarView-result-menu {

@@ -51,7 +51,7 @@ moz-promo {
 #appmenu-developer-tools-view,
 #PanelUI-helpItems {
   .toolbarbutton-text {
-    padding-left: 0px !important;
+    padding-left: 0 !important;
   }
 }
 
@@ -65,13 +65,13 @@ moz-promo {
 /* Add missing item background padding */
 #zen-folder-tabs-popup .folders-tabs-list-item-content {
   padding-block: 4px !important;
-  margin-block: 0px !important;
+  margin-block: 0 !important;
 }
 
 /* Notification popup */
 /* Remove excessive left margin from the site list section */
 popupnotification .webext-perm-domains-list {
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 
 /* Panel */
