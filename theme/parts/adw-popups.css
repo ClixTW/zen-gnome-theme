@@ -42,6 +42,7 @@ panel toolbarseparator {
   border: none !important;
 }
 #PlacesToolbarItems,
+#PlacesChevronPopup,
 #BMB_bookmarksPopup {
   menuseparator {
     margin-inline: var(--gnome-menu-padding) !important;
