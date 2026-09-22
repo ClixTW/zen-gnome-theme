@@ -51,7 +51,7 @@
 /* URL bar results */
 .urlbarView-row {
   border-radius: var(--gnome-popover-radius) !important;
-  color: var(--gnome-window-color) !important;
+  color: var(--gnome-menu-color) !important;
   &:hover {
     &,
     & .urlbarView-favicon {
@@ -62,6 +62,13 @@
     --zen-selected-bg: var(--gnome-active-color) !important;
     --zen-selected-color: var(--gnome-menu-color) !important;
     background-color: var(--gnome-active-color) !important;
+    & * {
+      color: var(--gnome-menu-color) !important;
+    }
+    .urlbarView-title-separator::before,
+    .urlbarView-url {
+      color: var(--gnome-accent) !important;
+    }
     &:where([type="switchtab"],
     [type="dynamic"],
     [type^="history"],
@@ -71,10 +78,6 @@
     .urlbarView-shortcutContent {
       color: var(--gnome-menu-color) !important;
       background-color: var(--gnome-trough-background) !important;
-    }
-    .urlbarView-title-separator::before,
-    .urlbarView-url {
-      color: var(--gnome-accent) !important;
     }
   }
   .urlbarView-favicon {
