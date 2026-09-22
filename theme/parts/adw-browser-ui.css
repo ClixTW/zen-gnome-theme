@@ -1,5 +1,10 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Scrollbar */
+:root {
+  scrollbar-color: var(--gnome-trough-background) var(--gnome-hover-color) !important;
+}
+
 /* Input box */
 input:where([type="email"],
 [type="tel"],
