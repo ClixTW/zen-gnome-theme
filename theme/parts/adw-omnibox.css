@@ -40,7 +40,6 @@
 }
 
 /* Center text */
-.urlbar-input,
 .urlbar-input[aria-expanded="false"] {
   text-align: center !important;
 }

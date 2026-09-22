@@ -21,7 +21,7 @@ dialog {
   box-shadow: var(--gnome-menu-shadow) !important;
   outline-offset: -1px !important;
   :not(.content-prompt-dialog) > .dialogOverlay > &:not(.spotlightBox) {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
   }
 }
 
