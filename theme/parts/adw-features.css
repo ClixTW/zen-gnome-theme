@@ -28,7 +28,7 @@
   border-radius: var(--gnome-button-radius) !important;
   overflow: hidden !important;
   &.active:hover::before {
-    background: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #fff) !important;
+    background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #fff) !important;
   }
 }
 #zen-site-data-addons {
@@ -65,21 +65,21 @@
 .permission-popup-permission-icon,
 .permission-popup-boost-icon {
   &::before {
-    background: var(--gnome-button-background) !important;
+    background-color: var(--gnome-button-background) !important;
     opacity: 1 !important;
     transform: none !important;
   }
   &:hover::before {
-    background: var(--gnome-button-hover-background) !important;
+    background-color: var(--gnome-button-hover-background) !important;
   }
   :is(.permission-popup-permission-item[state="allow"],
   .permission-popup-boost-item[state="enabled"]) & {
     &::before {
-      background: var(--zen-sidebar-themed-icon-fill) !important;
+      background-color: var(--zen-sidebar-themed-icon-fill) !important;
       opacity: 1;
     }
     &:hover::before {
-      background: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #FFF) !important;
+      background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #FFF) !important;
     }
   }
 }
@@ -103,7 +103,7 @@ zen-library {
   border-radius: var(--gnome-card-radius) !important;
 }
 #zen-library-side {
-  background: var(--gnome-secondary-sidebar-background) !important;
+  background-color: var(--gnome-secondary-sidebar-background) !important;
   box-shadow: none !important;
 }
 .zen-library-tab {
@@ -111,23 +111,23 @@ zen-library {
     border-radius: var(--gnome-dialog-radius) !important;
   }
   &:hover::before {
-    background: var(--gnome-hover-color) !important;
+    background-color: var(--gnome-hover-color) !important;
   }
   &:active::before {
-    background: var(--gnome-active-color) !important;
+    background-color: var(--gnome-active-color) !important;
   }
   &:hover:active::before {
-    background: var(--gnome-active-color) !important;
+    background-color: var(--gnome-active-color) !important;
     transform: none !important;
   }
   &[active]::before {
-    background: var(--gnome-selected-color) !important;
+    background-color: var(--gnome-selected-color) !important;
   }
 }
 .zen-library-filter-chip {
   font-weight: bold !important;
   &[active] {
-    background: var(--gnome-button-checked-background) !important;
+    background-color: var(--gnome-button-checked-background) !important;
     color: var(--gnome-accent) !important;
   }
 }
@@ -136,7 +136,7 @@ zen-library {
 }
 .zen-library-boost-icon::before {
   border: 3px solid var(--gnome-accent-bg) !important;
-  background: var(--gnome-button-checked-background) !important;
+  background-color: var(--gnome-button-checked-background) !important;
 }
 .zen-library-boost-row[disabled] {
   .zen-library-boost-icon {
@@ -145,7 +145,7 @@ zen-library {
     }
     &::before {
       border: 3px solid var(--gnome-button-background) !important;
-      background: var(--gnome-button-background) !important;
+      background-color: var(--gnome-button-background) !important;
     }
     &::after {
       display: none !important;
@@ -167,10 +167,10 @@ zen-library {
 }
 .zen-library-space-icon {
   &:hover {
-    background: var(--gnome-button-hover-background) !important;
+    background-color: var(--gnome-button-hover-background) !important;
   }
   &:active {
-    background: var(--gnome-button-active-background) !important;
+    background-color: var(--gnome-button-active-background) !important;
   }
 }
 #zen-library-panel .toolbarbutton-1 {

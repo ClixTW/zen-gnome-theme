@@ -64,17 +64,17 @@ menuitem[badge]::after {
 }
 :where([_moz-menuactive]:not([disabled])) {
   menu& {
-    background: var(--gnome-hover-color) !important;
     color: var(--gnome-menu-color) !important;
+    background-color: var(--gnome-hover-color) !important;
   }
   menuitem& {
-    background: transparent !important;
     color: var(--gnome-menu-color) !important;
+    background-color: transparent !important;
     &:hover {
-      background: var(--gnome-hover-color) !important;
+      background-color: var(--gnome-hover-color) !important;
     }
     &:active {
-      background: var(--gnome-active-color) !important;
+      background-color: var(--gnome-active-color) !important;
     }
   }
 }
@@ -140,7 +140,7 @@ popupnotification {
     position: relative !important;
     padding-inline: var(--gnome-menu-item-padding) !important;
     border-radius: 99px !important;
-    background: var(--gnome-menu-background) !important;
+    background-color: var(--gnome-menu-background) !important;
     color: var(--gnome-menu-color) !important;
     box-shadow: var(--gnome-menu-shadow) !important;
   }

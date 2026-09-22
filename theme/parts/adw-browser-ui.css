@@ -51,7 +51,7 @@ findbar {
     border: none !important;
     padding: 4px 12px !important;
     font-weight: 500 !important;
-    background: var(--gnome-menu-background) !important;
+    background-color: var(--gnome-menu-background) !important;
     color: var(--gnome-menu-color) !important;
   }
 }
