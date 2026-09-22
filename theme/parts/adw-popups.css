@@ -65,9 +65,11 @@ menuitem[badge]::after {
 :where([_moz-menuactive]:not([disabled])) {
   menu& {
     background: var(--gnome-hover-color) !important;
+    color: var(--gnome-menu-color) !important;
   }
   menuitem& {
     background: transparent !important;
+    color: var(--gnome-menu-color) !important;
     &:hover {
       background: var(--gnome-hover-color) !important;
     }

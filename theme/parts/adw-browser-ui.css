@@ -138,7 +138,7 @@ tooltip {
   }
   #scrubber {
     &::-moz-range-thumb {
-      background-color: white !important;
+      background-color: var(--player-control-icon-fill) !important;
       border-radius: 99px !important;
       border: none !important;
       width: 20px !important;

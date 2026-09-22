@@ -93,7 +93,7 @@ tab-group[split-view-group] {
     width: 6px !important;
     height: 6px !important;
     border-radius: 99px !important;
-    background-color: white !important;
+    background-color: var(--gnome-toolbar-icon-fill) !important;
     opacity: 0.5 !important;
   }
   toolbarbutton[active="true"] & {
@@ -103,7 +103,7 @@ tab-group[split-view-group] {
 }
 #zen-workspaces-button .zen-workspace-icon {
   toolbarbutton & {
-    fill: white !important;
+    fill: var(--gnome-toolbar-icon-fill) !important;
     fill-opacity: 0.5 !important;
   }
   toolbarbutton[active="true"] & {
