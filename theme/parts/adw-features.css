@@ -21,6 +21,9 @@
 }
 
 /* Site data popup */
+#zen-unified-site-data-panel {
+  margin: 0 -16px !important;
+}
 #unified-extensions-view {
   --zen-sidebar-themed-icon-fill: var(--gnome-accent-bg) !important;
 }
