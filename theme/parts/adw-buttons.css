@@ -45,6 +45,9 @@ button {
 }
 
 /* Fix button glitches */
+#identity-icon-box {
+  background-color: transparent !important;
+}
 #tabs-newtab-button {
   --toolbarbutton-border-radius: 0 !important;
 }
