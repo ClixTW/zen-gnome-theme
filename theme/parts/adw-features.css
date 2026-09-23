@@ -240,13 +240,3 @@ zen-library {
     background-color: var(--gnome-button-active-background) !important;
   }
 }
-
-/* Space routing */
-#zenSpaceRoutingDialog {
-  #sr-content {
-    padding: var(--gnome-dialog-padding) 0 !important;
-  }
-  .input {
-    padding: 4px !important;
-  }
-}

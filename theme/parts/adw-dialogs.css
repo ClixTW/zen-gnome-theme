@@ -95,6 +95,21 @@ dialog {
   padding-bottom: 8px !important;
 }
 
+/* Space routing */
+#zenSpaceRoutingDialog {
+  #sr-content {
+    padding: var(--gnome-dialog-padding) 0 !important;
+  }
+  .input {
+    padding: 4px !important;
+  }
+}
+
+/* Share folder and space */
+#zen-share-confirm-dont-ask {
+  margin-bottom: var(--gnome-menu-item-padding) !important;
+}
+
 /* Misc */
 #SanitizeDialog {
   #SanitizeDurationBox {
@@ -105,7 +120,4 @@ dialog {
     color: var(--gnome-window-background) !important;
     border: none !important;
   }
-}
-#zen-share-confirm-dont-ask {
-  margin-bottom: var(--gnome-menu-item-padding) !important;
 }
