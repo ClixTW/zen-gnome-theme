@@ -24,7 +24,8 @@
 /* Buttons */
 toolbarbutton {
   --toolbarbutton-border-radius: var(--gnome-button-radius) !important;
-  &:not([open="true"]):active:hover {
+  &:active, &:active:hover {
+    scale: none !important;
     transform: none !important;
   }
 }
@@ -35,6 +36,11 @@ button {
   }
   &:active {
     --select-background-color: var(--gnome-button-active-background) !important;
+  }
+  &:active,
+  &:active:hover {
+    scale: none !important;
+    transform: none !important;
   }
 }
 .select {
