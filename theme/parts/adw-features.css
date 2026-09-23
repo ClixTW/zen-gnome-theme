@@ -106,6 +106,7 @@ zen-library {
   border-radius: var(--gnome-card-radius) !important;
 }
 #zen-library-side {
+  background-image: none !important;
   background-color: var(--gnome-secondary-sidebar-background) !important;
   box-shadow: none !important;
 }
