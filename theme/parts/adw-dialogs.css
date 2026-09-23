@@ -95,6 +95,28 @@ dialog {
   padding-bottom: 8px !important;
 }
 
+/* Edit bookmark */
+#editBMPanel_locationField {
+  width: 100% !important;
+}
+.workspace-trigger {
+  border: none !important;
+  border-radius: var(--gnome-button-radius) !important;
+  border-start-end-radius: 0 !important;
+  border-end-end-radius: 0 !important;
+}
+#editBMPanel_workspacesSelectorExpander {
+  min-width: var(--gnome-button-size) !important;
+  border-end-start-radius: 0 !important;
+  border-start-start-radius: 0 !important;
+}
+#editBMPanel_workspaceList {
+  border: none !important;
+  border-radius: var(--gnome-card-radius) !important;
+  background-color: var(--zen-colors-tertiary);
+  box-shadow: none !important;
+}
+
 /* Space routing */
 #zenSpaceRoutingDialog {
   #sr-content {
