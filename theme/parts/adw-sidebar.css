@@ -14,6 +14,11 @@
   --border-radius-medium: var(--gnome-entry-radius) !important;
   --zen-compact-mode-no-padding-radius-fix: -4px !important;
 }
+.zen-toolbar-background {
+  &::before, &::after {
+    outline: 1px solid var(--gnome-border-color) !important;
+  }
+}
 
 /* Essentials tabs */
 #zen-essentials {
