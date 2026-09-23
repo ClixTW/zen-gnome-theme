@@ -57,6 +57,7 @@
   }
   .identity-box-button,
   .urlbar-page-action,
+  #notification-popup-box,
   #urlbar-zoom-button {
     justify-content: center !important;
     margin: 0 !important;
