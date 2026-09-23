@@ -82,7 +82,7 @@ dialog {
     flex: 1 !important;
     &:hover,
     &:active {
-      scale: 1 !important;
+      scale: none !important;
     }
   }
   .button-spacer {

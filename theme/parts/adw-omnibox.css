@@ -169,7 +169,7 @@
   &:is([type="switchtab"],
   [type="remotetab"]) .urlbarView-action {
     margin-right: 0 !important;
-    scale: 1 !important;
+    scale: none !important;
     opacity: 1 !important;
     &::after {
       display: none !important;
