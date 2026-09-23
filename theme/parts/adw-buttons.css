@@ -49,6 +49,15 @@ button {
     --select-background-color: var(--gnome-button-hover-background) !important;
   }
 }
+.panel-footer {
+  gap: 12px !important;
+  button,
+  moz-button {
+    flex: 1 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+}
 
 /* Fix button glitches */
 #identity-icon-box {
