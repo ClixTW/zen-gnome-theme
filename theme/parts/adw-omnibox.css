@@ -5,7 +5,7 @@
   --urlbar-box-background-color: var(--gnome-selected-color) !important;
   --urlbar-box-background-color-hover: var(--gnome-hover-color) !important;
   --urlbar-box-background-color-active: var(--gnome-active-color) !important;
-  --urlbar-icon-border-radius: var(--gnome-button-radius) !important;
+  --urlbar-icon-border-radius: 0 !important;
 }
 
 /* URL bar and toolbars */
@@ -34,7 +34,7 @@
 }
 
 /* URL bar buttons */
-#urlbar:not([breakout-extend]) .urlbar-input-container {
+:root:not([zen-has-empty-tab="true"]) #urlbar:not([breakout-extend]) .urlbar-input-container {
   align-items: stretch !important;
   padding: 0 !important;
   gap: 0 !important;
@@ -55,24 +55,27 @@
   .urlbar-input-box {
     margin-inline: 0 !important;
   }
-  #zen-copy-url-button,
-  #zen-site-data-icon-button,
+  .identity-box-button,
   .urlbar-page-action,
   #urlbar-zoom-button {
     justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
     height: auto !important;
     min-height: 100% !important;
     min-width: var(--gnome-button-size) !important;
-    margin-block: 0 !important;
-    border-radius: 0 !important;
+    &:active:hover {
+      transform: none !important;
+    }
   }
   #identity-box {
     height: auto !important;
   }
   #urlbar-zoom-button {
-    margin-inline: 0 !important;
+    padding-inline: 6px !important;
     font-weight: 500 !important;
     background-color: var(--gnome-button-background) !important;
+    border-radius: 0 !important;
     animation: none !important;
     &:hover {
       background-color: var(--gnome-button-hover-background) !important;
@@ -95,14 +98,9 @@
 #urlbar[breakout-extend] #urlbar-zoom-button {
   display: none !important;
 }
-.urlbar-page-action,
-.identity-box-button {
-  &:not([open="true"]):active:hover {
-    transform: none !important;
-  }
-}
 
 /* Center text */
+.urlbar-input,
 .urlbar-input[aria-expanded="false"] {
   text-align: center !important;
 }
