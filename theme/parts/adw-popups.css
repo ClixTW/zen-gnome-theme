@@ -119,6 +119,16 @@ popupnotification {
     font-weight: 800 !important;
   }
 }
+
+/* Translations panel */
+#full-page-translations-panel-multiview {
+  .panel-header {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    h1 {
+      margin-left: 0 !important;
+    }
+  }
 }
 
 /* AutoComplete popup */
