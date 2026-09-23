@@ -30,6 +30,10 @@
 }
 
 /* Main menu */
+/* Remove unnecessary padding from submenu footer buttons */
+.panel-subview-footer-button {
+  margin-bottom: 0 !important;
+}
 /* Hide firefox promotional banners */
 moz-promo {
   display: none !important;
