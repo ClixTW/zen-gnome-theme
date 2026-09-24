@@ -35,7 +35,7 @@ panel-list {
   border-radius: var(--gnome-menu-radius) !important;
 }
 
-/* Separator */
+/* Separators */
 menuseparator,
 panel toolbarseparator {
   padding-block: var(--gnome-menu-padding) !important;
@@ -84,7 +84,7 @@ menuitem[badge]::after {
   border-radius: var(--gnome-menu-radius) !important;
 }
 
-/* Folder tabs popup */
+/* Folder tab popups */
 #zen-folder-tabs-popup {
   .tabs-list-header {
     margin-inline: var(--gnome-menu-padding) !important;
@@ -106,7 +106,7 @@ menuitem[badge]::after {
   }
 }
 
-/* Notification popup */
+/* Notification popups */
 popupnotification {
   .popup-notification-body {
     padding: 2px !important;
@@ -120,7 +120,7 @@ popupnotification {
   }
 }
 
-/* Translations panel */
+/* Translation panel */
 #full-page-translations-panel-multiview {
   .panel-header {
     font-size: 20px !important;
@@ -131,7 +131,7 @@ popupnotification {
   }
 }
 
-/* AutoComplete popup */
+/* Autocomplete popup */
 #PopupAutoComplete richlistbox {
   padding-block: 0 !important;
   padding-inline: var(--gnome-menu-padding) !important;
