@@ -65,6 +65,16 @@ dialog {
     var(--button-background-color-primary) 90%,
     #FFF) !important;
     --focus-outline-color: var(--gnome-entry-focused-border-color) !important;
+    /* A foolish approach, but due to Shadow DOM limitations, this is the only workaround I have for now */
+    &:is([data-l10n-id="sanitize-button-ok2"], [label="Leave page"], [label="離開頁面"], [label="离开页面"], [label="ページを離れる"], [label="페이지 나가기"], [label="Salir de la página"], [label="Quitter la page"], [label="Seite verlassen"], [label="Lascia la pagina"], [label="Sair da página"], [label="Покинуть страницу"], [label="Pagina verlassen"], [label="Opuść stronę"], [label="Sayfadan ayrıl"], [label="Lishiti storonku"], [label="Lämna sidan"], [label="Forlad side"], [label="Poistu sivulta"], [label="Forlat siden"], [label="Opustit stránku"], [label="Oldal elhagyása"], [label="Εγκατάλειψη σελίδας"], [label="עזוב את הדף"], [label="مغادرة الصفحة"], [label="ออกจากหน้านี้"], [label="Rời khỏi trang"]) {
+      --button-background-color-primary: var(--gnome-button-destructive-background) !important;
+      --button-background-color-primary-hover: var(--gnome-button-destructive-hover-background) !important;
+      --button-background-color-primary-active: var(--gnome-button-destructive-active-background) !important;
+      --button-text-color-primary: var(--gnome-destructive) !important;
+      --button-text-color-primary-hover: var(--button-text-color-primary) !important;
+      --button-text-color-primary-active: var(--button-text-color-primary) !important;
+      --focus-outline-color: var(--gnome-entry-error-focused-border-color) !important;
+    }
     padding: 10px 14px !important;
     margin: 0 !important;
     border-radius: 12px !important;
@@ -74,16 +84,6 @@ dialog {
     &:active {
       scale: none !important;
     }
-  }
-  &:has(button[dlgtype="cancel"]:not([hidden])) button[dlgtype="accept"],
-  button[data-l10n-id="sanitize-button-ok2"] {
-    --button-background-color-primary: var(--gnome-button-destructive-background) !important;
-    --button-background-color-primary-hover: var(--gnome-button-destructive-hover-background) !important;
-    --button-background-color-primary-active: var(--gnome-button-destructive-active-background) !important;
-    --button-text-color-primary: var(--gnome-destructive) !important;
-    --button-text-color-primary-hover: var(--button-text-color-primary) !important;
-    --button-text-color-primary-active: var(--button-text-color-primary) !important;
-    --focus-outline-color: var(--gnome-entry-error-focused-border-color) !important;
   }
   .button-spacer {
     display: none !important;
