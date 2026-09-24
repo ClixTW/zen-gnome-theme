@@ -18,6 +18,7 @@ button:not(.dialog-button-box button),
 #context-navigation menuitem,
 #urlbar:not([breakout-extend]) .urlbar-background,
 #urlbar:not([breakout-extend]) #urlbar-input,
+.notification-anchor-icon,
 .urlbarView-button,
 .dialog-button-box button:hover,
 .dialog-button-box button:active,
@@ -68,6 +69,7 @@ input::-moz-search-clear-button {
 
 /* Multiple */
 #zen-copy-url-button,
+.unified-extensions-item,
 #zen-site-data-icon-button,
 #page-action-buttons .urlbar-page-action {
   transition: opacity var(--gnome-animation-time), background var(--gnome-animation-time) !important;
