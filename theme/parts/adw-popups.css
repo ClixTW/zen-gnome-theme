@@ -137,6 +137,18 @@ popupnotification {
   padding-inline: var(--gnome-menu-padding) !important;
 }
 
+/* Notification messages */
+.notificationbox-stack {
+  margin: 12px !important;
+  notification-message {
+    padding: var(--gnome-menu-padding) !important;
+    background-color: var(--gnome-menu-background) !important;
+    backdrop-filter: none !important;
+    border-radius: var(--gnome-popover-radius) !important;
+  }
+}
+
+
 /* Toast notifications */
 #zen-toast-container {
   left: 50% !important;
