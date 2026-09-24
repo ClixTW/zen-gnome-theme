@@ -58,6 +58,9 @@ button {
     border: none !important;
   }
 }
+#chevron-button {
+  height: auto !important;
+}
 
 /* Fix button glitches */
 #identity-icon-box {
