@@ -55,10 +55,9 @@
   .urlbar-input-box {
     margin-inline: 0 !important;
   }
+  .unified-extensions-item,
   .identity-box-button,
-  .urlbar-page-action,
-  #notification-popup-box,
-  #urlbar-zoom-button {
+  .urlbar-page-action {
     justify-content: center !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -69,11 +68,29 @@
       transform: none !important;
     }
   }
+  .unified-extensions-item {
+    .unified-extensions-item-row-wrapper,
+    .toolbarbutton-badge-stack {
+      justify-content: center !important;
+      align-content: center !important;
+      min-height: 100% !important;
+      min-width: var(--gnome-button-size) !important;
+      border-radius: 0 !important;
+    }
+  }
   #identity-box {
     height: auto !important;
   }
+  .notification-anchor-icon {
+    padding: 9px !important;
+    min-height: 100% !important;
+    min-width: var(--gnome-button-size) !important;
+    border-radius: 0 !important;
+  }
   #urlbar-zoom-button {
+    margin: 0 !important;
     padding-inline: 6px !important;
+    min-height: 100% !important;
     font-weight: 500 !important;
     background-color: var(--gnome-button-background) !important;
     border-radius: 0 !important;
