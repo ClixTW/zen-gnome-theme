@@ -42,6 +42,7 @@
     order: -1 !important;
   }
   #urlbar-input {
+    padding-inline: var(--gnome-menu-item-padding) !important;
     &:hover {
       background-color: var(--gnome-hover-color) !important;
     }
