@@ -9,9 +9,9 @@
   --zen-branding-paper: #fafafb !important;
   --zen-squircle-value: 1 !important;
   /*  */
-	--zen-colors-primary: var(--gnome-headerbar-background) !important;
-	--zen-colors-secondary: var(--gnome-secondary-sidebar-background) !important;
-	--zen-colors-tertiary: var(--gnome-view-background) !important;  
+  --zen-colors-primary: var(--gnome-headerbar-background) !important;
+  --zen-colors-secondary: var(--gnome-secondary-sidebar-background) !important;
+  --zen-colors-tertiary: var(--gnome-view-background) !important;  
   /*  */
   --border-radius-xsmall: var(--gnome-button-radius) !important;
   --border-radius-small: var(--gnome-menu-radius) !important;
