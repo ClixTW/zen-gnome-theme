@@ -31,7 +31,7 @@ input::-moz-search-clear-button:hover {
   opacity: 1 !important;
 }
 
-/* Find bar  */
+/* Find bar */
 findbar {
   --findbar-container-height: var(--gnome-entry-height) !important;
   align-items: center;
