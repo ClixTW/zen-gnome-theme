@@ -131,7 +131,6 @@ popupnotification {
   }
 }
 
-/* Autocomplete popup */
 /* Download panel */
 #downloadsSummary {
   padding-inline: 6px !important;
@@ -140,6 +139,7 @@ popupnotification {
   background-color: var(--gnome-hover-color) !important;
 }
 
+/* Autocomplete suggestions */
 #PopupAutoComplete richlistbox {
   padding-block: 0 !important;
   padding-inline: var(--gnome-menu-padding) !important;
