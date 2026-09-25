@@ -30,8 +30,23 @@
 #zen-site-data-header toolbarbutton {
   border-radius: var(--gnome-button-radius) !important;
   overflow: hidden !important;
-  &.active:hover::before {
-    background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #fff) !important;
+  @media (prefers-color-scheme: dark) {
+    &.active:hover::before {
+      background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 95%, #fff) !important;
+    }
+    &.active:active::before {
+      background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 85%, #fff) !important;
+      transform: none !important;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    &.active:hover::before {
+      background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 95%, #000) !important;
+    }
+    &.active:active::before {
+      background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 85%, #000) !important;
+      transform: none !important;
+    }
   }
 }
 #zen-site-data-addons {
@@ -81,8 +96,21 @@
       background-color: var(--zen-sidebar-themed-icon-fill) !important;
       opacity: 1;
     }
-    &:hover::before {
-      background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 90%, #FFF) !important;
+    @media (prefers-color-scheme: dark) {
+      &:hover::before {
+        background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 95%, #FFF) !important;
+      }
+      &:active::before {
+        background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 85%, #FFF) !important;
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      &:hover::before {
+        background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 95%, #000) !important;
+      }
+      &:active::before {
+        background-color: color-mix(in srgb, var(--zen-sidebar-themed-icon-fill) 85%, #000) !important;
+      }
     }
   }
 }

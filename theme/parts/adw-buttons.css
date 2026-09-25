@@ -96,11 +96,21 @@ button {
 }
 .zen-glance-sidebar-container toolbarbutton {
   background-color: var(--gnome-menu-background) !important;
-  &:hover {
-    background-color: color-mix(in srgb, var(--gnome-menu-background) 95%, #FFF) !important;
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      background-color: color-mix(in srgb, var(--gnome-menu-background) 95%, #FFF) !important;
+    }
+    &:active:hover {
+      background-color: color-mix(in srgb, var(--gnome-menu-background) 85%, #FFF) !important;
+    }
   }
-  &:active:hover {
-    background-color: color-mix(in srgb, var(--gnome-menu-background) 90%, #FFF) !important;
+  @media (prefers-color-scheme: light) {
+    &:hover {
+      background-color: color-mix(in srgb, var(--gnome-menu-background) 95%, #000) !important;
+    }
+    &:active:hover {
+      background-color: color-mix(in srgb, var(--gnome-menu-background) 85%, #000) !important;
+    }
   }
 }
 

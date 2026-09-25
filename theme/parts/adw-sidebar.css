@@ -32,14 +32,28 @@
         filter: blur(35px) saturate(50%) contrast(0.7) !important;
       }
     }
-    &[visuallyselected]:hover .tab-background {
-      &::after {
-        filter: blur(35px) saturate(50%) contrast(0.7) brightness(1.1) !important;
+    @media (prefers-color-scheme: dark) 	{
+      &[visuallyselected]:hover .tab-background {
+        &::after {
+          filter: blur(35px) saturate(50%) contrast(0.7) brightness(1.1) !important;
+        }
+      }
+      &[visuallyselected]:active .tab-background {
+        &::after {
+          filter: blur(35px) saturate(50%) contrast(0.7) brightness(1.3) !important;
+        }
       }
     }
-    &[visuallyselected]:active .tab-background {
-      &::after {
-        filter: blur(35px) saturate(50%) contrast(0.7) brightness(1.3) !important;
+    @media (prefers-color-scheme: light) 	{
+      &[visuallyselected]:hover .tab-background {
+        &::after {
+          filter: blur(35px) saturate(50%) contrast(0.7) brightness(0.9) !important;
+        }
+      }
+      &[visuallyselected]:active .tab-background {
+        &::after {
+          filter: blur(35px) saturate(50%) contrast(0.7) brightness(0.7) !important;
+        }
       }
     }
   }
