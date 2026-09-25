@@ -132,6 +132,9 @@ popupnotification {
 }
 
 /* Download panel */
+#downloadsListBox richlistitem {
+  border-radius: var(--gnome-card-radius) !important;
+}
 #downloadsSummary {
   padding-inline: 6px !important;
   border: none !important;
