@@ -5,6 +5,11 @@
   scrollbar-color: var(--gnome-trough-background) var(--gnome-hover-color) !important;
 }
 
+/* Splitter */
+#zen-sidebar-splitter {
+  background-color: transparent !important;
+}
+
 /* Input box */
 input:where([type="email"],
 [type="tel"],

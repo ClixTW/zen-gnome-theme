@@ -51,9 +51,6 @@
       --zen-main-browser-background: #252F49 !important;
     }
   }
-  #zen-sidebar-splitter {
-    background-color: transparent !important;
-  }
   .tab-group-folder-icon svg {
     --zen-folder-behind-bgcolor: var(--gnome-accent-bg) !important;
     --zen-folder-front-bgcolor: var(--gnome-sidebar-background) !important;
