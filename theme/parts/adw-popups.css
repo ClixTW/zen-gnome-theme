@@ -132,6 +132,14 @@ popupnotification {
 }
 
 /* Autocomplete popup */
+/* Download panel */
+#downloadsSummary {
+  padding-inline: 6px !important;
+  border: none !important;
+  border-radius: var(--gnome-card-radius) !important;
+  background-color: var(--gnome-hover-color) !important;
+}
+
 #PopupAutoComplete richlistbox {
   padding-block: 0 !important;
   padding-inline: var(--gnome-menu-padding) !important;
