@@ -52,6 +52,8 @@ A simple theme that brings the clean and elegant look of GNOME's Adwaita to Zen 
 - **Interactions:** Hover, active, and other states are consistently indicated through changes in brightness. Many interactions also have subtle animations that stay out of the way.
 - **Color Scheme:** The sidebar and window backgrounds use GNOME-inspired colors, with higher-contrast text and icon colors. The accent color follows the GNOME system setting.
 
+   ![preview-color.webp](assets/preview-color.webp)
+
 ## 📦 Installation
 
 1. Make sure support for custom stylesheets is enabled in Zen Browser. See [here](https://github.com/ClixTW/zen-gnome-theme#-not-working) for instructions.
