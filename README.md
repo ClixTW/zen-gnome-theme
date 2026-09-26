@@ -103,7 +103,7 @@ To change an option, simply open the `about:config` page, search for the corresp
 
 ## 💖 Acknowledgements
 
-- firefox-gnome-theme: The strongest foundation for this project. Its styles, color variables, and icon-related tools saved me a great deal of time, and some elements were also inspired by its implementation.
+- [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme): The strongest foundation for this project. Its styles, color variables, and icon-related tools saved me a great deal of time, and some elements were also inspired by its implementation.
 
 ## 📄 License
 
