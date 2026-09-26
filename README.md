@@ -27,7 +27,7 @@ A simple theme that brings the clean and elegant look of GNOME's Adwaita to Zen 
 
    ![preview-urlbar.png](assets/preview-urlbar.png)
 
-- **Sidebar:** Essentials are tinted based on their icon's overall color. The hamburger menu is moved to the right, while the Overflow button, when available, is moved to the left.
+- **Sidebar:** Essentials are tinted based on their icon's overall color. The hamburger menu is moved to the right, while the Overflow button, when available, is moved to the left. For workspaces without an assigned icon, the active indicator grows larger with a subtle scaling animation.
 
    ![preview-sidebar1.png](assets/preview-sidebar1.png)
    ![preview-sidebar2.png](assets/preview-sidebar2.png)
