@@ -138,6 +138,11 @@ zen-library {
   background-color: var(--gnome-secondary-sidebar-background) !important;
   box-shadow: none !important;
 }
+.zen-library-tab-icon-image,
+.empty-state-icon-image {
+  --stroke: var(--gnome-accent) !important;
+  --fill: var(--gnome-selection-bg) !important;
+}
 .zen-library-tab {
   &::before {
     border-radius: var(--gnome-dialog-radius) !important;
