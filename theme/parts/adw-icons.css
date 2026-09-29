@@ -355,7 +355,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 }
 #tabs-newtab-button,
 #appMenu-new-tab-button2 {
-  list-style-image: var(--gnome-icon-tab-new-symbolic) !important;
+  list-style-image: var(--gnome-icon-plus-framed-symbolic) !important;
 }
 .findbar-find-previous {
   list-style-image: var(--gnome-icon-go-up-symbolic) !important;
@@ -412,9 +412,6 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 #pageAction-panel-bookmark[starred],
 #star-button[starred] {
   list-style-image: var(--gnome-icon-starred-symbolic) !important;
-}
-.zen-glance-sidebar-split {
-  list-style-image: var(--gnome-icon-sidebar-show-right-symbolic) !important;
 }
 #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon,
 #sidebar-switcher-tabs {
@@ -791,4 +788,19 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 }
 #characterencoding-button {
   list-style-image: var(--gnome-icon-language-symbolic) !important;
+}
+.zen-glance-sidebar-split {
+  list-style-image: var(--gnome-icon-view-dual-symbolic) !important;
+}
+menuitem[data-l10n-id="zen-panel-ui-workspaces-create"] img {
+  content: var(--gnome-icon-tabs-stack-symbolic) !important;
+}
+menuitem[data-l10n-id="zen-panel-ui-folder-create"] img {
+  content: var(--gnome-icon-folder-plus-symbolic) !important;
+}
+menuitem[data-l10n-id="zen-panel-ui-new-empty-split"] img {
+  content: var(--gnome-icon-view-dual-symbolic) !important;
+}
+menuitem[data-l10n-id="tabs-toolbar-new-tab"] img {
+  content: var(--gnome-icon-plus-framed-symbolic) !important;
 }

@@ -98,6 +98,10 @@
     "skip-forward-large-symbolic",
     "skip-backward-large-symbolic",
     "speaker-3-symbolic",
-    "magic-wand-symbolic"
+    "magic-wand-symbolic",
+    "view-dual-symbolic",
+    "tabs-stack-symbolic",
+    "plus-framed-symbolic",
+    "folder-plus-symbolic"
   ]
 }
