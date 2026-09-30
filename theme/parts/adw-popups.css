@@ -98,6 +98,13 @@ panelmultiview .panel-header {
     display: none !important;
   }
 }
+panelmultiview {
+  .panel-viewcontainer,
+  .panel-viewstack,
+  .PanelUI-subView {
+    min-height: 0 !important;
+  }
+}
 @media not (-moz-pref("zen.gnome.theme.hide-menu-icons.disabled")) {
   panelmultiview panelview {
     width: max-content !important;
