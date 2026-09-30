@@ -37,7 +37,7 @@ A simple theme that brings the clean and elegant look of GNOME's Adwaita to Zen 
    ![preview-menu1.png](assets/preview-menu1.png)
    ![preview-menu2.png](assets/preview-menu2.png)
 
-- **Library:** Workspace background colors follow Zen's built-in workspace settings, making it easier to tell workspaces apart.
+- **Library:** Preserves Zen's built-in workspace background colors, making it easier to distinguish between workspaces when organizing them.
 
    ![preview-library.png](assets/preview-library.png)
 
@@ -73,16 +73,21 @@ This theme includes a few optional settings that you can enable if you prefer.
 
 To change an option, simply open the `about:config` page, search for the corresponding preference, click the plus button on the right to add it, and leave its value set to `true`. To disable an option, change its value to `false`, or simply delete the preference.
 
-- Disable color override: Useful if you prefer colorful windows and sidebars instead of gray/white-toned background colors.
+- **Disable color override:** Useful if you prefer colorful windows and sidebars instead of gray/white-toned background colors.
 
     ```
     zen.gnome.theme.color-override.disabled
     ```
-- Disable context menu cleanup: Useful if an item you frequently use has been removed and you want to restore the original menu items.
+- **Disable context menu cleanup:** Useful if an item you frequently use has been removed and you want to restore the original menu items.
 
     ```
     zen.gnome.theme.context-menu-cleanup.disabled
     ```
+- **Disable menu icon removal:** Useful if you prefer having icons in menus and don't find them visually cluttered.
+
+    ```
+	 zen.gnome.theme.hide-menu-icons.disabled
+	 ```
 
 ## 😞 Known Limitations
 
@@ -105,7 +110,8 @@ To change an option, simply open the `about:config` page, search for the corresp
 
 ## 💖 Acknowledgements
 
-- [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme): The strongest foundation for this project. Its styles, color variables, and icon-related tools saved me a great deal of time, and some elements were also inspired by its implementation.
+- **[firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme):** The strongest foundation for this project. Its styles, color variables, and icon-related tools saved me a great deal of time, and some elements were also inspired by its implementation.
+- **@KiKaraage:** Provided very helpful guidance and suggestions throughout the development of this theme.
 
 ## 📄 License
 
