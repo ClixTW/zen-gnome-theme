@@ -79,8 +79,8 @@ menuitem[badge]::after {
   }
 }
 
-/* Main menu */
-.panel-header {
+/* Panel */
+panelmultiview .panel-header {
   padding-bottom: 0 !important;
   toolbarbutton {
     width: 100% !important;
@@ -99,6 +99,9 @@ menuitem[badge]::after {
   }
 }
 @media not (-moz-pref("zen.gnome.theme.hide-menu-icons.disabled")) {
+  panelmultiview panelview {
+    width: fit-content !important;
+  }
   panelmultiview toolbarbutton:not(.subviewbutton-iconic) {
     .toolbarbutton-icon {
       display: none !important;
