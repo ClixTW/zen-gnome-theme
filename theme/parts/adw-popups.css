@@ -161,17 +161,23 @@ popupnotification {
 
 /* Toast notifications */
 #zen-toast-container {
-  left: 50% !important;
-  right: auto !important;
-  transform: translateX(-50%) !important;
-  margin-top: 6px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: auto !important;
+  bottom: 0 !important;
+  justify-content: end !important;
+  align-items: center !important;
+  padding-bottom: 12px !important;
   .zen-toast {
-    position: relative !important;
     padding-inline: var(--gnome-menu-item-padding) !important;
     border-radius: 99px !important;
-    background-color: var(--gnome-menu-background) !important;
+    background: var(--gnome-menu-background) !important;
     color: var(--gnome-menu-color) !important;
     box-shadow: var(--gnome-menu-shadow) !important;
+    transform-origin: center bottom !important;
+    :root[zen-right-side="true"] & {
+      translate: 0 !important;
+    }
   }
 }
 
