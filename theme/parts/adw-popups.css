@@ -80,6 +80,24 @@ menuitem[badge]::after {
 }
 
 /* Main menu */
+.panel-header {
+  padding-bottom: 0 !important;
+  toolbarbutton {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  h1 span::before {
+    display: none !important;
+  }
+  h1 {
+    position: absolute !important;
+    text-align: center !important;
+    pointer-events: none !important;
+  }
+  & + toolbarseparator {
+    display: none !important;
+  }
+}
 @media not (-moz-pref("zen.gnome.theme.hide-menu-icons.disabled")) {
   panelmultiview toolbarbutton:not(.subviewbutton-iconic) {
     .toolbarbutton-icon {
@@ -87,24 +105,6 @@ menuitem[badge]::after {
     }
     .toolbarbutton-text {
       padding-left: 0 !important;
-    }
-  }
-  .panel-header {
-    padding-bottom: 0 !important;
-    toolbarbutton {
-      width: 100% !important;
-      height: 100% !important;
-    }
-    h1 span::before {
-      display: none !important;
-    }
-    h1 {
-      position: absolute;
-      text-align: center;
-      pointer-events: none;
-    }
-    & + toolbarseparator {
-      display: none !important;
     }
   }
   #appMenu-zoom-controls label:nth-child(1) {
