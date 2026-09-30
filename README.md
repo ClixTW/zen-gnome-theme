@@ -111,7 +111,7 @@ To change an option, simply open the `about:config` page, search for the corresp
 ## 💖 Acknowledgements
 
 - **[firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme):** The strongest foundation for this project. Its styles, color variables, and icon-related tools saved me a great deal of time, and some elements were also inspired by its implementation.
-- **@KiKaraage:** Provided very helpful guidance and suggestions throughout the development of this theme.
+- **[@KiKaraage](https://github.com/KiKaraage):** Provided very helpful guidance and suggestions throughout the development of this theme.
 
 ## 📄 License
 
