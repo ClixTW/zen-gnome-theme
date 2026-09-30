@@ -102,7 +102,6 @@ panelmultiview .panel-header {
   panelmultiview panelview {
     width: max-content !important;
     min-width: 15em !important;
-    max-width: 30em !important;
   }
   panelmultiview toolbarbutton:not(.subviewbutton-iconic) {
     .toolbarbutton-icon {
