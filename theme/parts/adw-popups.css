@@ -102,7 +102,8 @@ panelmultiview .panel-header {
   panelmultiview panelview {
     width: max-content !important;
   }
-  panelmultiview toolbarbutton:not(.subviewbutton-iconic) {
+  panelmultiview toolbarbutton:not(.subviewbutton-iconic,
+  .remote-tabs-close-button) {
     .toolbarbutton-icon {
       display: none !important;
     }
