@@ -98,7 +98,7 @@ panelmultiview .panel-header {
     display: none !important;
   }
 }
-panelmultiview {
+#appMenu-popup {
   .panel-viewcontainer,
   .panel-viewstack,
   .PanelUI-subView {
@@ -106,11 +106,12 @@ panelmultiview {
   }
 }
 @media not (-moz-pref("zen.gnome.theme.hide-menu-icons.disabled")) {
-  panelmultiview panelview {
+  #appMenu-popup panelview {
     width: max-content !important;
   }
-  panelmultiview toolbarbutton:not(.subviewbutton-iconic,
-  .remote-tabs-close-button) {
+  #appMenu-popup toolbarbutton:not(.subviewbutton-iconic,
+  .remote-tabs-close-button),
+  #customizationui-widget-panel {
     .toolbarbutton-icon {
       display: none !important;
     }
