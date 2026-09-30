@@ -101,7 +101,6 @@ panelmultiview .panel-header {
 @media not (-moz-pref("zen.gnome.theme.hide-menu-icons.disabled")) {
   panelmultiview panelview {
     width: max-content !important;
-    min-width: 15em !important;
   }
   panelmultiview toolbarbutton:not(.subviewbutton-iconic) {
     .toolbarbutton-icon {
