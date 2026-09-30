@@ -80,6 +80,37 @@ menuitem[badge]::after {
 }
 
 /* Main menu */
+@media not (-moz-pref("zen.gnome.theme.hide-menu-icons.disabled")) {
+  panelmultiview toolbarbutton:not(.subviewbutton-iconic) {
+    .toolbarbutton-icon {
+      display: none !important;
+    }
+    .toolbarbutton-text {
+      padding-left: 0 !important;
+    }
+  }
+  .panel-header {
+    padding-bottom: 0 !important;
+    toolbarbutton {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    h1 span::before {
+      display: none !important;
+    }
+    h1 {
+      position: absolute;
+      text-align: center;
+      pointer-events: none;
+    }
+    & + toolbarseparator {
+      display: none !important;
+    }
+  }
+  #appMenu-zoom-controls label:nth-child(1) {
+    padding-left: 0 !important;
+  }
+}
 #PanelUI-fxa-menu-manage-account-button {
   border-radius: var(--gnome-menu-radius) !important;
 }
