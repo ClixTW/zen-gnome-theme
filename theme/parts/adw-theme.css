@@ -36,7 +36,7 @@
 }
 
 /* Override window and sidebar background colors */
-@media not all and (-moz-bool-pref: "zen.gnome.theme.color-override.disabled") {
+@media not (-moz-pref("zen.gnome.theme.color-override.disabled")) {
   browser {
     background-color: var(--gnome-window-background) !important;
   }

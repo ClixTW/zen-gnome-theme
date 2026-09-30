@@ -176,7 +176,7 @@ popupnotification {
 }
 
 /* Context menu cleanup */
-@media not all and (-moz-bool-pref: "zen.gnome.theme.context-menu-cleanup.disabled") {
+@media not (-moz-pref("zen.gnome.theme.context-menu-cleanup.disabled")) {
   /* Tab and UI items */
   #context_openANewTab,
   #context_reloadTab,
