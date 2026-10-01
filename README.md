@@ -17,6 +17,9 @@ A simple theme that brings the clean and elegant look of GNOME's Adwaita to Zen 
   </tr>
 </table>
 
+> [!NOTE]
+> If you encounter an issue while using a third-party theme, please make sure it is not caused by the theme before reporting it upstream, to avoid unnecessarily bothering the developers.
+
 ## ✨ Features
 
 - **Omnibox:** Uses large, rounded corners inspired by GNOME. When focused, the URL is highlighted using the system accent color.
