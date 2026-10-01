@@ -71,6 +71,10 @@ button {
   &:active {
     background-color: var(--gnome-active-color) !important;
   }
+  /* Remove this fix once the upstream icon set includes this icon */
+  #navigator-toolbox:not([zen-sidebar-expanded="true"]) & image {
+    width: var(--toolbarbutton-icon-size) !important;
+  }
 }
 .zen-current-workspace-indicator.zen-drop-target toolbarbutton {
   --border-radius-medium: 12px !important;
