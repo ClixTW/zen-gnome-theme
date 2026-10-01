@@ -27,6 +27,9 @@
     border-radius: var(--gnome-dialog-radius) !important;
     box-shadow: var(--gnome-menu-shadow), var(--gnome-menu-shadow) !important;
   }
+  :root:not([zen-single-toolbar="true"]) #urlbar:not([breakout-extend]) & {
+    margin: 0 !important;
+  }
 }
 #urlbar[breakout-extend]::before {
   animation: none !important;
