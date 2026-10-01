@@ -92,6 +92,7 @@ panelmultiview .panel-header {
   h1 {
     position: absolute !important;
     text-align: center !important;
+    margin-inline: 0 !important;
     pointer-events: none !important;
   }
   & + toolbarseparator {
