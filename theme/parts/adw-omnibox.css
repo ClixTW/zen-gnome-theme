@@ -91,6 +91,9 @@
     min-width: var(--gnome-button-size) !important;
     border-radius: 0 !important;
   }
+  #translations-button-locale {
+    display: none !important;
+  }
   #urlbar-zoom-button {
     margin: 0 !important;
     padding-inline: 6px !important;
