@@ -168,9 +168,13 @@ popupnotification {
 #full-page-translations-panel-multiview {
   .panel-header {
     font-size: 20px !important;
-    font-weight: 800 !important;
+    toolbarbutton {
+      width:  fit-content !important;
+      height: fit-content !important;
+    }
     h1 {
-      margin-left: 0 !important;
+      position: initial !important;
+      text-align: start !important;
     }
   }
 }
