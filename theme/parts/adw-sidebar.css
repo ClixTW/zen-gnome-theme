@@ -117,6 +117,14 @@ tab-group[split-view-group] {
       background: none !important;
     }
   }
+  .zen-media-pip-button {
+    visibility: collapse !important;
+    opacity: 0 !important;
+    .zen-media-info-container:hover & {
+      visibility: visible  !important;
+      opacity: 1 !important;
+    }
+  }
   .zen-media-pip-button,
   .zen-media-close-button {
     image {
