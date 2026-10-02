@@ -108,6 +108,28 @@ tab-group[split-view-group] {
   }
 }
 
+/* Media card */
+#zen-media-controls-toolbar {
+  .zen-media-info-vbox {
+    overflow: hidden !important;
+    mask-image: none !important;
+    &::before {
+      background: none !important;
+    }
+  }
+  .zen-media-pip-button,
+  .zen-media-close-button {
+    image {
+      border-radius: 99px !important;
+    }
+  }
+}
+
+/* Update info card */
+.zen-sidebar-notification-close-button {
+  border-radius: 99px !important;
+}
+
 /* Workspace icon */
 #zen-workspaces-button .zen-workspace-icon[no-icon="true"] {
   toolbarbutton & {

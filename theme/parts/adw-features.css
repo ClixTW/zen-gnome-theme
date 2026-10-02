@@ -219,23 +219,6 @@ zen-library {
   }
 }
 
-/* Media card */
-.zen-media-info-vbox {
-  overflow: hidden !important;
-  mask-image: none !important;
-  &::before {
-    background: none !important;
-  }
-}
-.zen-media-close-button image {
-  border-radius: 99px !important;
-}
-
-/* Update info card */
-.zen-sidebar-notification-close-button {
-  border-radius: 99px !important;
-}
-
 /* Boost */
 #zenBoostWindow {
   --zen-boosts-primary-background: var(--gnome-menu-background) !important;
