@@ -36,7 +36,8 @@ dialog {
   #titleCropper {
     display: initial !important;
   }
-  #titleText {
+  #titleText,
+  #infoTitle {
     font-size: 20px !important;
     font-weight: 800 !important;
     text-align: center !important;
@@ -115,6 +116,19 @@ dialog {
   border-radius: var(--gnome-card-radius) !important;
   background-color: var(--zen-colors-tertiary);
   box-shadow: none !important;
+}
+
+/* Clear Data For Site */
+#clearDataForSiteDialogWindow {
+  p, li {
+    text-align: center !important;
+  }
+  ul {
+    padding-inline: 0 !important;
+    li {
+      list-style-position: inside !important;
+    }
+  }
 }
 
 /* Space routing */
