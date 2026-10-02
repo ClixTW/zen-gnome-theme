@@ -178,6 +178,17 @@ popupnotification {
     }
   }
 }
+#select-translations-panel {
+  .translations-panel-header-wrapper {
+    margin-left: 0 !important;
+    #select-translations-panel-header {
+      font-size: 20px !important;
+    }
+  }
+  .footer-button {
+    flex: initial !important;
+  }
+}
 
 /* Download panel */
 #downloadsListBox richlistitem {
