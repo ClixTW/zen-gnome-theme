@@ -131,7 +131,7 @@ dialog {
   }
 }
 
-/* Clear Data For Site */
+/* Clear all data for this website */
 #clearDataForSiteDialogWindow {
   p, li {
     text-align: center !important;
@@ -144,7 +144,7 @@ dialog {
   }
 }
 
-/* Space routing */
+/* Space routing settings */
 #zenSpaceRoutingDialog {
   #sr-content {
     padding: var(--gnome-dialog-padding) 0 !important;
@@ -154,7 +154,7 @@ dialog {
   }
 }
 
-/* Share folder and space */
+/* Share link */
 #zenShareConfirmDialog h2 {
   display: flex !important;
   justify-content: center !important;
