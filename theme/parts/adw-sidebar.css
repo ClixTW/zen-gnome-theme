@@ -60,6 +60,10 @@
     }
   }
 }
+#zen-essentials .tabbrowser-tab[pending="true"] .tab-icon-overlay {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
 
 /* Tabs */
 zen-workspace {

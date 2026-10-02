@@ -50,7 +50,9 @@ button:not(.dialog-button-box button),
 /* Opacity */
 /* gnome-animation-time */
 toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inactive,
-input::-moz-search-clear-button {
+input::-moz-search-clear-button,
+.tab-icon-overlay,
+.zen-media-pip-button {
   transition: opacity var(--gnome-animation-time) !important;
 }
 
