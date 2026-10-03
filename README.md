@@ -89,8 +89,8 @@ To change an option, simply open the `about:config` page, search for the corresp
 - **Disable menu icon removal:** Useful if you prefer having icons in menus and don't find them visually cluttered.
 
     ```
-	 zen.gnome.theme.hide-menu-icons.disabled
-	 ```
+	zen.gnome.theme.hide-menu-icons.disabled
+	```
 
 ## 😞 Known Limitations
 
