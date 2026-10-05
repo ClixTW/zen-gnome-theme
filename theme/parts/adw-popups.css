@@ -240,6 +240,20 @@ popupnotification {
   }
 }
 
+/* Ctrl+Tab tab cycling popup */
+@media (prefers-color-scheme: light) {
+  #ctrlTab-panel .ctrlTab-preview {
+    text-shadow: none !important;
+  }
+
+  #ctrlTab-panel .ctrlTab-preview:focus > .ctrlTab-preview-inner {
+    background-color: var(--gnome-selected-color) !important;
+    color: var(--gnome-menu-color) !important;
+    text-shadow: none !important;
+    outline: var(--gnome-focus-border-color) !important;
+  }
+}
+
 /* Context menu cleanup */
 @media not (-moz-pref("zen.gnome.theme.context-menu-cleanup.disabled")) {
   /* Tab and UI items */
