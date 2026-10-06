@@ -218,6 +218,29 @@ zen-library {
     background-color: var(--gnome-button-active-background) !important;
   }
 }
+.zen-swipe-add-space-progress-badge {
+  background-color: color-mix(in srgb, var(--gnome-menu-color) 10%, var(--gnome-accent-bg)) !important;
+  &:hover {
+    background-color: color-mix(in srgb, var(--gnome-menu-color) 15%, var(--gnome-accent-bg)) !important;
+  }
+  &:active:hover {
+    background-color: color-mix(in srgb, var(--gnome-menu-color) 30%, var(--gnome-accent-bg)) !important;
+  }
+  &::after {
+    display: none !important;
+  }
+}
+.zen-swipe-add-space-icon {
+    fill: var(--gnome-toolbar-icon-fill) !important;
+  }
+.zen-swipe-add-space-container[readytoadd] {
+  & .zen-swipe-add-space-progress-badge {
+    animation: none !important;
+  }
+  & .zen-swipe-add-space-icon {
+    fill: var(--gnome-toolbar-icon-fill) !important;
+  }
+}
 
 /* Boost */
 #zenBoostWindow {
