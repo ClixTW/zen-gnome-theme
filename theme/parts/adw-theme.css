@@ -11,7 +11,7 @@
   /*  */
   --zen-colors-primary: var(--gnome-headerbar-background) !important;
   --zen-colors-secondary: var(--gnome-secondary-sidebar-background) !important;
-  --zen-colors-tertiary: var(--gnome-view-background) !important;  
+  --zen-colors-tertiary: var(--gnome-view-background) !important;
   /*  */
   --border-radius-xsmall: var(--gnome-button-radius) !important;
   --border-radius-small: var(--gnome-menu-radius) !important;
@@ -21,14 +21,14 @@
   --background-color-canvas: var(--gnome-menu-background) !important;
   --background-color-box: var(--gnome-card-background) !important;
   --border-color: var(--gnome-border-color) !important;
-  --hr-color: var(--gnome-menu-separator-color) !important;  
+  --hr-color: var(--gnome-menu-separator-color) !important;
   /*  */
   --text-color: var(--gnome-menu-color) !important;
   --text-color-secondary: color-mix(in srgb,
   var(--gnome-menu-color) 90%,
   transparent) !important;
   --text-color-accent-primary-selected: var(--gnome-menu-color) !important;
-  --text-color-error: var(--gnome-error) !important;  
+  --text-color-error: var(--gnome-error) !important;
   /*  */
   --color-accent-primary-selected: var(--gnome-menu-background) !important;
   --select-background-color: var(--gnome-button-background) !important;
