@@ -134,7 +134,11 @@
 }
 
 /* URL bar results */
+.urlbarView-results {
+  max-height: 248px !important;
+}
 .urlbarView-row {
+  height: 46px !important;
   border-radius: var(--gnome-popover-radius) !important;
   color: var(--gnome-menu-color) !important;
   &:hover {

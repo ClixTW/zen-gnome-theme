@@ -18,10 +18,6 @@
     padding-inline: 10px 0 !important;
   }
 }
-/* Ensure the last result is fully visible */
-.urlbarView-row {
-  height: 47px !important;
-}
 
 /* Toolbar */
 /* Fix alignment for zoom button label */
