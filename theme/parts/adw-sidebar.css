@@ -112,13 +112,6 @@ tab-group[split-view-group] {
 
 /* Media card */
 #zen-media-controls-toolbar {
-  .zen-media-info-vbox {
-    overflow: hidden !important;
-    mask-image: none !important;
-    &::before {
-      background: none !important;
-    }
-  }
   .zen-media-pip-button {
     visibility: collapse !important;
     opacity: 0 !important;
