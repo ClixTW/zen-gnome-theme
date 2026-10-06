@@ -27,6 +27,7 @@ button:not(.dialog-button-box button),
 .control-button,
 .zen-library-tab::before,
 .zen-library-space-header::before,
+.zen-swipe-add-space-progress-badge,
 .mod-button {
   transition: background var(--gnome-animation-time) !important;
 }
@@ -51,7 +52,6 @@ button:not(.dialog-button-box button),
 /* gnome-animation-time */
 toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inactive,
 input::-moz-search-clear-button,
-.tab-icon-overlay,
 .zen-media-pip-button {
   transition: opacity var(--gnome-animation-time) !important;
 }
@@ -70,6 +70,7 @@ input::-moz-search-clear-button,
 }
 
 /* Multiple */
+.tab-icon-overlay,
 #zen-copy-url-button,
 .unified-extensions-item,
 #zen-site-data-icon-button,
