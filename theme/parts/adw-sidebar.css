@@ -58,9 +58,19 @@
     }
   }
 }
-#zen-essentials .tabbrowser-tab[pending="true"] .tab-icon-overlay {
-  visibility: hidden !important;
-  opacity: 0 !important;
+#zen-essentials .tab-icon-overlay {
+  background-image: none !important;
+  background-color: color-mix(in srgb, var(--gnome-menu-color) 10%, var(--gnome-menu-background)) !important;
+  &:hover {
+    background-color: color-mix(in srgb, var(--gnome-menu-color) 15%, var(--gnome-menu-background)) !important;
+  }
+  &:active {
+    background-color: color-mix(in srgb, var(--gnome-menu-color) 30%, var(--gnome-menu-background)) !important;
+  }
+  .tabbrowser-tab[pending="true"] & {
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
 }
 
 /* Tabs */
