@@ -240,17 +240,30 @@ popupnotification {
   }
 }
 
-/* Ctrl+Tab tab cycling popup */
-@media (prefers-color-scheme: light) {
-  #ctrlTab-panel .ctrlTab-preview {
-    text-shadow: none !important;
-  }
-
-  #ctrlTab-panel .ctrlTab-preview:focus > .ctrlTab-preview-inner {
-    background-color: var(--gnome-selected-color) !important;
-    color: var(--gnome-menu-color) !important;
-    text-shadow: none !important;
-    outline: var(--gnome-focus-border-color) !important;
+/* Ctrl-Tab */
+#ctrlTab-panel {
+  --panel-border-radius: var(--gnome-dialog-radius) !important;
+  --panel-background-color: var(--gnome-toolbar-background) !important;
+  .ctrlTab-preview-inner {
+    border: none !important;
+    border-radius: var(--gnome-popover-radius) !important;
+    .ctrlTab-preview:focus & {
+      background-color: var(--gnome-trough-background) !important;
+    }
+    .ctrlTab-canvas {
+      box-shadow: none !important;
+      background-color: transparent !important;
+      img, canvas {
+        border-radius: var(--gnome-button-radius) !important;
+      }
+    }
+    .ctrlTab-favicon {
+      border: none !important;
+      background: none !important;
+    }
+    .ctrlTab-label {
+      text-shadow: none !important;
+    }
   }
 }
 
