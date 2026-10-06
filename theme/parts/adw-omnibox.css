@@ -46,6 +46,7 @@
   }
   #urlbar-input {
     padding-inline: var(--gnome-menu-item-padding) !important;
+    color: var(--gnome-menu-color) !important;
     &:hover {
       background-color: var(--gnome-hover-color) !important;
     }
@@ -177,6 +178,7 @@
 /* Action badges */
 #urlbar-search-mode-indicator {
   padding-inline: var(--gnome-menu-item-padding) !important;
+  color: var(--gnome-menu-color) !important;
 }
 .urlbarView-prettyName,
 .urlbarView-shortcutContent {
