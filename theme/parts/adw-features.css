@@ -156,6 +156,9 @@ zen-library {
     border-radius: 99px !important;
   }
 }
+.zen-library-media-item:hover {
+  scale: none !important;
+}
 .zen-library-media-preview-panel {
   .zen-library-media-preview-header {
     .zen-library-media-preview-open {
