@@ -156,6 +156,36 @@ zen-library {
     border-radius: 99px !important;
   }
 }
+.zen-library-media-preview-panel {
+  .zen-library-media-preview-header {
+    .zen-library-media-preview-open {
+      label {
+        padding-bottom: calc(var(--toolbarbutton-padding-inner) - 1px) !important;
+        background-color: var(--gnome-button-background) !important;
+      }
+      &:hover label {
+        background-color: var(--gnome-button-hover-background) !important;
+      }
+      &:active label {
+        background-color: var(--gnome-button-active-background) !important;
+      }
+    }
+    .toolbarbutton-1.close {
+      order: 99 !important;
+      img {
+        scale: 0.9 !important;
+        border-radius: 99px !important;
+        background-color: var(--gnome-button-background) !important;
+        &:hover {
+          background-color: var(--gnome-button-hover-background) !important;
+        }
+        &:active {
+          background-color: var(--gnome-button-active-background) !important;
+        }
+      }
+    }
+  }
+}
 .zen-library-boost-icon::before {
   border: 3px solid var(--gnome-accent-bg) !important;
   background-color: var(--gnome-button-checked-background) !important;

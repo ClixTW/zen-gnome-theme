@@ -27,6 +27,7 @@ button:not(.dialog-button-box button),
 .control-button,
 .zen-library-tab::before,
 .zen-library-space-header::before,
+.zen-library-media-preview-open label,
 .zen-swipe-add-space-progress-badge,
 .mod-button {
   transition: background var(--gnome-animation-time) !important;
