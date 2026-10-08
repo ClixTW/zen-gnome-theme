@@ -102,6 +102,8 @@
     "view-dual-symbolic",
     "tabs-stack-symbolic",
     "plus-framed-symbolic",
-    "folder-plus-symbolic"
+    "folder-plus-symbolic",
+    "filter-symbolic",
+    "move-tool-symbolic"
   ]
 }

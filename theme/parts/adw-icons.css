@@ -813,3 +813,12 @@ menuitem[data-l10n-id="zen-panel-ui-new-empty-split"] img {
 menuitem[data-l10n-id="tabs-toolbar-new-tab"] img {
   content: var(--gnome-icon-plus-framed-symbolic) !important;
 }
+.zen-library-filter-button img {
+  content: var(--gnome-icon-filter-symbolic) !important;
+}
+.zen-library-space-handle img {
+  content: var(--gnome-icon-move-tool-symbolic) !important;
+}
+.zen-library-space-actions img {
+  content: var(--gnome-icon-view-more-horizontal-symbolic) !important;
+}
