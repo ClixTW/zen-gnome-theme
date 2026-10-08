@@ -110,14 +110,16 @@ panelmultiview .panel-header {
   #appMenu-popup panelview {
     width: max-content !important;
   }
-  #appMenu-popup toolbarbutton:not(.subviewbutton-iconic,
-  .remote-tabs-close-button),
+  #appMenu-popup,
   #customizationui-widget-panel {
-    .toolbarbutton-icon {
-      display: none !important;
-    }
-    .toolbarbutton-text {
-      padding-left: 0 !important;
+    toolbarbutton:not(.subviewbutton-iconic,
+    .remote-tabs-close-button) {
+      .toolbarbutton-icon {
+        display: none !important;
+      }
+      .toolbarbutton-text {
+        padding-left: 0 !important;
+      }
     }
   }
   #appMenu-zoom-controls label:nth-child(1) {
