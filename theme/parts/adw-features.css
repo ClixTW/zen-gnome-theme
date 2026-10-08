@@ -140,6 +140,9 @@ zen-library {
     background-color: var(--gnome-selected-color) !important;
   }
 }
+.zen-library-filter-button span {
+  display: none !important;
+}
 .zen-library-filter-chip {
   font-weight: bold !important;
   &[active] {
