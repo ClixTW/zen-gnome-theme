@@ -448,7 +448,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 /* Permissions */
 #zen-site-data-icon-button {
   & image {
-    list-style-image: url("permissions.svg", unset);
+    list-style-image: var(--gnome-icon-view-more-symbolic) !important;
   }
   &:where([starred]) image {
     list-style-image: url("permissions-fill.svg", unset);
@@ -819,6 +819,26 @@ menuitem[data-l10n-id="tabs-toolbar-new-tab"] img {
 .zen-library-space-handle img {
   content: var(--gnome-icon-move-tool-symbolic) !important;
 }
-.zen-library-space-actions img {
+.zen-library-space-actions img,
+.toolbarbutton-1.more img,
+toolbarbutton[data-l10n-id="library-downloads-more-button"] img {
   content: var(--gnome-icon-view-more-horizontal-symbolic) !important;
+}
+toolbarbutton[data-l10n-id="library-history-forget-button"] img {
+  content: var(--gnome-icon-user-trash-symbolic) !important;
+}
+toolbarbutton[data-l10n-id="library-history-reopen-button"] img {
+  content: var(--gnome-icon-history-undo-symbolic) !important;
+}
+toolbarbutton[data-l10n-id="library-footer-close-button"] image {
+  content: var(--gnome-icon-go-previous-symbolic) !important;
+}
+.toolbarbutton-1.prev img {
+  content: var(--gnome-icon-go-previous-symbolic) !important;
+}
+.toolbarbutton-1.next img {
+  content: var(--gnome-icon-go-next-symbolic) !important;
+}
+.toolbarbutton-1.close img {
+  content: var(--gnome-icon-window-close-symbolic) !important;
 }
