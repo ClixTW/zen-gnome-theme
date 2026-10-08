@@ -152,6 +152,9 @@ zen-library {
 }
 .zen-library-row {
   border-radius: var(--gnome-card-radius) !important;
+  .zen-library-row-actions .toolbarbutton-icon {
+    border-radius: 99px !important;
+  }
 }
 .zen-library-boost-icon::before {
   border: 3px solid var(--gnome-accent-bg) !important;
