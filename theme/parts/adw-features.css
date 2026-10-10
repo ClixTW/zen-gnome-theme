@@ -157,9 +157,19 @@ zen-library {
     overflow: visible !important;
   }
 }
-.zen-library-media-item:hover {
-  scale: none !important;
 /* Media */
+.zen-library-media-grid {
+  gap: 0 !important;
+  .zen-library-media-item {
+    background-color: transparent !important;
+    &:hover {
+      background-color: var(--gnome-hover-color) !important;
+      scale: none !important;
+    }
+    &:active {
+      background-color: var(--gnome-active-color) !important;
+    }
+  }
 }
 .zen-library-media-preview-panel {
   .zen-library-media-preview-header {
