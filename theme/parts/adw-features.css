@@ -154,6 +154,7 @@ zen-library {
   border-radius: var(--gnome-card-radius) !important;
   .zen-library-row-actions .toolbarbutton-icon {
     border-radius: 99px !important;
+    overflow: visible !important;
   }
 }
 .zen-library-media-item:hover {
