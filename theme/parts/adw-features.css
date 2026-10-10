@@ -162,8 +162,17 @@ zen-library {
 }
 .zen-library-media-preview-panel {
   .zen-library-media-preview-header {
+    padding: var(--gnome-toolbar-padding) !important;
+    > toolbarbutton:not(.toolbarbutton-1.close) {
+      .toolbarbutton-icon {
+        padding: 9px !important;
+        height: var(--gnome-button-size) !important;
+        width: var(--gnome-button-size) !important;
+      }
+    }
     .zen-library-media-preview-open {
       label {
+        padding-inline: 9px !important;
         padding-bottom: calc(var(--toolbarbutton-padding-inner) - 1px) !important;
         background-color: var(--gnome-button-background) !important;
       }
