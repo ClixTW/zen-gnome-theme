@@ -140,14 +140,30 @@ zen-library {
     background-color: var(--gnome-selected-color) !important;
   }
 }
-.zen-library-filter-button span {
-  display: none !important;
-}
-.zen-library-filter-chip {
-  font-weight: bold !important;
-  &[active] {
-    background-color: var(--gnome-button-checked-background) !important;
-    color: var(--gnome-accent) !important;
+.zen-library-search-top {
+  .zen-library-search-box {
+    height: var(--gnome-button-size) !important;
+  }
+  .zen-library-filter-button {
+    padding: 9px !important;
+    height: var(--gnome-button-size) !important;
+    width: var(--gnome-button-size) !important;
+    span {
+      display: none !important;
+    }
+  }
+  .zen-library-filter-done {
+    display: flex !important;
+    align-items: center !important;
+    height: var(--gnome-button-size) !important;
+  }
+  .zen-library-filter-chip {
+    height: var(--gnome-button-size) !important;
+    font-weight: bold !important;
+    &[active] {
+      background-color: var(--gnome-button-checked-background) !important;
+      color: var(--gnome-accent) !important;
+    }
   }
 }
 .zen-library-row {
