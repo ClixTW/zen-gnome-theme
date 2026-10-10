@@ -158,6 +158,7 @@ zen-library {
 }
 .zen-library-media-item:hover {
   scale: none !important;
+/* Media */
 }
 .zen-library-media-preview-panel {
   .zen-library-media-preview-header {
@@ -189,6 +190,7 @@ zen-library {
     }
   }
 }
+/* Boosts */
 .zen-library-boost-icon::before {
   border: 3px solid var(--gnome-accent-bg) !important;
   background-color: var(--gnome-button-checked-background) !important;
@@ -207,6 +209,7 @@ zen-library {
     }
   }
 }
+/* Spaces */
 .zen-library-space,
 .zen-library-space::before {
   border-radius: var(--gnome-popover-radius) !important;
