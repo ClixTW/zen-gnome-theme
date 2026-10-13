@@ -65,7 +65,6 @@
   .urlbar-page-action {
     justify-content: center !important;
     margin: 0 !important;
-    padding: 0 !important;
     height: auto !important;
     min-height: 100% !important;
     min-width: var(--gnome-button-size) !important;
