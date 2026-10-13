@@ -192,6 +192,32 @@ popupnotification {
   }
 }
 
+/* Bookmark panel */
+#zenEditBookmarkPanelFaviconContainer {
+  padding: var(--gnome-menu-item-padding) !important;
+  height: fit-content !important;
+  width: fit-content !important;
+  #zenEditBookmarkPanelFavicon {
+    height: var(--gnome-button-size) !important; 
+    width: var(--gnome-button-size) !important;
+  }
+}
+#editBookmarkPanelTitle {
+  font-size: 20px !important;
+}
+#editBMPanel_folderMenuList,
+#editBMPanel_workspaceSummary {
+  margin-left: var(--gnome-menu-item-padding) !important;
+}
+#editBMPanel_folderTree {
+  margin-block: var(--gnome-menu-padding) !important;
+  border: none !important;
+  background-color: var(--gnome-card-background) !important;
+}
+#editBMPanel_workspacesSelectorExpander {
+  margin-left: 0 !important;
+}
+
 /* Download panel */
 #downloadsListBox richlistitem {
   border-radius: var(--gnome-card-radius) !important;
