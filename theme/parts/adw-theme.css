@@ -11,7 +11,7 @@
   /*  */
   --zen-colors-primary: var(--gnome-headerbar-background) !important;
   --zen-colors-secondary: var(--gnome-secondary-sidebar-background) !important;
-  --zen-colors-tertiary: var(--gnome-view-background) !important;
+  --zen-colors-tertiary: var(--gnome-card-shade-color) !important;
   /*  */
   --border-radius-xsmall: var(--gnome-button-radius) !important;
   --border-radius-small: var(--gnome-menu-radius) !important;
@@ -32,7 +32,7 @@
   /*  */
   --color-accent-primary-selected: var(--gnome-menu-background) !important;
   --select-background-color: var(--gnome-button-background) !important;
-  --input-background-color: var(--gnome-card-background) !important;
+  --input-background-color: var(--gnome-card-shade-color) !important;
 }
 
 /* Override window and sidebar background colors */

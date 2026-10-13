@@ -209,10 +209,12 @@ popupnotification {
 #editBMPanel_workspaceSummary {
   margin-left: var(--gnome-menu-item-padding) !important;
 }
-#editBMPanel_folderTree {
+#editBMPanel_folderTree,
+#editBMPanel_workspaceList {
   margin-block: var(--gnome-menu-padding) !important;
   border: none !important;
-  background-color: var(--gnome-card-background) !important;
+  border-radius: var(--gnome-card-radius) !important;
+  background-color: var(--gnome-card-shade-color) !important;
 }
 #editBMPanel_workspacesSelectorExpander {
   margin-left: 0 !important;
