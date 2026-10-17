@@ -5,9 +5,6 @@
 /* Omnibox */
 /* Fix search icon alignment */
 :not([zen-single-toolbar="true"]) {
-  #identity-icon-label {
-    display: none !important;
-  }
   #identity-icon-box {
     padding-left: 16px !important;
   }
