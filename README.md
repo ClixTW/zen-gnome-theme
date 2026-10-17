@@ -67,9 +67,9 @@ A simple theme that brings the clean and elegant look of GNOME's Adwaita to Zen 
 
 ## ✏️ Usage
 
-1. Set Zen's built-in dark/light workspace modes to match your GNOME system setting. If your GNOME Shell is using dark mode, all Zen workspaces should also be set to dark mode, and vice versa. Otherwise, you may encounter dark backgrounds with dark icons, making them difficult to distinguish.
+1. Set `zen.theme.content-element-separation` to `0` on the `about:config` page. Some styles depend on this setting, so skipping this step may cause visual glitches.
 2. Set `svg.context-properties.content.enabled` to `true` on the `about:config` page. This allows icons to be colored correctly according to the light or dark mode.
-3. Set `zen.theme.content-element-separation` to `0` on the `about:config` page. Some styles depend on this setting, so skipping this step may cause visual glitches.
+3. Set Zen's built-in dark/light workspace modes to match your GNOME system setting. If your GNOME Shell is using dark mode, all Zen workspaces should also be set to dark mode, and vice versa. Otherwise, you may encounter dark backgrounds with dark icons, making them difficult to distinguish.
 
 ## ⚙️ Additional Options
 
