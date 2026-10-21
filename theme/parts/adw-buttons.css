@@ -104,6 +104,7 @@ button {
   box-shadow: var(--gnome-menu-shadow) !important;
   &:hover {
     background-color: color-mix(in srgb, var(--gnome-menu-color) 15%, var(--gnome-menu-background)) !important;
+    scale: none !important;
   }
   &:active:hover {
     background-color: color-mix(in srgb, var(--gnome-menu-color) 30%, var(--gnome-menu-background)) !important;
