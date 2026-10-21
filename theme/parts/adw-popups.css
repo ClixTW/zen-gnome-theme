@@ -258,10 +258,12 @@ popupnotification {
   align-items: center !important;
   padding-bottom: 12px !important;
   .zen-toast {
+    --gnome-toast-background: #505053;
+    --gnome-toast-color: #ffffff;
     padding: var(--gnome-menu-item-padding) !important;
     border-radius: 99px !important;
-    background: var(--gnome-palette-dark-2) !important;
-    color: var(--gnome-palette-light-1) !important;
+    background: var(--gnome-toast-background) !important;
+    color: var(--gnome-toast-color) !important;
     font-size: 16px !important;
     box-shadow: var(--gnome-menu-shadow) !important;
     transform-origin: center bottom !important;
