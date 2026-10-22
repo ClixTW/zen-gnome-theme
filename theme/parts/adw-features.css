@@ -109,9 +109,11 @@ zen-library {
   --zen-library-radius: var(--gnome-button-radius) !important;
   color: var(--gnome-menu-color) !important;
 }
+/* Button */
 .zen-library-download-list-download {
   border-radius: var(--gnome-card-radius) !important;
 }
+/* Sidebar */
 #zen-library-side {
   background-image: none !important;
   background-color: var(--gnome-secondary-sidebar-background) !important;
@@ -140,6 +142,7 @@ zen-library {
     background-color: var(--gnome-selected-color) !important;
   }
 }
+/* Search */
 .zen-library-search-top {
   .zen-library-search-box {
     height: var(--gnome-button-size) !important;
@@ -166,6 +169,7 @@ zen-library {
     }
   }
 }
+/* Row */
 .zen-library-row {
   border-radius: var(--gnome-card-radius) !important;
   .zen-library-row-actions .toolbarbutton-icon {
