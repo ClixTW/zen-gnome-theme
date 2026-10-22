@@ -113,6 +113,14 @@ zen-library {
 #library-button-badge:not([downloading]) {
   display: none !important;
 }
+.zen-library-download-progress  {
+  .zen-library-download-progress-track {
+    stroke: var(--gnome-accent-bg) !important;
+  }
+  .zen-library-download-progress-arc {
+    stroke: var(--gnome-accent) !important;
+  }
+}
 .zen-library-download-list-download {
   border-radius: var(--gnome-card-radius) !important;
 }
