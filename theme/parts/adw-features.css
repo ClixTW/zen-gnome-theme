@@ -110,6 +110,9 @@ zen-library {
   color: var(--gnome-menu-color) !important;
 }
 /* Button */
+#library-button-badge:not([downloading]) {
+  display: none !important;
+}
 .zen-library-download-list-download {
   border-radius: var(--gnome-card-radius) !important;
 }
