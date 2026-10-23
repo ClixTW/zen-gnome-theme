@@ -34,6 +34,12 @@
         filter: blur(35px) saturate(50%) contrast(0.7) !important;
       }
     }
+    &[zen-glance-tab="true"] .tab-background {
+      border: none !important;
+      background-image: image(var(--gnome-tabbar-tab-active-background-contrast)) !important;
+      background-color: var(--gnome-tabbar-background) !important;
+      box-shadow: var(--gnome-menu-shadow) !important;
+    }
     @media (prefers-color-scheme: dark) {
       &[visuallyselected]:hover .tab-background {
         &::after {
