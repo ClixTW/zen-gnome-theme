@@ -36,8 +36,8 @@
     }
     &[zen-glance-tab="true"] .tab-background {
       border: none !important;
-      background-image: image(var(--gnome-tabbar-tab-active-background-contrast)) !important;
-      background-color: var(--gnome-tabbar-background) !important;
+      background-image: image(var(--gnome-selected-active-color)) !important;
+      background-color: var(--gnome-sidebar-background) !important;
       box-shadow: var(--gnome-menu-shadow) !important;
     }
     @media (prefers-color-scheme: dark) {
