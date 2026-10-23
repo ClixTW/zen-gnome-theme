@@ -58,6 +58,7 @@
     }
   }
 }
+/* Audio indicator */
 #zen-essentials .tab-icon-overlay {
   background-image: none !important;
   background-color: color-mix(in srgb, var(--gnome-menu-color) 10%, var(--gnome-menu-background)) !important;
