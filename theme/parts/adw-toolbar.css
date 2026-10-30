@@ -14,3 +14,8 @@
 [zen-single-toolbar="true"] #nav-bar-overflow-button {
   order: -1 !important;
 }
+
+/* Toolbar */
+#zen-appcontent-navbar-wrapper {
+  --zen-toolbar-height: 40px !important;
+}
