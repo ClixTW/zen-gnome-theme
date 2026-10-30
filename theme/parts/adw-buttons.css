@@ -62,6 +62,12 @@ button {
   height: auto !important;
 }
 
+.toolbarbutton-1:not(#tabs-newtab-button),
+.urlbar-page-action,
+.identity-box-button {
+  --toolbarbutton-padding-inner: 8px !important;
+}
+
 /* Fix button glitches */
 #identity-icon-box {
   background-color: transparent !important;
