@@ -30,6 +30,7 @@
 #zen-site-data-header toolbarbutton {
   border-radius: var(--gnome-button-radius) !important;
   overflow: hidden !important;
+  fill: var(--gnome-toolbar-icon-fill) !important;
   &.active:hover::before {
     background-color: color-mix(in srgb, var(--gnome-menu-color) 15%, var(--gnome-accent-bg)) !important;
   }
@@ -93,13 +94,18 @@
     }
   }
 }
-#zen-site-data-security-info,
-#zen-site-data-boost {
-  border-radius: var(--gnome-button-radius) !important;
+#zen-site-data-footer  {
+  toolbarbutton {
+    height: var(--gnome-button-size) !important;
+    min-width: var(--gnome-button-size) !important;
+    border-radius: var(--gnome-button-radius) !important;
+  }
+  #zen-site-data-security-info  > * {
+    opacity: 1 !important;
 }
-#zen-site-data-actions {
-  border-radius: 99px !important;
-  margin-top: 3px !important;
+  #zen-site-data-actions {
+    border-radius: 99px !important;
+  }
 }
 
 /* Library */
