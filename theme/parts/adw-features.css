@@ -102,7 +102,7 @@
   }
   #zen-site-data-security-info  > * {
     opacity: 1 !important;
-}
+  }
   #zen-site-data-actions {
     border-radius: 99px !important;
   }
@@ -116,16 +116,22 @@ zen-library {
   color: var(--gnome-menu-color) !important;
 }
 /* Button */
+.zen-library-download-badge {
+  &[downloading]::after {
+    fill: var(--gnome-palette-dark-4) !important;
+  }
+  .zen-library-download-progress {
+    --thickness: 6px !important;
+    .zen-library-download-progress-track {
+      stroke: light-dark(var(--gnome-trough-background), var(--gnome-accent)) !important;
+    }
+    .zen-library-download-progress-arc {
+      stroke: var(--gnome-accent-bg) !important;
+    }
+  }
+}
 #library-button-badge:not([downloading]) {
   display: none !important;
-}
-.zen-library-download-progress  {
-  .zen-library-download-progress-track {
-    stroke: var(--gnome-accent-bg) !important;
-  }
-  .zen-library-download-progress-arc {
-    stroke: var(--gnome-accent) !important;
-  }
 }
 .zen-library-download-list-download {
   border-radius: var(--gnome-card-radius) !important;
