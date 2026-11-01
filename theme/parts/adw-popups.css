@@ -198,7 +198,7 @@ popupnotification {
   height: fit-content !important;
   width: fit-content !important;
   #zenEditBookmarkPanelFavicon {
-    height: var(--gnome-button-size) !important; 
+    height: var(--gnome-button-size) !important;
     width: var(--gnome-button-size) !important;
   }
 }
@@ -341,5 +341,10 @@ popupnotification {
   #context-sep-sendlinktodevice {
     display: none !important;
     color: red !important;
+  }
+}
+#contentAreaContextMenu {
+  .webextension-menuitem .menu-icon {
+    display: none !important;
   }
 }
