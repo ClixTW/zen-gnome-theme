@@ -277,6 +277,9 @@ zen-library {
 .zen-library-space::before {
   border-radius: var(--gnome-popover-radius) !important;
 }
+.zen-library-space-background::after {
+  --zen-main-browser-background: color-mix(var(--zen-primary-color), transparent 50%) !important;
+}
 .zen-library-space-body {
   --border-radius-medium: var(--gnome-entry-radius) !important;
   .tab-group-folder-icon svg {
