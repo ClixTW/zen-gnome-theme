@@ -155,7 +155,8 @@
       color: var(--gnome-menu-color) !important;
     }
     .urlbarView-title-separator::before,
-    .urlbarView-url {
+    .urlbarView-url,
+    .urlbarView-url strong {
       color: var(--gnome-accent) !important;
     }
     &:where([type="switchtab"],
