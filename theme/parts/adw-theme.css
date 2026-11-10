@@ -57,4 +57,7 @@
     --zen-folder-stroke: var(--gnome-window-color) !important;
     filter: none !important;
   }
+  #zenToolbarThemePicker {
+    display: none !important;
+  }
 }
