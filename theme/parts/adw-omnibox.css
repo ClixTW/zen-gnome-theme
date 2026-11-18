@@ -62,7 +62,8 @@
   }
   .unified-extensions-item,
   .identity-box-button,
-  .urlbar-page-action {
+  .urlbar-page-action,
+  #zen-little-window-container {
     justify-content: center !important;
     margin: 0 !important;
     height: auto !important;
@@ -117,6 +118,16 @@
       &:active {
         background-color: var(--gnome-active-color) !important;
       }
+    }
+  }
+  #zen-little-window-container {
+    border-radius: 0 !important;
+    background-color: var(--gnome-button-background) !important;
+    &:hover {
+      background-color: var(--gnome-button-hover-background) !important;
+    }
+    &:active {
+      background-color: var(--gnome-button-active-background) !important;
     }
   }
 }
