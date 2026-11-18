@@ -269,11 +269,15 @@ radio > .radio-check[selected] {
   --toggle-width: 48px !important;
   --toggle-border-radius: 24px !important;
   --toggle-border-color: var(--gnome-trough-background) !important;
-  --toggle-background-color:  var(--gnome-trough-background) !important;
+  --toggle-background-color: var(--gnome-trough-background) !important;
+  --toggle-background-color-hover: var(--gnome-trough-hover-background) !important;
   --toggle-background-color-pressed: var(--gnome-accent-bg) !important;
+  --toggle-background-color-pressed-hover: color-mix(in srgb, var(--gnome-accent-bg), var(--gnome-menu-color) 10%) !important;
   --toggle-dot-height: 22px !important;
   --toggle-dot-width: 22px !important;
   --toggle-dot-background-color: #FFF !important;
+  --toggle-dot-background-color-hover: #FFF !important;
+  --toggle-dot-background-color-active: #FFF !important;
   --toggle-dot-background-color-on-pressed: #FFF !important;
   --toggle-dot-transform-x: calc(var(--toggle-width) - 4 * var(--toggle-dot-margin) - var(--toggle-dot-width)) !important;
   border: 0 !important;
