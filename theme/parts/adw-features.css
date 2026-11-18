@@ -363,3 +363,126 @@ zen-library {
     background-color: var(--gnome-button-active-background) !important;
   }
 }
+
+/* Settings */
+#zen-settings-root {
+  .zen-settings-card {
+    border-radius: var(--gnome-card-radius) !important;
+  }
+  .zen-settings-row {
+    padding-block: var(--gnome-menu-item-padding) !important;
+  }
+  .zen-settings-button {
+    min-height: var(--gnome-button-size) !important;
+    min-width: var(--gnome-button-size) !important;
+    border-radius: var(--gnome-button-radius) !important;
+    &:active {
+      background-color: var(--gnome-button-active-background) !important;
+    }
+  }
+  .zen-settings-icon-button {
+    min-height: var(--gnome-button-size) !important;
+    min-width: var(--gnome-button-size) !important;
+    border-radius: var(--gnome-button-radius) !important;
+    color: var(--gnome-button-color) !important;
+  }
+  .zen-settings-drag-handle {
+    opacity: 1 !important;
+  }
+}
+#zen-settings-sidebar {
+  --zen-settings-sidebar-width: 25% !important;
+  --zen-settings-sidebar-background: var(--gnome-sidebar-background) !important;
+  padding-inline: var(--gnome-menu-padding) !important;
+  max-width: 280px !important;
+  min-width: 180px !important;
+  .zen-settings-category {
+    padding-block: var(--gnome-menu-item-padding)  !important;
+    border-radius: var(--gnome-button-radius) !important;
+    font-weight: 500 !important;
+    &:active {
+      background-color: var(--gnome-button-hover-background) !important;
+    }
+    &[aria-selected="true"] {
+      background-color: var(--gnome-button-hover-background) !important;
+      &:active {
+        background-color: var(--gnome-button-active-background) !important;
+      }
+    }
+  }
+}
+#zen-settings-main {
+  --zen-settings-background: var(--gnome-window-background) !important;
+  --zen-settings-card-background: var(--gnome-card-background) !important;
+  --zen-settings-button-background: var(--gnome-button-background) !important;
+  --zen-settings-button-background-hover: var(--gnome-button-hover-background) !important;
+  --zen-settings-subtitle-color: var(--gnome-menu-color) !important;
+  --zen-settings-text-color: var(--gnome-menu-color) !important;
+  #zen-settings-header {
+    justify-content: center !important;
+    #zen-settings-title {
+      margin-right: 40.5px !important;
+    }
+    .titlebar-buttonbox-container {
+      position: absolute !important;
+      align-self: center !important;
+      right: 0 !important;
+    }
+  }
+  .zen-settings-pane {
+    margin-inline: auto !important;
+    max-width: 600px !important;
+  }
+}
+
+/* Appearance */
+#zen-settings-pane-appearance {
+  .zen-settings-layout-row {
+    display:  grid !important;
+    #zen-settings-layout {
+      --zen-settings-layout-thumbnail-width: 160px !important;
+      justify-content: center !important;
+      gap: var(--gnome-menu-item-padding) !important;
+      .zen-settings-layout-option[aria-checked="true"] img {
+        border-radius: var(--gnome-button-radius) !important;
+        outline-width: 3px !important;
+      }
+    }
+  }
+}
+/* Shortcuts */
+#zen-settings-pane-shortcuts {
+  #zen-settings-shortcuts-list {
+    --zen-settings-sticky-background: color-mix(in srgb, var(--gnome-menu-background) 80%, var(--gnome-accent-bg)) !important;
+    --zen-settings-muted-color: var(--gnome-menu-color) !important;
+    .zen-settings-keycap {
+      border-radius: 99px !important;
+      border: none !important;
+    }
+  }
+  #zen-settings-shortcuts-aside {
+    align-self: center !important;
+    .zen-settings-art-key {
+      --zen-settings-art-key-face: var(--gnome-accent) !important;
+      --zen-settings-art-key-edge: var(--gnome-accent-bg) !important;
+      --zen-settings-art-key-color: var(--gnome-accent-bg) !important;
+    }
+    #zen-settings-shortcuts-more {
+      border-radius: 99px !important;
+    }
+  }
+}
+/* Dialog */
+/* WIP */
+.zen-settings-dialog {
+  .zen-settings-button-primary {
+    flex: 1 !important;
+  }
+}
+window[headerparent="containers-dialog"],
+window[headerparent="add-engine-dialog"],
+window[id="TranslationsDialog"] {
+  dialog {
+    background-color: var(--gnome-view-background) !important;
+  }
+}
