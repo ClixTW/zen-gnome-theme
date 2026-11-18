@@ -19,3 +19,33 @@
 #zen-appcontent-navbar-wrapper {
   --zen-toolbar-height: 40px !important;
 }
+
+/* Little zen */
+/* WIP */
+#zen-little-window-open-in-space {
+  order: -1 !important;
+  margin-inline: 6px !important;
+  height: var(--urlbar-height) !important;
+  background: transparent !important;
+  font-weight: 500 !important;
+  &:hover {
+    background: var(--gnome-hover-color) !important;
+  }
+  #zen-little-window-open-button {
+    order: -1 !important;
+    border-radius: 9px 0 0 9px !important;
+    border: none !important;
+    #zen-little-window-open-label {
+      color: var(--gnome-menu-color) !important;
+    }
+    #zen-little-window-open-shortcut {
+      display: none !important;
+    }
+  }
+  #zen-little-window-spaces-button {
+    border-radius: 0 9px 9px 0 !important;
+    .toolbarbutton-icon {
+      opacity: 1 !important;
+    }
+  }
+}
