@@ -108,6 +108,12 @@
     "plus-framed-symbolic",
     "folder-plus-symbolic",
     "filter-symbolic",
-    "move-tool-symbolic"
+    "move-tool-symbolic",
+    "appearance-symbolic",
+    "container-symbolic",
+    "keyboard-symbolic",
+    "sliders-symbolic",
+    "privacy-symbolic",
+    "flag-symbolic"
   ]
 }
