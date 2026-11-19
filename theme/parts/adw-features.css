@@ -386,9 +386,6 @@ zen-library {
     border-radius: var(--gnome-button-radius) !important;
     color: var(--gnome-button-color) !important;
   }
-  .zen-settings-drag-handle {
-    opacity: 1 !important;
-  }
 }
 #zen-settings-sidebar {
   --zen-settings-sidebar-width: 25% !important;
@@ -420,6 +417,8 @@ zen-library {
   --zen-settings-text-color: var(--gnome-menu-color) !important;
   #zen-settings-header {
     justify-content: center !important;
+    padding-inline: 0 !important;
+    height: 46px !important;
     #zen-settings-title {
       margin-right: 40.5px !important;
     }
@@ -430,6 +429,7 @@ zen-library {
     }
   }
   .zen-settings-pane {
+    margin-top: 24px !important;
     margin-inline: auto !important;
     max-width: 600px !important;
   }
