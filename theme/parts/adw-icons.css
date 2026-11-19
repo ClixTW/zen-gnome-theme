@@ -82,7 +82,8 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 .private-browsing-indicator-icon {
   list-style-image: url("account-private.svg", unset) !important;
 }
-#back-button {
+#back-button,
+#zen-little-window-back {
   list-style-image: var(--gnome-icon-go-previous-symbolic) !important;
 }
 #forward-button {
@@ -158,7 +159,8 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 #PopupAutoComplete > richlistbox > richlistitem[originaltype="login"] > .ac-site-icon {
   list-style-image: var(--gnome-icon-key-symbolic) !important;
 }
-#nav-bar-overflow-button {
+#nav-bar-overflow-button,
+#zen-little-window-spaces-button {
   list-style-image: var(--gnome-icon-pan-down-symbolic) !important;
 }
 .zen-current-workspace-indicator-chevron,
