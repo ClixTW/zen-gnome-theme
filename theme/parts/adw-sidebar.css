@@ -88,6 +88,7 @@ zen-workspace {
   --tab-background-color-hover: var(--gnome-hover-color) !important;
   --tab-background-color-selected: var(--gnome-selected-color) !important;
   .tabbrowser-tab {
+    rotate: none !important;
     &:hover {
       --tab-background-color-selected: var(--gnome-selected-hover-color) !important;
     }
