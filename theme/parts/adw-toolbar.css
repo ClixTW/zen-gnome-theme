@@ -22,9 +22,15 @@
 
 /* Little zen */
 #main-window[zen-little-window="true"] {
+  #nav-bar {
+    padding-inline: 0 !important;
+  }
+  #back-button {
+    margin-inline: var(--gnome-menu-padding) -8px !important;
+  }
   #zen-little-window-open-in-space {
-    margin-inline: 6px !important;
     height: var(--urlbar-height) !important;
+    border: none !important;
     background: transparent !important;
     font-weight: 500 !important;
     &:hover {
@@ -32,9 +38,11 @@
     }
     #zen-little-window-open-button {
       order: -1 !important;
+      padding-inline: var(--gnome-menu-padding) !important;
       border-radius: 9px 0 0 9px !important;
       border: none !important;
-      #zen-little-window-open-label {
+      #zen-little-window-open-label,
+      #zen-little-window-open-label > b {
         color: var(--gnome-menu-color) !important;
       }
       #zen-little-window-open-shortcut {
