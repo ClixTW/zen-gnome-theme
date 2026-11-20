@@ -95,6 +95,17 @@ zen-workspace {
       --tab-background-color-selected: var(--gnome-selected-active-color) !important;
     }
   }
+  .zen-workspace-scroll-to-tab {
+    --zen-workspace-scroll-to-tab-shadow: var(--gnome-menu-shadow) !important;
+    background-color: var(--gnome-menu-background) !important;
+    scale: none !important;
+    &:hover {
+      background-color: var(--gnome-hover-color) !important;
+    }
+    &:active {
+      background-color: var(--gnome-active-color) !important;
+    }
+  }
 }
 .tab-close-button,
 .tab-reset-button {
