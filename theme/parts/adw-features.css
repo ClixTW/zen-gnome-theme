@@ -440,7 +440,7 @@ zen-library {
   .zen-settings-layout-row {
     display:  grid !important;
     #zen-settings-layout {
-      --zen-settings-layout-thumbnail-width: 160px !important;
+      --zen-settings-layout-thumbnail-width: 100% !important;
       justify-content: center !important;
       gap: var(--gnome-menu-item-padding) !important;
       .zen-settings-layout-option[aria-checked="true"] img {
