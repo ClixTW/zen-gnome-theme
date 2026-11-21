@@ -368,6 +368,7 @@ zen-library {
 #zen-settings-root {
   .zen-settings-card {
     border-radius: var(--gnome-card-radius) !important;
+    box-shadow: var(--gnome-menu-shadow) !important;
   }
   .zen-settings-row {
     padding-block: var(--gnome-menu-item-padding) !important;
@@ -434,7 +435,6 @@ zen-library {
     max-width: 600px !important;
   }
 }
-
 /* Appearance */
 #zen-settings-pane-appearance {
   .zen-settings-layout-row {
