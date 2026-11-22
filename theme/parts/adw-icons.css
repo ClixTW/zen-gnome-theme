@@ -37,6 +37,15 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 .zen-view-splitter-header toolbarbutton {
   color: var(--gnome-toolbar-icon-fill) !important;
 }
+/* Remove this hack once the icon pack includes the new icons */
+@media (prefers-color-scheme: dark) {
+  #tabs-newtab-button image,
+  #appMenu-new-tab-button2 image,
+  menuitem[data-l10n-id="zen-panel-ui-folder-create"] img,
+  menuitem[data-l10n-id="tabs-toolbar-new-tab"] img {
+    filter: invert(1) !important;
+  }
+}
 
 /* Adjust icon size */
 #restore-button,
