@@ -1,6 +1,8 @@
 zen-themes.css
 customChrome.css
 
+theme/icons/src/
+
 .DS_Store
 Thumbs.db
 *.log

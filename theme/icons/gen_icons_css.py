@@ -9,7 +9,6 @@
 
 import json
 import logging
-import shutil
 import subprocess
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -17,14 +16,15 @@ from typing import TypedDict
 from urllib.parse import quote
 
 ABS_PATH = Path(__file__).resolve().parent
+SRC_PATH = ABS_PATH / "src"
 ICONS_FILE = ABS_PATH / "icons.json"
 CSS_FILE = ABS_PATH / "icons.css"
 ICONS_REPO_URL = "https://gitlab.gnome.org/GNOME/adwaita-icon-theme.git"
-ICONS_REPO_PATH = ABS_PATH / "adwaita-icon-theme"
+ICONS_REPO_PATH = SRC_PATH / "adwaita-icon-theme"
 ICONS_KIT_REPO_URL = (
     "https://gitlab.gnome.org/Teams/Design/icon-development-kit-www.git"
 )
-ICONS_KIT_REPO_PATH = ABS_PATH / "icon-development-kit-www"
+ICONS_KIT_REPO_PATH = SRC_PATH / "icon-development-kit-www"
 
 ET.register_namespace("", "http://www.w3.org/2000/svg")
 
@@ -33,13 +33,26 @@ class IconsDefinition(TypedDict):
     icons: list[str]
 
 
-def main():
-    if not ICONS_REPO_PATH.exists():
-        subprocess.call(["git", "clone", "--depth", "1", ICONS_REPO_URL], cwd=ABS_PATH)
-    if not ICONS_KIT_REPO_PATH.exists():
-        subprocess.call(
-            ["git", "clone", "--depth", "1", ICONS_KIT_REPO_URL], cwd=ABS_PATH
+def sync_repo(repo_url: str, repo_path: Path) -> None:
+    """Clone the repository into src if missing, otherwise pull latest changes."""
+    if not repo_path.exists():
+        subprocess.run(
+            ["git", "clone", "--depth", "1", repo_url, repo_path.name],
+            cwd=SRC_PATH,
+            check=True,
         )
+    else:
+        subprocess.run(
+            ["git", "pull", "--ff-only"],
+            cwd=repo_path,
+            check=True,
+        )
+
+
+def main():
+    SRC_PATH.mkdir(parents=True, exist_ok=True)
+    sync_repo(ICONS_REPO_URL, ICONS_REPO_PATH)
+    sync_repo(ICONS_KIT_REPO_URL, ICONS_KIT_REPO_PATH)
 
     # Get icons name to path mappings
     icon_paths = {
@@ -70,10 +83,6 @@ def main():
             css.write(f'\t--gnome-icon-{name}: url("data:image/svg+xml,{svg}");\n')
         css.write("}\n")
 
-    # Remove repos dirs
-    shutil.rmtree(ICONS_REPO_PATH)
-    shutil.rmtree(ICONS_KIT_REPO_PATH)
-
 
 def lookup_icons(icons_folder: Path, has_subdirs=True) -> dict[str, Path]:
     """Finds all symbolic icons in a folder and maps their name to their Path."""
@@ -81,7 +90,7 @@ def lookup_icons(icons_folder: Path, has_subdirs=True) -> dict[str, Path]:
 
     # Use Path.glob() for finding files
     glob_pattern = "**/*-symbolic.svg" if has_subdirs else "*-symbolic.svg"
-    
+
     for path in icons_folder.glob(glob_pattern):
         # Use path.stem to get the filename without the .svg extension
         name = path.stem
