@@ -17,7 +17,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 /* Fix icon colors */
 #tabs-newtab-button image,
 .zen-workspaces-actions {
-  opacity: 0.5 !important;
+  opacity: 0.6 !important;
 }
 #tabs-newtab-button[in-urlbar] image,
 .zen-workspaces-actions[open] {
