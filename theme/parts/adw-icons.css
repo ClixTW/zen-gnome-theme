@@ -813,6 +813,12 @@ menuitem[data-l10n-id="zen-panel-ui-new-empty-split"] img {
 menuitem[data-l10n-id="tabs-toolbar-new-tab"] img {
   content: var(--gnome-icon-plus-framed-symbolic) !important;
 }
+#zen-library-customize-button image {
+  content: var(--gnome-icon-pencil-symbolic) !important;
+}
+.toolbarbutton-1[image="chrome://browser/skin/zen-icons/heart-circle-fill.svg"] image {
+  content: var(--gnome-icon-heart-symbolic) !important;
+}
 .zen-library-filter-button img {
   content: var(--gnome-icon-filter-symbolic) !important;
 }
@@ -842,6 +848,9 @@ toolbarbutton[data-l10n-id="library-footer-close-button"] image {
 .toolbarbutton-1.close img {
   content: var(--gnome-icon-window-close-symbolic) !important;
 }
+.zen-settings-drag-handle {
+  content: var(--gnome-icon-draggable-symbolic) !important;
+}
 .zen-settings-icon-button img {
   content: var(--gnome-icon-settings-symbolic) !important;
 }
@@ -852,7 +861,7 @@ toolbarbutton[data-l10n-id="library-footer-close-button"] image {
   content: var(--gnome-icon-settings-symbolic) !important;
 }
 .zen-settings-category[data-pane="appearance"] img {
-  content: var(--gnome-icon-display-symbolic) !important;
+  content: var(--gnome-icon-appearance-symbolic) !important;
 }
 .zen-settings-category[data-pane="tabs"] img {
   content: var(--gnome-icon-tab-symbolic) !important;
@@ -870,19 +879,25 @@ toolbarbutton[data-l10n-id="library-footer-close-button"] image {
   content: var(--gnome-icon-flag-symbolic) !important;
 }
 .zen-settings-category[data-pane="shortcuts"] img {
-  content: var(--gnome-icon-keyboard-symbolic) !important;
-}
-.zen-settings-category[data-pane="privacy"] img {
-  content: var(--gnome-icon-privacy-symbolic) !important;
+  content: var(--gnome-icon-input-keyboard-symbolic) !important;
 }
 .zen-settings-category[data-pane="advanced"] img {
   content: var(--gnome-icon-sliders-symbolic) !important;
+}
+.zen-settings-category[data-action="open-privacy-settings"] img {
+  content: var(--gnome-icon-privacy-symbolic) !important;
+}
+.zen-settings-category[data-action="open-accessibility-settings"] img {
+  content: var(--gnome-icon-preferences-desktop-accessibility-symbolic) !important;
 }
 .zen-settings-category[data-action="open-mods"] img {
   content: var(--gnome-icon-magic-wand-symbolic) !important;
 }
 .zen-settings-category[data-action="open-more-settings"] img {
   content: var(--gnome-icon-view-more-horizontal-symbolic) !important;
+}
+.zen-settings-category[data-action="open-donate"] img {
+  content: var(--gnome-icon-heart-symbolic) !important;
 }
 .zen-settings-category[data-action="open-about"] img {
   content: var(--gnome-icon-info-outline-symbolic) !important;
