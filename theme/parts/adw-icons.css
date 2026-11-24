@@ -15,6 +15,13 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 }
 
 /* Fix icon colors */
+.unified-extensions-item,
+.identity-box-button,
+.urlbar-page-action {
+  #navigator-toolbox[zen-has-implicit-hover="true"] &, &:is([open], [showing]), #urlbar[has-popup-open="true"] &, :root[zen-has-empty-tab="true"] &, :root:not([zen-single-toolbar="true"]) & {
+    opacity: 0.6 !important;
+  }
+}
 #tabs-newtab-button image,
 .zen-workspaces-actions {
   opacity: 0.6 !important;
@@ -28,7 +35,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 .PanelUI-subView .subviewbutton-nav,
 .tab-preview-add-note.subviewbutton-nav {
   &::after {
-    fill-opacity: 0.4 !important;
+    opacity: 0.4 !important;
   }
 }
 .urlbarView-type-icon {
