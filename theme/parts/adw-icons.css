@@ -71,7 +71,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
   --menuitem-icon: var(--gnome-icon-process-stop-symbolic) !important;
 }
 #context-bookmarkpage {
-  --menuitem-icon: var(--gnome-icon-non-starred-symbolic) !important;
+  --menuitem-icon: var(--gnome-icon-star-symbolic) !important;
   &[starred] {
     --menuitem-icon: var(--gnome-icon-starred-symbolic) !important;
   }
@@ -415,7 +415,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 #pageAction-panel-bookmark,
 #star-button,
 #zen-bookmark-button {
-  list-style-image: var(--gnome-icon-non-starred-symbolic) !important;
+  list-style-image: var(--gnome-icon-star-symbolic) !important;
 }
 #zen-site-data-header-bookmark.active,
 #pageAction-panel-bookmark[starred],
@@ -617,7 +617,7 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
   list-style-image: var(--gnome-icon-file-manager-symbolic) !important;
 }
 #panelMenuBookmarkThisPage {
-  list-style-image: var(--gnome-icon-non-starred-symbolic) !important;
+  list-style-image: var(--gnome-icon-star-symbolic) !important;
 }
 #panelMenu_searchBookmarks {
   list-style-image: var(--gnome-icon-edit-find-symbolic) !important;
