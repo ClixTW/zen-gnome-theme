@@ -816,6 +816,12 @@ menuitem[data-l10n-id="zen-panel-ui-new-empty-split"] img {
 menuitem[data-l10n-id="tabs-toolbar-new-tab"] img {
   content: var(--gnome-icon-plus-framed-symbolic) !important;
 }
+#zen-library-button {
+  list-style-image: var(--gnome-icon-inbox-symbolic) !important;
+  .zen-library-sprite {
+    display: none !important;
+  }
+}
 #zen-library-customize-button image {
   content: var(--gnome-icon-pencil-symbolic) !important;
 }
