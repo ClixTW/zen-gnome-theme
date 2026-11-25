@@ -98,6 +98,9 @@ toolbarbutton:not(.zen-glance-sidebar-container toolbarbutton):-moz-window-inact
 #zen-boost-delete {
   list-style-image: var(--gnome-icon-window-close-symbolic) !important;
 }
+.tab-close-button {
+  content: var(--gnome-icon-window-close-symbolic) !important;
+}
 #appMenu-quit-button2,
 .zen-glance-sidebar-close {
   list-style-image: var(--gnome-icon-cross-large-symbolic) !important;
